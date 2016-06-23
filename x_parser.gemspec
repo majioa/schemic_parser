@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'xparser/version'
+require 'x_parser/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "xparser"
-  spec.version       = Xparser::VERSION
+  spec.name          = "x_parser"
+  spec.version       = XParser::VERSION
   spec.authors       = ["Malo Skrylevo"]
   spec.email         = ["majioa@yandex.ru"]
 
@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
 
 #  spec.add_dependency "activerecord", "~> 2"
 #  spec.add_dependency "activesupport", "~> 2"
+  spec.add_dependency "rubyzip", "~> 1.2"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"

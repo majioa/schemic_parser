@@ -1,7 +1,7 @@
 require 'zip'
 
 class XParser::Base
-  extend Parser::Methods
+  extend XParser::Methods
 
   attr_reader :errors
 
