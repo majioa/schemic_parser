@@ -1,4 +1,7 @@
 module XParser::Methods
+  CONTEXT_KEYS = [ :by, :from, :context, :field, :reset_context, :handler ]
+  FIELD_KEYS = [ :required, :as, :if ]
+
   def scheme name, &block
     current_scheme_path << name.to_s
     yield
@@ -15,34 +18,59 @@ module XParser::Methods
     name.to_s.singularize
   end
 
-  def full_context options
-    ctxs = [ options[:context] || "" ].flatten
-    ctxs.map do |ctx|
-      [ current_context, ctx ].flatten.compact.join('/')
+  def has_field name, *args
+    current_scheme[scheme_name(name)] = make_options(:field, args)
+  end
+
+  def has_scheme name, *args
+    current_scheme[scheme_name(name)] = make_options(:scheme, args)
+  end
+
+  def has_schemes name, *args
+    current_scheme[scheme_name(name)] = make_options(:scheme, args, true)
+  end
+
+  def has_reference name, *args
+    current_scheme[scheme_name(name)] = make_options(:reference, args)
+  end
+
+#   has_reference :lot, [
+#   { by: 'guid', from: 'ns2:lot', reset_context: 'ns2:protocolLotApplications' },
+#   { by: 'ns2:guid', from: 'ns2:protocolLotApplications', reset_context: 'ns2:lotApplicationsList' },
+#   ], required: true
+#
+#   has_field :rate, { required: true },
+#   { from: [ 'ns2:winnerIndication' ], handler: proc { |value| ! (value !~ /W/) } },
+#   { from: [ 'ns2:applicationPlace' ], handler: proc { |value| ! (value !~ /F/) } },
+#   { from: [ 'ns2:applicationRate' ], handler: proc { |value| ! (value !~ /1/) } }
+
+  # TODO move to protected
+  #
+  def make_options(type, args, multiple = false)
+    contexts = full_context(filter_hashes(args, CONTEXT_KEYS))
+    local = filter_hashes(args, FIELD_KEYS).reduce({}) { |r, x| r.merge(x) }
+    { type: type, multiple: multiple, contexts: contexts }.merge(local)
+  end
+
+  def filter_hashes hashes, by
+    hashes.flatten.map do |hash|
+      (hash.keys & by).map { |x| [ x, hash[x] ] }.to_h
+    end.select do |hash|
+      hash.any?
     end
   end
 
-  def has_field name, options={}
-    data = { type: :field, context: full_context(options) }
-    current_scheme[scheme_name(name)] = options.merge(data)
+  def full_context contexts
+    contexts.map do |options|
+      ctxs = [ options[:context] || "" ].flatten
+      options[:context] = ctxs.map do |ctx|
+        [ current_context, ctx ].flatten.compact.join('/')
+      end
+
+      options
+    end
   end
 
-  def has_scheme name, options={}
-    data = { type: :scheme, context: full_context(options) }
-    current_scheme[scheme_name(name)] = options.merge(data)
-  end
-
-  def has_schemes name, options={}
-    data = { type: :scheme, multiple: true, context: full_context(options) }
-    current_scheme[scheme_name(name)] = options.merge(data)
-  end
-
-  def has_reference name, options={}
-    data = { type: :reference, context: full_context(options) }
-    current_scheme[scheme_name(name)] = options.merge(data)
-  end
-
-  # TODO move to protected
   def current_context
     @current_context ||= []
   end

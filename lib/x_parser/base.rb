@@ -8,19 +8,16 @@ class XParser::Base
   Struct.new('Value', :text)
 
   def import files, importer
-    files.each do |file|
+    [ files ].flatten.each do |file|
       Rails.logger.info("File to unpack #{file}")
-      Dir.mktmpdir do |dir|
-        unzip(dir, file).each do |xml|
-          Rails.logger.info("Xml file to proceed #{xml}")
+      touch_file(file) do |xml|
+        binding.pry
+        attrs = parse(xml)
 
-          attrs = parse(IO.read(xml))
-
-          if errors.blank?
-            importer.import(attrs)
-          else
-            Rails.logger.error(errors.inspect)
-          end
+        if errors.blank?
+          importer.import(attrs)
+        else
+          Rails.logger.error(errors.inspect)
         end
       end
     end
@@ -29,10 +26,25 @@ class XParser::Base
   def parse xml
     filtered = xml.gsub(/[\r\u{feff}]/,"")
     doc = Nokogiri::XML.parse(filtered)
+    binding.pry
     each_field_for(self.class.schemes[nil], doc)
   end
 
   protected
+
+  def touch_file file
+    if file =~ /\.zip$/i
+      Dir.mktmpdir do |dir|
+        unzip(dir, file).each do |xml|
+          Rails.logger.info("Xml file to proceed #{xml}")
+
+          yield(IO.read(xml))
+        end
+      end
+    else
+      yield(IO.read(file))
+    end
+  end
 
   def unzip dir, file
     Zip::File.open(file) do |zip_file|

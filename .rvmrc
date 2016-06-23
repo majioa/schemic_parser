@@ -7,9 +7,7 @@ if [[ "$gemruby" == *engine* ]]; then
 fi
 
 if [ -z "$ruby_version" -o -z "$ruby_type" ]; then
-   set -
    info=$(rvm info)
-   set -x
    ruby_type=$(echo "$info"|grep "^  ruby:" -A 6|grep " interpreter"|sed "s/[^\"]*\"\([^\"]*\)\"/\1/")
 
    ruby_version=$(echo "$info"|grep "^  ruby:" -A 6|grep " version"|sed "s/[^\"]*\"\([^\"]*\)\"/\1/")
