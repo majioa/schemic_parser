@@ -11,9 +11,9 @@ class XParser::Base
     [ files ].flatten.each do |file|
       Rails.logger.info("File to unpack #{file}")
       touch_file(file) do |xml|
-        binding.pry
         attrs = parse(xml)
 
+#        binding.pry
         if errors.blank?
           importer.import(attrs)
         else
@@ -26,7 +26,6 @@ class XParser::Base
   def parse xml
     filtered = xml.gsub(/[\r\u{feff}]/,"")
     doc = Nokogiri::XML.parse(filtered)
-    binding.pry
     each_field_for(self.class.schemes[nil], doc)
   end
 
@@ -57,24 +56,25 @@ class XParser::Base
     end
   end
 
-  def each_field_for schema, context
+  def each_field_for schema, xml_context
     schema.map do |name, options|
       real_name = options[:multiple] && name.pluralize || name
-      value = type_value(name, options, context)
+      value = type_value(name, options, xml_context)
       is_assing = [Array, Hash].any? { |x| x === value }
       key = is_assing && "#{real_name}_attributes" || real_name
       [ key, value ]
     end.select {|_, v| v }.to_h
   end
 
-  def type_value name, options, context
+  def type_value name, options, xml_context
     case options[:type]
     when :field
-      select_value(name, context, options).text
+      value, = select_value(name, xml_context, options[:contexts], options)
+      value.text
 
     when :scheme
       scheme_name = self.class.scheme_name(options[:as] || name)
-      value = select_value(name, context, options)
+      value, = select_value(name, xml_context, options[:contexts], options)
       if options[:multiple]
         value.map { |v| each_field_for(self.class.schemes[scheme_name], v) }
       else
@@ -82,25 +82,31 @@ class XParser::Base
       end if value
 
     when :reference
-      in_context = value(name, context, options)
-      if in_context.text
-        find_for(name, select_value(options[:by], in_context, {context: ""}).text,
-          options)
+      new_contexts = self.class.filter_hashes(options[:contexts],
+        XParser::Methods::PURE_CONTEXT_KEYS)
+      inx, index = select_value(name, xml_context, new_contexts, options)
+      if inx.text
+        inc = options[:contexts][index]
+        value, = select_value(inc[:by], inx, this_contexts(inc), options)
+#        binding.pry #if inc[:by] == 'purchaseNoticeNumber'
+        field = inc[:field] || inc[:by]
+        model = model_for(name, options)
+        model.where(field => value.text).first ||
+        model.where("? ~* #{field}", value.text).order(code: :desc).first
       end
     end
+  end
+
+  def this_contexts in_context
+    [ in_context.merge({context: [""], from: nil}) ]
   end
 
   def model_for name, options
     (options[:as] || name).to_s.singularize.camelize.constantize
   end
 
-  def find_for name, value, options
-    field = options[:field] || options[:by]
-    model_for(name, options).where(field => value).first
-  end
-
-  def search_in context, path, options
-    res = /\w+:/ =~ path && context.xpath(path) || context.css(to_css(path))
+  def search_in xml_context, path, options
+    res = /\w+:/ =~ path && xml_context.xpath(path) || xml_context.css(to_css(path))
 
     options[:multiple] && res || res.first
   end
@@ -113,33 +119,50 @@ class XParser::Base
   # Осуществляет выбор между обработчиками встроенным и заданным пользователем в
   # подробностях (options).
   #
-   def select_value name, context, options
-    if options[:handler]
-      value = case options[:handler]
-      when Proc, Method
-        options[:handler][ name, context, options ]
+  def select_value name, xml_context, contexts, options
+    contexts.map.with_index do |c, i|
+      [ c, i ]
+    end.reduce([nil, nil]) do |(value, val_index), (context, index)|
+      next [value, val_index] if value && value.text
+
+      new =
+      if context[:handler]
+        handled_value(context[:handler], name, xml_context, context, options)
       else
-        send(options[:handler], name, context, options)
+        value(name, xml_context, context, options)
       end
 
-      Struct::Value.new(value)
-    else
-      value(name, context, options)
+      if options[:required] && ! new.text
+        @errors[name] = "field is required "
+      end
+
+      [ new, index ]
     end
   end
 
-  def value name, context, options
-#    binding.pry if name == 'description'
-    paths = paths(name, options)
+  def handled_value handler, name, xml_context, context, options
+    value = value(name, xml_context, context, options)
+
+    method =
+    case handler
+    when Proc, Method
+      handler
+    else
+      self.method(handler)
+    end
+
+    args = [ value.text, name, xml_context, options ]
+
+    Struct::Value.new(method[ *args[0...method.arity]])
+  end
+
+  def value name, xml_context, context, options
+#    binding.pry if name == 'placing_method'
+    paths = paths(name, context)
     new_context = paths.reduce(nil) do |new_context, path|
-      new_context.blank? && search_in(context, path, options) || new_context
+      new_context.blank? && search_in(xml_context, path, options) || new_context
     end
 #      binding.pry if ! new_context # TODO
-
-    if options[:required] && ! new_context
-      @errors[name] =
-      "has invalid new context for paths: #{paths.join(', ')}"
-    end
 
     if new_context.respond_to?(:text)
       new_context
@@ -169,12 +192,16 @@ class XParser::Base
   #   args: nil, "contact", nil
   #   out: ":contact"
   #
-  def paths name, options
-    froms = [ options[:from] || name ].flatten.compact
-    ctxs = [ options[:reset_context] || options[:context] ].flatten.compact
+  def paths name, context
+    froms = [ context[:from] || name ].flatten.compact
+    ctxs = [ context[:reset_context] || context[:context] ].flatten.compact
 #    binding.pry
     integrate(ctxs, froms).map do |from|
-      from.map { |a| a.split('/') }.flatten.map { |a| /:/ =~ a && a || ":#{a}" }.unshift("").join("//")
+      from.map do |a|
+        a.split('/')
+      end.flatten.map do |a|
+        /:/ =~ a && a || ":#{a}"
+      end.unshift("").join("//")
     end
   end
 

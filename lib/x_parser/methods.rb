@@ -1,6 +1,8 @@
 module XParser::Methods
   CONTEXT_KEYS = [ :by, :from, :context, :field, :reset_context, :handler ]
   FIELD_KEYS = [ :required, :as, :if ]
+  PURE_CONTEXT_KEYS = [ :from, :context, :reset_context, :handler ]
+
 
   def scheme name, &block
     current_scheme_path << name.to_s
@@ -46,8 +48,8 @@ module XParser::Methods
 
   # TODO move to protected
   #
-  def make_options(type, args, multiple = false)
-    contexts = full_context(filter_hashes(args, CONTEXT_KEYS))
+  def make_options type, args, multiple = false
+    contexts = make_contexts(filter_hashes(args, CONTEXT_KEYS))
     local = filter_hashes(args, FIELD_KEYS).reduce({}) { |r, x| r.merge(x) }
     { type: type, multiple: multiple, contexts: contexts }.merge(local)
   end
@@ -60,8 +62,8 @@ module XParser::Methods
     end
   end
 
-  def full_context contexts
-    contexts.map do |options|
+  def make_contexts contexts
+    (contexts.empty? && [{}] || contexts).map do |options|
       ctxs = [ options[:context] || "" ].flatten
       options[:context] = ctxs.map do |ctx|
         [ current_context, ctx ].flatten.compact.join('/')
