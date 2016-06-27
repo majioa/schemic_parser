@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
 
 #  spec.add_dependency "activerecord", "~> 2"
 #  spec.add_dependency "activesupport", "~> 2"
+  spec.add_dependency "nokogiri", "~> 1.6.8"
+#  spec.add_dependency "ox", platform: ruby
   spec.add_dependency "rubyzip", "~> 1.2"
 
   spec.add_development_dependency "bundler", "~> 1.12"

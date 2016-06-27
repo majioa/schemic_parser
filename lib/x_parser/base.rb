@@ -1,4 +1,5 @@
 require 'zip'
+require 'nokogiri'
 
 class XParser::Base
   extend XParser::Methods
@@ -13,7 +14,6 @@ class XParser::Base
       touch_file(file) do |xml|
         attrs = parse(xml)
 
-#        binding.pry
         if errors.blank?
           importer.import(attrs)
         else
@@ -60,10 +60,19 @@ class XParser::Base
     schema.map do |name, options|
       real_name = options[:multiple] && name.pluralize || name
       value = type_value(name, options, xml_context)
-      is_assing = [Array, Hash].any? { |x| x === value }
-      key = is_assing && "#{real_name}_attributes" || real_name
+
+      is_assign = [Array, Hash].any? { |x| x === value }
+      key = is_assign && "#{real_name}_attributes" || real_name
+
+      value =
+      if (!( handler = handler_for(options[:if])) || handler[value])
+        value
+      else
+        nil
+      end
+
       [ key, value ]
-    end.select {|_, v| v }.to_h
+    end.compact.select {|_, v| v }.to_h
   end
 
   def type_value name, options, xml_context
@@ -85,12 +94,14 @@ class XParser::Base
       new_contexts = self.class.filter_hashes(options[:contexts],
         XParser::Methods::PURE_CONTEXT_KEYS)
       inx, index = select_value(name, xml_context, new_contexts, options)
+
       if inx.text
         inc = options[:contexts][index]
         value, = select_value(inc[:by], inx, this_contexts(inc), options)
-#        binding.pry #if inc[:by] == 'purchaseNoticeNumber'
         field = inc[:field] || inc[:by]
         model = model_for(name, options)
+#        binding.pry if inc[:field] == 'source_guid'
+#        binding.pry if name == 'customer'
         model.where(field => value.text).first ||
         model.where("? ~* #{field}", value.text).order(code: :desc).first
       end
@@ -106,13 +117,15 @@ class XParser::Base
   end
 
   def search_in xml_context, path, options
-    res = /\w+:/ =~ path && xml_context.xpath(path) || xml_context.css(to_css(path))
+#    binding.pry if path =~ /lots/
+    res = xml_context.xpath(path)
+#    res = /\w+:/ =~ path && xml_context.xpath(path) || xml_context.css(to_css(path))
 
     options[:multiple] && res || res.first
   end
 
   def to_css path
-    ">" + path.split('//').map { |x| x.sub(/.*:/,'') }.join(' ')
+    ">" + path.split('//')[1..-1].map { |x| x.sub(/.*:/,'') }.join(' ')
   end
 
   # +select_value+ выборка общего обработчика контекста для заданного атрибута.
@@ -120,6 +133,7 @@ class XParser::Base
   # подробностях (options).
   #
   def select_value name, xml_context, contexts, options
+    value =
     contexts.map.with_index do |c, i|
       [ c, i ]
     end.reduce([nil, nil]) do |(value, val_index), (context, index)|
@@ -132,24 +146,31 @@ class XParser::Base
         value(name, xml_context, context, options)
       end
 
-      if options[:required] && ! new.text
-        @errors[name] = "field is required "
-      end
-
       [ new, index ]
+    end
+
+    if options[:required] && value[0].nil?
+      @errors[name] = "field is required"
+    end
+
+    value
+  end
+
+  def handler_for handler
+    case handler
+    when Proc, Method
+      handler
+    when NilClass
+      nil
+    else
+      self.method(handler)
     end
   end
 
   def handled_value handler, name, xml_context, context, options
     value = value(name, xml_context, context, options)
 
-    method =
-    case handler
-    when Proc, Method
-      handler
-    else
-      self.method(handler)
-    end
+    method = handler_for(handler)
 
     args = [ value.text, name, xml_context, options ]
 
@@ -157,12 +178,11 @@ class XParser::Base
   end
 
   def value name, xml_context, context, options
-#    binding.pry if name == 'placing_method'
+#    binding.pry if name == 'rate'
     paths = paths(name, context)
     new_context = paths.reduce(nil) do |new_context, path|
       new_context.blank? && search_in(xml_context, path, options) || new_context
     end
-#      binding.pry if ! new_context # TODO
 
     if new_context.respond_to?(:text)
       new_context
@@ -182,26 +202,27 @@ class XParser::Base
   #
   # Пример 1:
   #   args: "ns2:documentationDelivery", "deliveryEndDateTime"
-  #   out: "ns2:documentationDelivery//:deliveryEndDateTime"]
+  #   out: ".//ns2:documentationDelivery//:deliveryEndDateTime"]
   #
   # Пример 2:
   #   args: "", "ns2:contact"
-  #   out: "ns2:contact"
+  #   out: ".//ns2:contact"
   #
   # Пример 3:
   #   args: nil, "contact", nil
-  #   out: ":contact"
+  #   out: ".//:contact"
   #
   def paths name, context
     froms = [ context[:from] || name ].flatten.compact
     ctxs = [ context[:reset_context] || context[:context] ].flatten.compact
-#    binding.pry
+    prefix = context[:reset_context] && "" || "."
+
     integrate(ctxs, froms).map do |from|
       from.map do |a|
         a.split('/')
       end.flatten.map do |a|
         /:/ =~ a && a || ":#{a}"
-      end.unshift("").join("//")
+      end.unshift(prefix).join("//")
     end
   end
 
