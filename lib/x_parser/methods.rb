@@ -1,7 +1,7 @@
 module XParser::Methods
   CONTEXT_KEYS = [ :by, :from, :context, :field, :reset_context, :handler ]
   FIELD_KEYS = [ :required, :as, :if ]
-  PURE_CONTEXT_KEYS = [ :from, :context, :reset_context, :handler ]
+  PURE_CONTEXT_KEYS = [ :from, :context, :reset_context ]
 
 
   def scheme name, &block
