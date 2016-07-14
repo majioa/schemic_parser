@@ -35,13 +35,9 @@ class XParser::Base
     model = name.singularize.camelize.constantize
     model_attrs = attrs.values.first
 
-    if model_attrs['id']
-      instance = model.where(id: model_attrs['id']).first
-      instance.update!(model_attrs)
-    else
-      instance = model.new(model_attrs)
-      instance.save!
-    end
+    model.find_or_initialize_by(model_attrs['id']) do |i|
+      i.attributes = model_attrs
+    end.save!
   rescue => e
     err_text = "Failed to import record #{name} with messages '#{e.message}'"
     err_text += " and #{show_errors(instance.errors)}" if instance
