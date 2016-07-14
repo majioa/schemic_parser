@@ -4,18 +4,18 @@ require 'nokogiri'
 class XParser::Base
   extend XParser::Methods
 
-  attr_reader :errors
+  attr_reader :errors, :this
 
   Struct.new('Value', :text)
 
-  def import files, importer
+  def import files
     [ files ].flatten.each do |file|
       Rails.logger.info("File to unpack #{file}")
       touch_file(file) do |xml|
         attrs = parse(xml)
 
         if errors.blank?
-          importer.import(attrs)
+          import_attrs(attrs)
         else
           Rails.logger.error(errors.inspect)
         end
@@ -26,10 +26,40 @@ class XParser::Base
   def parse xml
     filtered = xml.gsub(/[\r\u{feff}]/,"")
     doc = Nokogiri::XML.parse(filtered)
+    @this = {}
     each_field_for(self.class.schemes[nil], doc)
   end
 
+  def import_attrs attrs
+    name = File.basename(attrs.keys.first, '_attributes')
+    model = name.singularize.camelize.constantize
+    model_attrs = attrs.values.first
+
+    if model_attrs['id']
+      instance = model.where(id: model_attrs['id']).first
+      instance.update!(model_attrs)
+    else
+      instance = model.new(model_attrs)
+      instance.save!
+    end
+  rescue => e
+    err_text = "Failed to import record #{name} with messages '#{e.message}'"
+    err_text += " and #{show_errors(instance.errors)}" if instance
+
+#    binding.pry
+    error "", err_text
+    Rails.logger.error(err_text)
+  end
+
   protected
+
+  def show_errors errors
+    errors.messages.map do |field, msgs|
+      msgs.map do |msg|
+        "#{field} #{msg}"
+      end
+    end.flatten.join(", ")
+  end
 
   def touch_file file
     if file =~ /\.zip$/i
@@ -58,61 +88,128 @@ class XParser::Base
 
   def each_field_for schema, xml_context
     schema.map do |name, options|
-      real_name = options[:multiple] && name.pluralize || name
-      value = type_value(name, options, xml_context)
+      v = type_value(name, options, xml_context)
 
-      is_assign = [Array, Hash].any? { |x| x === value }
+      real_name = options[:multiple] && name.pluralize || name
+      is_assign = [Array, Hash].any? { |x| x === v }
       key = is_assign && "#{real_name}_attributes" || real_name
 
       value =
-      if (!( handler = handler_for(options[:if])) || handler[value])
-        value
-      else
-        nil
-      end
+      (!( handler = handler_for(options[:if])) || handler[v]) && v || nil
+
+      @this[name] ||= []
+      @this[name] << value
 
       [ key, value ]
     end.compact.select {|_, v| v }.to_h
   end
 
   def type_value name, options, xml_context
-    case options[:type]
+    value = case options[:type]
     when :field
-      value, = select_value(name, xml_context, options[:contexts], options)
-      value.text
+      v = select_value(name, xml_context, options[:contexts], options).first
+#    binding.pry if name =~ /addr/
+      ! v.respond_to?(:text) && v || v.text
 
     when :scheme
-      scheme_name = self.class.scheme_name(options[:as] || name)
-      value, = select_value(name, xml_context, options[:contexts], options)
-      if options[:multiple]
-        value.map { |v| each_field_for(self.class.schemes[scheme_name], v) }
-      else
-        each_field_for(self.class.schemes[scheme_name], value)
-      end if value.text.present?
+      scheme_value(name, options, xml_context)
 
     when :reference
-      new_contexts = self.class.filter_hashes(options[:contexts],
-        XParser::Methods::PURE_CONTEXT_KEYS)
-      inx, index = select_value(name, xml_context, new_contexts, options)
+      reference_value(name, options, xml_context)
+    end
 
-      if inx.text
-        inc = options[:contexts][index]
-        begin
-          value, = select_value(inc[:by], inx, this_contexts(inc), options)
-        rescue NoMethodError
-          error(name, "field error for '#{inc[:by]}' in context: #{inx.inspect}")
-        end
+    if options[:on_complete]
+      value = handled_value(options[:on_complete], value, name, xml_context, options).text
+    end
 
-        field = inc[:field] || inc[:by]
-        model = model_for(name, options)
-        begin
-          model.where(field => value.text).first ||
-          model.where("? ~* #{field}", value.text).order(code: :desc).first
-        rescue Java::JavaLang::NoSuchMethodError
-          error(name, "field is unavailable to set via referenced model " +
-            " '#{model}' with data: #{inx.text}")
+    if options[:required] && value.nil?
+#      binding.pry
+      error(name, "field is required")
+    end
+
+    value
+  end
+
+  def is_update_required(name, xml_context, options, object)
+    base = object.send(options[:update_field])
+    inx, inc = find_new_contexts(name, xml_context, options)
+    o = select_value(options[:update], inx, this_contexts(inc), options).first
+
+    base < Time.parse(o.text)
+  end
+
+  def attributes_update name, options, xml_context
+    if options[:update] && options[:update_field] &&
+        ref = reference_value(name, options, xml_context)
+      if is_update_required(name, xml_context, options, ref)
+        { "id" => ref.id }
+      else
+        nil
+      end
+    else
+      {}
+    end
+  end
+
+  def scheme_value name, options, xml_context
+    if attrs = attributes_update(name, options, xml_context)
+#      binding.pry if name.to_s =~ /lot_apps/
+      value, i = select_value(name, xml_context, options[:contexts], options)
+      if value.text.present?
+        as = options[:contexts][i][:scheme] || options[:as] || name
+#        binding.pry if name.to_s =~ /lot_item/
+        scheme_name = self.class.scheme_name(as)
+        if options[:multiple]
+          value.map { |v| each_field_for(self.class.schemes[scheme_name], v) }
+        else
+          each_field_for(self.class.schemes[scheme_name], value).merge(attrs)
         end
       end
+    end
+  end
+
+  def find_new_contexts name, xml_context, options
+    new_contexts = self.class.filter_hashes(options[:contexts],
+      XParser::Methods::PURE_CONTEXT_KEYS)
+    inx, index = select_value(name, xml_context, new_contexts, options)
+
+    if inx.text
+      inc = options[:contexts][index]
+    end
+
+    [inx, inc]
+  end
+
+  def reference_value name, options, xml_context
+    inx, inc = find_new_contexts(name, xml_context, options)
+
+    if inc
+      begin
+        value, = select_value(inc[:by], inx, this_contexts(inc), options)
+      rescue NoMethodError
+        error(name, "field error for '#{inc[:by]}' in context: #{inx.inspect}")
+      end
+
+      model = model_for(name, options)
+
+      if field = inc[:field] || inc[:by]
+#      binding.pry if name =~ /lot/
+#        binding.pry
+        rela = model.where(field => value.text)
+      end
+
+#      binding.pry if name.to_s =~ /placing_method/
+      if rela.empty? && field = inc[:re_field]
+        begin
+          rela = model.where("? ~* #{field}", value.text).order(code: :desc)
+        rescue Java::JavaLang::NoSuchMethodError
+          error(name, "reference is unavailable to find out via referenced field" +
+            " '#{field}' with data: #{value.text}")
+          []
+        end
+      end
+
+      rela.first
     end
   end
 
@@ -123,7 +220,7 @@ class XParser::Base
     nil
   end
 
-  def this_contexts in_context
+  def this_contexts in_context = {}
     [ in_context.merge({context: [""], from: nil}) ]
   end
 
@@ -135,6 +232,10 @@ class XParser::Base
     res = xml_context.xpath(path)
 
     options[:multiple] && res || res.first
+  rescue Nokogiri::XML::XPath::SyntaxError
+    err_text = "Failed to navigate path with messages '#{e.message}'"
+    error path, err_text
+    Rails.logger.error(err_text)
   end
 
   # +select_value+ выборка общего обработчика контекста для заданного атрибута.
@@ -142,27 +243,21 @@ class XParser::Base
   # подробностях (options).
   #
   def select_value name, xml_context, contexts, options
-    value =
     contexts.map.with_index do |c, i|
       [ c, i ]
     end.reduce([nil, nil]) do |(value, val_index), (context, index)|
-      next [value, val_index] if value && value.text
+      next [value, val_index] if value && value.text.present?
 
       new =
-      if context[:handler]
-        handled_value(context[:handler], name, xml_context, context, options)
+      if context[:on_proceed]
+        midvalue = value(name, xml_context, context, options)
+        handled_value(context[:on_proceed], midvalue, name, xml_context, options)
       else
         value(name, xml_context, context, options)
       end
 
       [ new, index ]
     end
-
-    if options[:required] && value[0].nil?
-      error(name, "field is required")
-    end
-
-    value
   end
 
   def handler_for handler
@@ -176,9 +271,7 @@ class XParser::Base
     end
   end
 
-  def handled_value handler, name, xml_context, context, options
-    value = value(name, xml_context, context, options)
-
+  def handled_value handler, value, name, xml_context, options
     method = handler_for(handler)
 
 #    new_value =
@@ -189,9 +282,28 @@ class XParser::Base
 #      value
 #    end
 #
-    args = [ value.text, name, xml_context, options ]
-
-    Struct::Value.new(method[ *args[0...method.arity]])
+    if method
+      new_value =
+      if value.is_a?(Nokogiri::XML::NodeSet)
+        new = Nokogiri::XML::NodeSet.new(value.document)
+        new_value = value.map do |subvalue|
+          args = [ subvalue, name, xml_context, options ]
+          method[*args[0...method.arity]]
+#          if subvalue.nil? || subvalue.is_a?(Nokogiri::XML::Searchable)
+#            subvalue
+#          else
+#            binding.pry
+#            Struct::Value.new(method[*args[0...method.arity]])
+#          end
+        end.compact.reduce(new) { |new, x| new << x }
+        new_value
+      else
+        args = [ value, name, xml_context, options ]
+        Struct::Value.new(method[*args[0...method.arity]])
+      end
+    else
+      value
+    end
   end
 
   def value name, xml_context, context, options
@@ -237,7 +349,7 @@ class XParser::Base
       from.map do |a|
         a.split('/')
       end.flatten.map do |a|
-        /:/ =~ a && a || ":#{a}"
+        /(:|\A..\z)/ =~ a && a || ":#{a}"
       end.unshift(prefix).join("//")
     end
   end
