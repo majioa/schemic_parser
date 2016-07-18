@@ -30,6 +30,20 @@ class XParser::Base
     each_field_for(self.class.schemes[nil], doc)
   end
 
+#      def _update_array name, array
+#        array.each do |value|
+#          if value['id']
+#            name = File.basename(name, '_attributes')
+#            m = name.singularize.camelize.constantize
+#            i = m.where(id: value['id']).first
+#            binding.pry
+#            i.update!(value)
+#          end
+#        end
+#
+#        array.delete_if { |value | value['id'] }
+#      end
+#
   def import_attrs attrs
     name = File.basename(attrs.keys.first, '_attributes')
     model = name.singularize.camelize.constantize
@@ -37,6 +51,14 @@ class XParser::Base
 
     if model_attrs['id']
       instance = model.where(id: model_attrs['id']).first
+#      binding.pry
+#      model_attrs.each do |name, value|
+#        if value.is_a?(Array)
+#          _update_array(name, value)
+#        end
+#      end
+
+#      binding.pry
       instance.update!(model_attrs)
     else
       instance = model.new(model_attrs)
@@ -44,11 +66,14 @@ class XParser::Base
     end
   rescue => e
     err_text = "Failed to import record #{name} with messages '#{e.message}'"
-    err_text += " and #{show_errors(instance.errors)}" if instance
+    if instance && !(errs = show_errors(instance.errors)).empty?
+      err_text += " and #{errs}"
+    end
+    err_text += " at #{e.backtrace.first}"
 
 #    binding.pry
-    error "", err_text
     Rails.logger.error(err_text)
+    error "", err_text
   end
 
   protected
@@ -123,7 +148,7 @@ class XParser::Base
     end
 
     if options[:required] && value.nil?
-#      binding.pry
+      binding.pry
       error(name, "field is required")
     end
 
@@ -146,6 +171,13 @@ class XParser::Base
       else
         nil
       end
+    elsif ref = reference_value(name, options, xml_context)
+#      binding.pry if name =~ /lot/
+      if ref.is_a?(Array)
+        ref.map { |r| { "id" => r.id } }
+      else
+        { "id" => ref.id }
+      end
     else
       {}
     end
@@ -154,16 +186,30 @@ class XParser::Base
   def scheme_value name, options, xml_context
     if attrs = attributes_update(name, options, xml_context)
 #      binding.pry if name.to_s =~ /lot_apps/
+
       value, i = select_value(name, xml_context, options[:contexts], options)
+#      binding.pry if name =~ /lot/
       if value.text.present?
         as = options[:contexts][i][:scheme] || options[:as] || name
 #        binding.pry if name.to_s =~ /lot_item/
         scheme_name = self.class.scheme_name(as)
+        vvv = 
         if options[:multiple]
-          value.map { |v| each_field_for(self.class.schemes[scheme_name], v) }
+
+          if attrs.is_a?(Array)
+            values = [ value, attrs ].transpose
+            values.map do |(v, attr)|
+#              binding.pry
+              each_field_for(self.class.schemes[scheme_name], v).merge(attr)
+            end
+          else
+            value.map { |v| each_field_for(self.class.schemes[scheme_name], v) }
+          end
         else
           each_field_for(self.class.schemes[scheme_name], value).merge(attrs)
         end
+#          binding.pry if name =~ /lots?/
+          vvv
       end
     end
   end
@@ -183,7 +229,7 @@ class XParser::Base
   def reference_value name, options, xml_context
     inx, inc = find_new_contexts(name, xml_context, options)
 
-    if inc
+    if inc && inc[:by]
       begin
         value, = select_value(inc[:by], inx, this_contexts(inc), options)
       rescue NoMethodError
@@ -193,9 +239,12 @@ class XParser::Base
       model = model_for(name, options)
 
       if field = inc[:field] || inc[:by]
-#      binding.pry if name =~ /lot/
 #        binding.pry
-        rela = model.where(field => value.text)
+        if options[:multiple] && value.respond_to?(:size)
+          rela = model.where(field => value.map(&:text))
+        else
+          rela = model.where(field => value.text)
+        end
       end
 
 #      binding.pry if name.to_s =~ /placing_method/
@@ -209,11 +258,35 @@ class XParser::Base
         end
       end
 
-      rela.first
+#      binding.pry if name =~ /lot/
+      if options[:multiple]
+        rela_a = rela.empty? && [nil] || rela
+        value =
+        rela_a.map do |rela_v|
+          if inc[:on_found]
+            handled_value(inc[:on_found], rela_v, name, xml_context, options).text
+          else
+            rela_v
+          end
+        end
+      else
+        value = rela.first
+        if inc[:on_found]
+          value = handled_value(inc[:on_found], value, name, xml_context, options).text
+        end
+      end
+
+      this['relations'] ||= {}
+      this['relations'][name] ||= []
+      this['relations'][name] << value
+
+#      binding.pry if name =~ /lot/
+      value
     end
   end
 
   def error name, error
+#    binding.pry
     @errors[name] ||= []
     @errors[name] << error
 
@@ -256,6 +329,7 @@ class XParser::Base
         value(name, xml_context, context, options)
       end
 
+#      binding.pry if name =~ /lot/
       [ new, index ]
     end
   end
