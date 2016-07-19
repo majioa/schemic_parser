@@ -148,7 +148,7 @@ class XParser::Base
     end
 
     if options[:required] && value.nil?
-      binding.pry
+#      binding.pry
       error(name, "field is required")
     end
 
