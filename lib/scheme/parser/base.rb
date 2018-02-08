@@ -1,7 +1,8 @@
-#require 'zip'
+require 'scheme/parser/version'
+
 require 'nokogiri'
 
-module XParser::Base
+module Scheme::Parser::Base
    class ParameterError < StandardError;end
 
    attr_reader :errors, :this
@@ -226,7 +227,7 @@ module XParser::Base
 
    def find_new_contexts name, xml_context, options
       new_contexts = self.filter_hashes(options[:contexts],
-         XParser::Methods::PURE_CONTEXT_KEYS)
+         Scheme::Parser::Methods::PURE_CONTEXT_KEYS)
       inx, index = select_value(name, xml_context, new_contexts, options)
 
       if inx.text

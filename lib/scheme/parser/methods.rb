@@ -1,4 +1,4 @@
-module XParser::Methods
+module Scheme::Parser::Methods
    CONTEXT_KEYS = [ :by, :re, :from, :context, :field, :reset_context, :on_proceed, :scheme, :on_found ]
    FIELD_KEYS = [ :required, :as, :if, :update, :update_field, :on_complete, :map ]
    PURE_CONTEXT_KEYS = [ :from, :context, :reset_context ]
