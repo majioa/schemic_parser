@@ -9,15 +9,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Malo Skrylevo"]
   spec.email         = ["majioa@yandex.ru"]
 
-  spec.summary       = %q{XParser parse an XML/HTML document to YAML format}
-  spec.description   = %q{XParser parse an XML/HTML document to YAML format, prepared to import to a DB, or just save it as is}
-  spec.homepage      = ""
+  spec.summary       = %q{XParser parse an XML/HTML document to hashly-structured format}
+  spec.description   = %q{XParser parse an XML/HTML document to hashly-structured format,
+                          prepared to import to a DB, or just serialize it and save it as is}
+  spec.homepage      = "https://github.com/majioa/x_parser"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "https://UipyxVE6LHDyp1op4ftZ@gem.fury.io/majioa"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
@@ -27,11 +28,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-#  spec.add_dependency "activerecord", "~> 2"
-#  spec.add_dependency "activesupport", "~> 2"
-  spec.add_runtime_dependency "nokogiri", "~> 1.6", '>= 1.6.8'
-#  spec.add_dependency "ox", platform: ruby
-  spec.add_runtime_dependency "rubyzip", "~> 1.2"
+  spec.add_runtime_dependency "nokogiri", "~> 1.8.2", '>= 1.8.2'
+  # spec.add_dependency "ox", platform: ruby
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
