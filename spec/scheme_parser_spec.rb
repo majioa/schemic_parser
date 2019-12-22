@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe XParser do
+describe Scheme::Parser do
   it 'has a version number' do
-    expect(XParser::VERSION).not_to be nil
+    expect(Scheme::Parser::VERSION).not_to be nil
   end
 
   xit 'does something useful' do
