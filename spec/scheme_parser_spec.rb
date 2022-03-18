@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Scheme::Parser do
+describe Schemic::Parser do
   it 'has a version number' do
-    expect(Scheme::Parser::VERSION).not_to be nil
+    expect(Schemic::Parser::VERSION).not_to be nil
   end
 
   xit 'does something useful' do

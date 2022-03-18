@@ -1,18 +1,18 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'scheme/parser/version'
+require 'schemic/parser/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "scheme_parser"
-  spec.version       = Scheme::Parser::VERSION
+  spec.name          = "schemic_parser"
+  spec.version       = Schemic::Parser::VERSION
   spec.authors       = ["Malo Skrylevo"]
   spec.email         = ["majioa@yandex.ru"]
 
-  spec.summary       = %q{Scheme Parser parse an XML/HTML document to hashly-structured format}
-  spec.description   = %q{Scheme Parser parse an XML/HTML document to hashly-structured format,
+  spec.summary       = %q{Schemic Parser parse an XML/HTML document to hashly-structured format}
+  spec.description   = %q{Schemic Parser parse an XML/HTML document to hashly-structured format,
                           prepared to import to a DB, or just serialize it and save it as is}
-  spec.homepage      = "https://github.com/majioa/scheme_parser"
+  spec.homepage      = "https://github.com/majioa/schemic_parser"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

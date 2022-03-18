@@ -1,8 +1,8 @@
-require 'scheme/parser/version'
-
 require 'nokogiri'
 
-module Scheme::Parser::Base
+require 'schemic/parser/version'
+
+module Schemic::Parser::Base
    class ParameterError < StandardError;end
 
    attr_reader :errors, :this
@@ -227,7 +227,7 @@ module Scheme::Parser::Base
 
    def find_new_contexts name, xml_context, options
       new_contexts = self.filter_hashes(options[:contexts],
-         Scheme::Parser::Methods::PURE_CONTEXT_KEYS)
+         Schemic::Parser::Methods::PURE_CONTEXT_KEYS)
       inx, index = select_value(name, xml_context, new_contexts, options)
 
       if inx.text
