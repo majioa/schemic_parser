@@ -1,6 +1,10 @@
+#!/usr/bin/env ruby
+
+require "cucumber/rake/task"
 require "bundler/gem_tasks"
-require "rspec/core/rake_task"
 
-RSpec::Core::RakeTask.new(:spec)
+Cucumber::Rake::Task.new do |t|
+   t.cucumber_opts = %w{--format progress}
+end
 
-task :default => :spec
+task :default => :cucumber
