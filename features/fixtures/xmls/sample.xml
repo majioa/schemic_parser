@@ -1,0 +1,36 @@
+<root>
+   <subroot>
+      <body>
+         <ignore>
+         </ignore>
+         <css1>
+            <css6>
+               Поле 1
+            </css6>
+         </css1>
+         <css3>
+            Поле 3
+         </css3>
+      </body>
+      <css4>
+         <css8>
+            <css6>
+               Поле 4
+            </css6>
+         </css8>
+      </css4>
+      <css2>
+         <css8>
+            <css6>
+               Поле 2
+            </css6>
+         </css8>
+         <ignore>
+            Игнор
+         </ignore>
+      </css2>
+   </subroot>
+   <css5>
+      ССыль
+   </css5>
+</root>

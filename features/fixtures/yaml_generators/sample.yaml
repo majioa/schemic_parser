@@ -1,0 +1,55 @@
+---
+schemes:
+   scheme1:
+      root: true # default false
+      has:
+         scheme2:
+            kind: scheme # mandatory
+            single: true # default false
+            require: true # default false
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css1:
+                  level: 0 # integer: 0 - current, >0 parent, -1 - root
+                  on_proceed: :prc # optional to proceed over the found value, symbol is the method name to proceed, other value just sets the value
+         new_name:
+            kind: scheme # mandatory
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css4:
+                  if: :iffalse # when true valud is taking into search
+               css2:
+                  level: 1 # integer: 0 - current, >0 parent, -1 - root
+                  as: scheme3 # optional, use real reference name 'as' to refer to
+         field1:
+            kind: field # one of: scheme, field, or reference
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css3:
+                  on_complete: :comp # optional to notify or replace value when found, when value is not a symbol, it just outputs as specified.
+         ref:
+            kind: field
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css5:
+                  level: -1 # integer: 0 - current, >0 parent, -1 - root
+   scheme2:
+      has:
+         field3:
+            kind: field # one of: scheme, field, or reference
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css6: {}
+            on_complete: :comp # optional to notify or replace value when found, when value is not a symbol, it just outputs as specified.
+   scheme3:
+      has:
+         field2:
+            kind: field # one of: scheme, field, or reference
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css8:
+                  level: -1 # integer: 0 - current, >0 parent, -1 - root
+                  as: scheme2 # optional, use real reference name 'as' to refer to
+            on_complete: :comp # optional to notify or replace value when found, when value is not a symbol, it just outputs as specified.
+   new_name:
+      has:
+         field3:
+            kind: field # one of: scheme, field, or reference
+            selectors: # mandatory, unless on_complete is specified, at least one children
+               css7:
+                  level: -1 # integer: 0 - current, >0 parent, -1 - root
+            on_complete: :comp # optional to notify or replace value when found, when value is not a symbol, it just outputs as specified.

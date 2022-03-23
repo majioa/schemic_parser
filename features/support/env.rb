@@ -1,6 +1,7 @@
 require 'pry'
 require 'shoulda-matchers/cucumber'
 
+require 'schemic/generator/yaml'
 require 'schemic/parser/cli'
 
 Shoulda::Matchers.configure do |config|

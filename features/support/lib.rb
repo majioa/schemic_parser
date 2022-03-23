@@ -23,4 +23,19 @@ module Lib
    end
 end
 
+module FakeMethods
+   def comp value
+      value
+   end
+
+   def prc value
+      value
+   end
+
+   def iffalse _value, _dom_context
+      false
+   end
+end
+
+Schemic::Parser.include(FakeMethods)
 World(Lib)
