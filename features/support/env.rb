@@ -3,6 +3,7 @@ require 'shoulda-matchers/cucumber'
 
 require 'schemic/generator/yaml'
 require 'schemic/parser/cli'
+require 'rspec/json_expectations'
 
 Shoulda::Matchers.configure do |config|
    config.integrate do |with|

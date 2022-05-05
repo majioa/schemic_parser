@@ -15,7 +15,7 @@ schemes:
             kind: scheme # mandatory
             selectors: # mandatory, unless on_complete is specified, at least one children
                css4:
-                  if: :iffalse # when true valud is taking into search
+                  if: false # when value or function returns true, field is taking into search
                css2:
                   level: 1 # integer: 0 - current, >0 parent, -1 - root
                   as: scheme3 # optional, use real reference name 'as' to refer to
@@ -42,7 +42,7 @@ schemes:
             kind: field # one of: scheme, field, or reference
             selectors: # mandatory, unless on_complete is specified, at least one children
                css8:
-                  level: -1 # integer: 0 - current, >0 parent, -1 - root
+                  level: 0 # integer: 0 - current, >0 parent, -1 - root
                   as: scheme2 # optional, use real reference name 'as' to refer to
             on_complete: :comp # optional to notify or replace value when found, when value is not a symbol, it just outputs as specified.
    new_name:

@@ -7,8 +7,11 @@ class Schemic::Parser
    attr_reader :errors
 
    class ParameterError < StandardError;end
+   class InvalidSchemeError < StandardError;end
 
    def initialize scheme
+      raise InvalidSchemeError unless scheme
+
       @scheme = scheme
    end
 
@@ -17,7 +20,7 @@ class Schemic::Parser
 
       filtered = readflow(xml)
       doc = filtered.kind_of?(Nokogiri::XML::Element) && filtered || Nokogiri::XML.parse(filtered)
-
+      #binding.pry
       each_field_for(root_scheme, doc)
    end
 
@@ -53,11 +56,21 @@ class Schemic::Parser
 
    def each_field_for schema, xml_context
       schema.has.map do |name, options|
-         v = type_value(name, options, xml_context)
-         handler = handler_for(options.if) if options.if
+         n, v = type_value(name, options, xml_context)
 
-         handler && handler[v, xml_context] || v
-      end.compact.select {|_, v| !v.nil? }.to_h
+         if options.if
+            handler = handler_for(options.if)
+            args = [v, xml_context][0...handler.arity]
+
+            [n, handler[*args] ? v : nil]
+         else
+            [n, v]
+         end
+      end.compact.select do |_, (_n, v)|
+         !v.nil?
+      end.reduce({}) do |res, _name, (name, value)|
+         res.merge({name => value})
+      end
    end
 
    def extract_value v
@@ -66,16 +79,16 @@ class Schemic::Parser
    end
 
    def type_value name, options, xml_context
-      value =
+      new_name, value =
          case options.kind.to_s
          when "field"
             v, = select_value(name, xml_context, options.selectors, options)
             v = extract_value(v)
-            v.present? && v || nil
+            [name.to_s, !v.nil? ? v : nil]
          when "scheme"
             scheme_value(name, options, xml_context)
-         #when "reference"
-         #   reference_value(name, options, xml_context)
+         when "reference"
+            reference_value(name, options, xml_context)
          end
 
       if options.on_complete
@@ -83,24 +96,55 @@ class Schemic::Parser
       end
 
       if options.required && value.nil?
-         binding.pry
          error(name, "field is required")
       end
 
-      value
+      [new_name, value]
    end
 
    def scheme_value name, options, xml_context
       value, selector = select_value(name, xml_context, options.selectors, options)
 
-      if value&.text&.present?
-         scheme_name = (selector.as || options.as || name).to_s.singularize
+      new_name, new_value =
+         if value&.text&.present?
+            scheme_name = (selector.as || options.as || name).to_s.singularize
 
-         if options.single
-            each_field_for(@scheme.schemes[scheme_name], value)
-         else
-            value.map { |v| each_field_for(@scheme.schemes[scheme_name], v) }
+            n, v =
+               if options.single
+                  [name, each_field_for(@scheme.schemes[scheme_name], value)]
+               else
+                  [name.to_s.pluralize, value.map { |v| each_field_for(@scheme.schemes[scheme_name], v) }]
+               end
+
+            is_empty?(v) ? [n, nil] : [n, v]
          end
+
+      new_name = [new_name, options.postfix].compact.join("_")
+
+      [new_name, new_value]
+   end
+
+   # +is_empty?+ checks wheither the value has empty value, including its subvalues, like for hash and array. Booleans are treated as non-empty values.
+   # Examples:
+   #     is_empty?("new_names"=>[{"field3"=>""}]) #=> true
+   #     is_empty?(false) #=> false
+   #     is_empty?(nil) #=> true
+   #     is_empty?("") #=> true
+   #
+   def is_empty? value
+      case value
+      when Hash
+         !value.map {|(_, v)| is_empty?(v) ? nil : v }.compact.any?
+      when Array
+         !value.map {|v| is_empty?(v) ? nil : v }.compact.any?
+      when FalseClass
+         false
+      when TrueClass
+         false
+      when NilClass
+         true
+      else
+         value.blank?
       end
    end
 
@@ -115,6 +159,9 @@ class Schemic::Parser
    end
 
    def reference_value name, options, xml_context
+      error(name, "no reference type is supported")
+
+      []
    end
 
    def error name, error
@@ -125,29 +172,47 @@ class Schemic::Parser
       nil
    end
 
-   def this_contexts in_context = {}
-      [ in_context.merge({context: [""], from: nil}) ]
-   end
-
-   def model_for name, options
-      (options.as || name).to_s.singularize.camelize.constantize
+   # log method TODO
+   def debug text
+      $stderr.puts(text) if ENV['DEBUG']
    end
 
    # +select_value+ выборка общего обработчика контекста для заданного атрибута.
    # Осуществляет выбор между обработчиками встроенным и заданным пользователем в
    # подробностях (options).
    #
-   def select_value name, dom_context, selectors, options
+   def select_value name, dom_context_in, selectors, options
       selectors.reduce([nil, nil]) do |(value, val_selector), path, selector|
          if value && value.text.present? ||
-               selector.if && !handler_for(selector.if)[value, dom_context]
+               !selector.if.nil? && !handler_for(selector.if)[value, dom_context_in]
             next [value, val_selector]
          end
 
+         dom_context = level_to_dom_context(selector.level, dom_context_in)
          value_tmp = search_in(path, dom_context, name, options)
          value_new = handled_value(selector.on_proceed, value_tmp, name, dom_context, options) if selector.on_proceed
 
-         [value_new || value_tmp, selector]
+         [is_empty?(value_new) ? value_tmp : value_new, selector]
+      end
+   end
+
+   # +level_to_dom_context+ returns a new DOM context depending on the level from the current passed as a +dom_context_in+
+   # argument. When +level+ is a positive integer, it returns a parent context with steps defined by a level,
+   # when +level+ is a zero, it returns self context, when +level+ is a -1, it returns a root context.
+   # Examples:
+   #     level_to_dom_context(-1, dom_context_in) # root DOM context
+   #     level_to_dom_context(0, dom_context_in) # self DOM context
+   #     level_to_dom_context(1, dom_context_in) # parent DOM context
+   #
+   def level_to_dom_context level, dom_context_in
+      case level
+      when -1
+         # dom_context_in.xpath('/*').first
+         dom_context_in.document
+      when 0
+         dom_context_in
+      else
+         (0...level.to_i).reduce(dom_context_in) {|res, _| res.parent rescue res }
       end
    end
 
@@ -156,46 +221,61 @@ class Schemic::Parser
       when Proc, Method
          handler
       when NilClass
-         self.method(:blank_handler)
+         self.method(:unhdefined_handler)
+      when TrueClass
+         self.method(:true_handler)
+      when FalseClass
+         self.method(:false_handler)
       else
-         self.methods.include?(handler) && self.method(handler) || self.method(:blank_handler)
+         self.methods.include?(handler) && self.method(handler) || self.method(:undefined_handler)
       end
    end
 
-   def blank_handler *args
-      binding.pry
-      warn("Blank handler is used with args: #{args.inspect}")
+   def true_handler *args
+      debug("True handler is used for '#{args[1]}' field with value '#{args.first}'")
+
+      true
+   end
+
+   def false_handler value, *args
+      debug("False handler is used for '#{args[1]}' field with value '#{args.first}'")
+
+      false
+   end
+
+   def undefined_handler value, *args
+      warn("Undefined handler is used for '#{args.first}' field with value '#{value}'")
+
+      value
    end
 
    def handled_value handler, value, name, xml_context, options
       method = handler_for(handler)
 
-      if method
-         new_value =
-         if value.is_a?(Nokogiri::XML::NodeSet)
-            new = Nokogiri::XML::NodeSet.new(value.document)
+      if value.is_a?(Nokogiri::XML::NodeSet)
+         new = Nokogiri::XML::NodeSet.new(value.document)
 
-            new_value = value.map do |subvalue|
-               args = [ subvalue, name, xml_context, options ]
-               method[*args[0...method.arity]]
-            end.compact.reduce(new) { |new, x| new << x }
-            new_value
-         else
-            args = [ value, name, xml_context, options ]
-            value_tmp = method[*args[0...method.arity]]
-         end
+         value.map do |subvalue|
+            args = [ subvalue, name, xml_context, options ]
+            method[*args[0...method.arity]]
+         end.compact.reduce(new) { |new, x| new << x }
       else
-         value
+         args = [ value, name, xml_context, options ]
+         value_tmp = method[*args[0...method.arity]]
       end
    end
 
    def search_in path, xml_context, name, options
-      res = xml_context.css(path)
+      res =
+         if path.blank?
+            xml_context
+         else
+            xml_context.css(path)
+         end
 
       options.single && res.first || res
    rescue Nokogiri::CSS::SyntaxError => e
-      binding.pry
-      error name, "Failed to navigate path with messages '#{e.message}'"
+      error(name, "Failed to navigate path with messages '#{e.message}'")
       nil
    end
 end

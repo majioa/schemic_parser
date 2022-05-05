@@ -11,10 +11,10 @@ Then('there are no errors on parsing') do
    expect(@parser.errors).to be_empty
 end
 
-Then('he can get the {string} JSON document from parser') do |file_name|
-   expect(@tree.to_json).to be_eql(IO.read(File.join("features/fixtures/jsons", file_name)).strip)
+Then('he can get the {string} JSON document') do |file_name|
+   expect(@tree.as_json).to include_json(JSON.parse(IO.read(File.join("features/fixtures/jsons", file_name)).strip))
 end
 
-Then('he can get the {string} YAML document from parser') do |file_name|
+Then('he can get the {string} YAML document') do |file_name|
    expect(@tree.to_yaml).to be_eql(IO.read(File.join("features/fixtures/yamls", file_name)))
 end

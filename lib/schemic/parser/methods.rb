@@ -6,10 +6,11 @@ class Array
    end
 end
 
+# TODO inline generator
 module Schemic::Parser::Methods
-   CONTEXT_KEYS = [ :by, :re, :from, :context, :field, :reset_context, :on_proceed, :scheme, :on_found ]
-   FIELD_KEYS = [ :required, :as, :if, :update, :update_field, :on_complete, :map ]
-   PURE_CONTEXT_KEYS = [ :from, :context, :reset_context ]
+   CONTEXT_KEYS = %i(by re from context field on_proceed scheme on_found)
+   FIELD_KEYS = %i(required as if update update_field on_complete map postfix)
+   PURE_CONTEXT_KEYS = %i(from context)
 
    def scheme name, options = {}, &block
       current_scheme_path << name.to_s
@@ -28,29 +29,27 @@ module Schemic::Parser::Methods
    end
 
    def use_default_key name
-      current_options[:key] = name
+      current_scheme[:key] = name
    end
 
    def has_field name_in, *args
-      has_param(scheme_name(name), :field, false, args)
+      has_param(name_in.to_s, :field, true, args)
    end
 
    def has_scheme name, *args
-      has_param(scheme_name(name), :scheme, false, args)
-   end
-
-   def has_schemes name, *args
       has_param(scheme_name(name), :scheme, true, args)
    end
 
-   def has_reference name, *args
-      has_param(scheme_name(name), :reference, false, args)
+   def has_schemes name, *args
+      has_param(scheme_name(name), :scheme, false, args)
    end
 
-   def has_param name, param_name, multiple, *args
-      current_scheme[name] = make_options(param_name, args, name, multiple)
-#      binding.pry
-      current_scheme[name]
+   def has_reference name, *args
+      has_param(name.to_s, :reference, true, args)
+   end
+
+   def has_param name, param_name, single, *args
+      current_scheme[:has][name] = make_options(param_name, args, name, single)
    end
 
 #    has_reference :lot, [
@@ -58,22 +57,57 @@ module Schemic::Parser::Methods
 #    { by: 'ns2:guid', from: 'ns2:protocolLotApplications', reset_context: 'ns2:lotApplicationsList' },
 #    ], required: true
 #
-#    has_field :rate, { required: true },
-#    { from: [ 'ns2:winnerIndication' ], handler: proc { |value| ! (value !~ /W/) } },
-#    { from: [ 'ns2:applicationPlace' ], handler: proc { |value| ! (value !~ /F/) } },
-#    { from: [ 'ns2:applicationRate' ], handler: proc { |value| ! (value !~ /1/) } }
-
    # TODO move to protected
    #
-   def make_options type, args, name, multiple = false
+   def make_options kind, args, name, single = true
       selectors = make_selectors(filter_hashes(args, CONTEXT_KEYS), name, args)
-      local = filter_hashes(args, FIELD_KEYS).reduce({}.to_os) { |r, x| r.merge(x.to_os) }
+      local = transform_field_keys(args)
 
-      { type: type, multiple: multiple, selectors: selectors }.to_os.merge(local)
+      { kind: kind, single: single, selectors: selectors }.to_os.merge(local)
+   end
+
+   # +transform_field_keys+ filters out and then transforms the passed in arguments to then merge them in to the scheme
+   #
+   def transform_field_keys hash_in
+      filter_hashes(hash_in, FIELD_KEYS).reduce({}.to_os) do |r, x|
+         new =
+            x.map do |key, value|
+               new_value =
+                  if key =~ /if|on_complete/
+                     value.is_a?(Symbol) && (method(value) rescue value) || value
+                  else
+                     value
+                  end
+
+               [key, new_value]
+            end.to_h.to_os
+
+         r.merge(new)
+      end
+   end
+
+   # +transform_selector_keys+ filters out and then transforms the passed in arguments to then merge them in to the scheme
+   #
+   def transform_selector_keys hash_in
+      filter_hashes(hash_in, CONTEXT_KEYS|[:level]).reduce({}.to_os) do |r, x|
+         new =
+            x.map do |key, value|
+               new_value =
+                  if key =~ /on_proceed|on_found/
+                     value.is_a?(Symbol) && (method(value) rescue value) || value
+                  else
+                     value
+                  end
+
+               [key, new_value]
+            end.to_h.to_os
+
+         r.merge(new)
+      end
    end
 
    def make_selectors contexts, name, args
-      (contexts.empty? && [{}] || contexts).map do |options|
+      (contexts.empty? && [{}] || contexts).reduce({}.to_os) do |selectors, options|
          ctxs = [ options[:context] || "" ].flatten
 
          context = ctxs.map do |ctx|
@@ -82,10 +116,8 @@ module Schemic::Parser::Methods
 
          current_scheme
 
-         #binding.pry
-
-         make_selector(name, options)
-      end.flatten
+         selectors.merge(make_selector(name, options))
+      end
    end
 
    def current_context
@@ -93,18 +125,19 @@ module Schemic::Parser::Methods
    end
 
    def current_scheme_path
-      @current_scheme_path ||= []
+      @current_scheme_path ||= [self.to_s.downcase]
    end
 
    def schemes
-      @schemes ||= {}
-   end
-   def current_options
-      current_scheme[nil] ||= {}
+      @schemes ||= {}.to_os
    end
 
    def current_scheme
-      schemes[current_scheme_path.last] ||= {}
+      schemes[current_scheme_path.last] ||= { has: {}, root: schemes.to_h.keys.size == 0 }.to_os
+   end
+
+   def generate
+      { schemes: @schemes }.to_os
    end
 
    # +paths_context+ объединяет переданные строки контекста в единую строку в
@@ -142,19 +175,18 @@ module Schemic::Parser::Methods
    #       dom_context: # parent * 3
    #
    def make_selector name, options
-      froms = [options[:from] || [name].compact].flatten
+      froms = [options.delete(:from) || [name].compact].flatten
 
       #ctxs = [reset_context || context].flatten.compact
       #prefix = reset_context && ">" || ""
 
       paths_in =
          if options[:context]
-      #binding.pry
-            context = [options[:context]].flatten
+            context = [options.delete(:context)].flatten
             context.integrate(froms).map { |from| from.join(">") }
          else
             froms
-         end
+         end.map(&:to_s)
 
       cpaths =
          paths_in.map do |path|
@@ -176,20 +208,21 @@ module Schemic::Parser::Methods
 
             no_root = no_parent.gsub(/@/, '')
             #root = no_root.size - path_parent.size
-            level_root = no_root.size > no_parent.size && -1 || level
-      #binding.pry
+            level_root = no_root.size < no_parent.size && -1 || level
+            new_path = no_root.sub(/:/, '|').gsub(/\//, '>')
+#            new_path = name if new_path.blank?
+            new_path = new_path.gsub(/\./, name)
+#           binding.pry if path =~ /[@]/
 
-            { path: no_root.sub(/:/, '|').gsub(/\//, '>'), parent_level: level_root }.to_os
-         end
+            # binding.pry if name =~ /number/
+            [ new_path, transform_selector_keys({ level: level_root }.merge(options)) ]
+         end.to_h.to_os
 
-#      binding.pry if cpaths.map {|x| x.path }
-
-        # { path: path, context: context }.to_os
       cpaths
    end
 
    def filter_hashes hashes, by
-      hashes.flatten.map do |hash|
+      [hashes].flatten.map do |hash|
          (hash.keys & by).map { |x| [ x, hash[x] ] }.to_h
       end.select do |hash|
          hash.any?
