@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1">
+  <ns2:fcsNotificationEF schemeVersion="1.0">
+    <id>48562</id>
+    <purchaseNumber>
+      <!--1. Уникальный идентификатор закупки-->0176100001414000001</purchaseNumber>
+    <docPublishDate>
+      <!--2. Дата публикации закупки-->2014-01-31T20:27:43.594+04:00</docPublishDate>
+    <href>
+      <!--3. Ссылка на закупку на сайте zakupki.gov.ru-->http://zakupki.gov.ru/epz/order/notice/ea44/view/common-info.html?noticeId=48562</href>
+    <printForm>
+      <url>
+        <!--4. Ссылка на печатную форму извещения закупки-->http://zakupki.gov.ru/epz/order/notice/printForm/view.html?noticeId=48562</url>
+    </printForm>
+    <purchaseObjectInfo>
+      <!--5. Предмет закупки-->Поставка нефтепродуктов с АЗС для нужд следственного управления Следственного комитета Российской Федерации по Республике Адыгея на условиях заправки с автоматической заправочной станции посредством электронного учета в 1 квартале 2014 г.
+</purchaseObjectInfo>
+    <!--6. Информация о заказчике и контактом лице заказчика-->
+    <purchaseResponsible>
+      <responsibleOrg>
+        <regNum>01761000014</regNum>
+        <fullName>следственное управление Следственного комитета Российской Федерации по Республике Адыгея</fullName>
+        <postAddress>Российская Федерация, 385000, Адыгея Респ, Майкоп г, Комсомольская ул, 201 А</postAddress>
+        <factAddress>Российская Федерация, 385000, Адыгея Респ, Майкоп г, Комсомольская, 201А, -</factAddress>
+        <INN>0105062815</INN>
+        <KPP>010501001</KPP>
+      </responsibleOrg>
+      <responsibleRole>CU</responsibleRole>
+      <responsibleInfo>
+        <orgPostAddress>Российская Федерация, 385000, Адыгея Респ, Майкоп г, Комсомольская ул, 201 А</orgPostAddress>
+        <orgFactAddress>Российская Федерация, 385000, Адыгея Респ, Майкоп г, Комсомольская, 201А, -</orgFactAddress>
+        <contactPerson>
+          <lastName>Якимцова</lastName>
+          <firstName>Марина</firstName>
+          <middleName>Александровна</middleName>
+        </contactPerson>
+        <contactEMail>sk01_buh@mail.ru</contactEMail>
+        <contactPhone>8-8772-560240</contactPhone>
+        <contactFax>8-8772-560240</contactFax>
+      </responsibleInfo>
+    </purchaseResponsible>
+    <!--7. Код способа закупки-->
+    <placingWay>
+      <code>EA44</code>
+      <!--8. Текстовое описание способа закупки-->
+      <name>Электронный аукцион</name>
+    </placingWay>
+    <!--9. Информация о площадке, на которой публикуется закупка-->
+    <ETP>
+      <code>ETP_SBAST</code>
+      <name>ЗАО «Сбербанк-АСТ»</name>
+      <url>http://www.sberbank-ast.ru</url>
+    </ETP>
+    <procedureInfo>
+      <collecting>
+        <startDate>2014-01-31T10:57:00+04:00</startDate>
+        <place>Заявка на участие в электронном аукционе напраляется участником аукциона оператору электронной площадки.</place>
+        <order>В соответствии с аукционной документацией</order>
+        <endDate>2014-02-07T17:00:00+04:00</endDate>
+      </collecting>
+      <scoring>
+        <date>2014-02-10T00:00:00+04:00</date>
+      </scoring>
+      <bidding>
+        <date>2014-02-13T00:00:00+04:00</date>
+      </bidding>
+    </procedureInfo>
+    <!--Перечисление лотов в закупке, аналогично тому, как в 223-->
+    <lot>
+      <maxPrice>
+        <!--10. Начальная максимальная цена лота-->231084</maxPrice>
+      <!--11. Валюта, в которой указана начальная максимальная цена-->
+      <currency>
+        <code>RUB</code>
+        <name>Российский рубль</name>
+      </currency>
+      <!--12. Источник финансирования-->
+      <financeSource>Федеральный бюджет</financeSource>
+      <quantityUndefined>false</quantityUndefined>
+      <customerRequirements>
+        <customerRequirement>
+          <customer>
+            <regNum>01761000014</regNum>
+            <fullName>следственное управление Следственного комитета Российской Федерации по Республике Адыгея</fullName>
+          </customer>
+          <maxPrice>231084</maxPrice>
+          <deliveryPlace>Поставка с АЗС поставщика (самовывоз с автоматической заправочной станции посредством электронного учета), вид заправки – топливная карта. Разветвленная сеть АЗС по Республике Адыгея (г. Майкоп, г. Адыгейск, Тахтамукайский район, Теучежский район, Гиагинский район, Красногвардейский район,  Майкопский район, Кошехабльский район, Шовгеновский район), ЮФО, СКФО.</deliveryPlace>
+          <deliveryTerm>1 квартал 2014 года.</deliveryTerm>
+          <applicationGuarantee>
+            <amount>4621.68</amount>
+            <part>2.0</part>
+            <procedureInfo>средства обеспечения заявок перечисляются по      
+банковским реквизитам оператора электронной       
+площадки в соответствии с инструкцией, находящейся
+по адресу:                                        
+https://www.sberbank-ast.ru 
+Порядок внесения обеспечения: обеспечение должно  
+быть предоставлено до момента подачи заявки на    
+участие в электронном аукционе. За несвоевременное
+предоставление обеспечения заявки отвечает        
+участник закупки                    </procedureInfo>
+            <settlementAccount>40302810100001000015</settlementAccount>
+            <personalAccount>05761А59350</personalAccount>
+            <bik>047908001</bik>
+          </applicationGuarantee>
+          <contractGuarantee>
+            <amount>69325.2</amount>
+            <part>30.0</part>
+            <procedureInfo>обеспечение исполнения контракта предоставляется  
+до подписания контракта победителем электронного  
+аукциона или иным участником, с которым           
+заключается контракт при уклонении победителя от  
+подписания контракта; светокопия документа,       
+подтверждающего предоставление обеспечения        
+исполнения контракта, представляется заказчику    
+одновременно с подписанием победителем            
+электронного аукциона или иным участником, с      
+которым заключается контракт при уклонении        
+победителя от подписания контракта, проекта       
+контракта. Исполнение контракта может             
+обеспечиваться банковской гарантией или внесением 
+денежных средств. Способ обеспечения исполнения   
+контракта определяется победителем электронного   
+аукциона или иным участником, с которым           
+заключается контракт при уклонении победителя от  
+подписания контракта, самостоятельно.</procedureInfo>
+            <settlementAccount>40302810100001000015</settlementAccount>
+            <personalAccount>05761А59350</personalAccount>
+            <bik>047908001</bik>
+          </contractGuarantee>
+        </customerRequirement>
+      </customerRequirements>
+      <!--13. Перечисление позиций в лоте, аналогично тому, как перечислены позиции в 223. Необходимо забрать обязательно все позиции.-->
+      <purchaseObjects>
+        <purchaseObject>
+          <OKPD>
+            <code>23.20.15.215</code>
+            <name>Топливо дизельное летнее с содержанием серы не более 10 мг/кг</name>
+          </OKPD>
+          <name>Дизельное топливо</name>
+          <OKEI>
+            <code>112</code>
+            <nationalCode>Л</nationalCode>
+          </OKEI>
+          <quantity>
+            <value>400.0</value>
+          </quantity>
+          <sum>13410</sum>
+        </purchaseObject>
+        <purchaseObject>
+          <OKPD>
+            <code>23.20.11.235</code>
+            <name>Бензин автомобильный неэтилированный с октановым числом не менее 95, но менее 98, содержанием серы не более 10 мг/кг</name>
+          </OKPD>
+          <name>Бензин АИ-95</name>
+          <OKEI>
+            <code>112</code>
+            <nationalCode>Л</nationalCode>
+          </OKEI>
+          <quantity>
+            <value>3200.0</value>
+          </quantity>
+          <sum>103125</sum>
+        </purchaseObject>
+        <purchaseObject>
+          <OKPD>
+            <code>23.20.11.229</code>
+            <name>Топливо автомобильное неэтилированное с октановым числом более 80, но менее 95, прочее</name>
+          </OKPD>
+          <name>Бензин АИ-92</name>
+          <OKEI>
+            <code>112</code>
+            <nationalCode>Л</nationalCode>
+          </OKEI>
+          <quantity>
+            <value>3200.0</value>
+          </quantity>
+          <sum>114549</sum>
+        </purchaseObject>
+        <totalSum>231084</totalSum>
+      </purchaseObjects>
+      <preferenses>
+        <preferense>
+          <code>8361032</code>
+          <name>Организациям инвалидов (в соответствии со Статьей 29 Федерального закона № 44-ФЗ)</name>
+          <prefValue>15.0</prefValue>
+        </preferense>
+        <preferense>
+          <code>8361033</code>
+          <name>Учреждениям и предприятиям уголовно-исполнительной системы (в соответствии со Статьей 28  Федерального закона № 44-ФЗ)</name>
+          <prefValue>15.0</prefValue>
+        </preferense>
+      </preferenses>
+      <requirements>
+        <requirement>
+          <code>8361040</code>
+          <name>Единые требования к участникам (в соответствии  с частью 1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+        </requirement>
+      </requirements>
+      <restrictInfo>Не установлены</restrictInfo>
+      <restrictForeignsInfo>Не установлены</restrictForeignsInfo>
+    </lot>
+    <attachments>
+      <attachment>
+        <publishedContentId>F147174BC5990046E043AC110725B979</publishedContentId>
+        <fileName>ЭА ГСМ Адыгея.doc</fileName>
+        <docDescription>ЭА ГСМ Адыгея</docDescription>
+        <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=F147174BC5990046E043AC110725B979</url>
+      </attachment>
+    </attachments>
+  </ns2:fcsNotificationEF>
+</ns2:export>

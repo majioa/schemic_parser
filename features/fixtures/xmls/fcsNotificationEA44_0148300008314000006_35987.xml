@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1">
+    <ns2:fcsNotificationEF schemeVersion="1.0">
+        <id>35987</id>
+		<!--+-->
+        <purchaseNumber>0148300008314000006</purchaseNumber>
+        <docPublishDate>2014-01-30T09:30:16.938+04:00</docPublishDate>
+		<!--+-->
+        <href>http://zakupki.gov.ru/epz/order/notice/ea44/view/common-info.html?noticeId=35987</href>
+        <printForm>
+            <url>http://zakupki.gov.ru/epz/order/notice/printForm/view.html?noticeId=35987</url>
+        </printForm>
+		<!--+-->
+        <purchaseObjectInfo>Выполнение работ по инвентаризации и паспортизации дворовых территорий с введением данных в АИС «Реестр зеленых насаждений»</purchaseObjectInfo>
+        <purchaseResponsible>
+            <responsibleOrg>
+				<!--+-->
+                <regNum>01483000083</regNum>
+				<!--+-->
+                <fullName>Администрация поселения Сосенское</fullName>
+				<!--+-->
+                <postAddress>Российская Федерация, 142770, Москва, Газопровод п, -, 15, -</postAddress>
+				<!--+-->
+                <factAddress>Российская Федерация, 142770, Москва, Газопровод п, -, 15, -</factAddress>
+				<!--+-->
+                <INN>5003057029</INN>
+				<!--+-->
+                <KPP>775101001</KPP>
+            </responsibleOrg>
+            <responsibleRole>CU</responsibleRole>
+            <responsibleInfo>
+                <orgPostAddress>Российская Федерация, 142770, Москва, Газопровод п, -, 15, -</orgPostAddress>
+                <orgFactAddress>Российская Федерация, 142770, Москва, Газопровод п, -, 15, -</orgFactAddress>
+                <contactPerson>
+					<!--+-->
+                    <lastName>Полхирева</lastName>
+					<!--+-->
+                    <firstName>Александра</firstName>
+					<!--+-->
+                    <middleName>Владимировна</middleName>
+                </contactPerson>
+				<!--+-->
+                <contactEMail>san4ik-675@mail.ru</contactEMail>
+				<!--+-->
+                <contactPhone>7-495-8176238</contactPhone>
+            </responsibleInfo>
+        </purchaseResponsible>
+        <placingWay>
+			<!--+-->
+            <code>EA44</code>
+			<!--+-->
+            <name>Электронный аукцион</name>
+        </placingWay>
+        <ETP>
+			<!--+-->
+            <code>ETP_SBAST</code>
+			<!--+-->
+            <name>ЗАО «Сбербанк-АСТ»</name>
+			<!--+-->
+            <url>http://www.sberbank-ast.ru</url>
+        </ETP>
+        <procedureInfo>
+            <collecting>
+				<!--+-->
+                <startDate>2014-01-30T10:00:00+04:00</startDate>
+                <place>www.sberbank-ast.ru </place>
+                <order>Заявка на участие в электронном аукционе направляется участником такого аукциона оператору электронной площадки в форме двух электронных документов, содержащих части заявки.
+Указанные электронные документы подаются одновременно.
+В течение одного часа с момента получения заявки на участие в электронном аукционе оператор электронной площадки обязан присвоить ей порядковый номер и подтвердить в форме электронного документа, направляемого участнику такого аукциона, подавшему указанную заявку, ее получение с указанием присвоенного ей порядкового номера.
+Участник электронного аукциона вправе подать только одну заявку на участие в таком аукционе в отношении каждого объекта закупки.
+В течение одного часа с момента получения заявки на участие в электронном аукционе оператор электронной площадки возвращает эту заявку подавшему ее участнику такого аукциона в случае:
+	подачи данной заявки с нарушением требований, предусмотренных частью 2 статьи 60 Федеральным законом РФ от 05.04.2013 г.</order>
+				<!--+-->
+                <endDate>2014-02-14T10:00:00+04:00</endDate>
+            </collecting>
+            <scoring>
+                <date>2014-02-17T00:00:00+04:00</date>
+            </scoring>
+            <bidding>
+                <date>2014-02-20T00:00:00+04:00</date>
+            </bidding>
+        </procedureInfo>
+        <lot>
+			<!--+-->
+            <maxPrice>3096970.79</maxPrice>
+            <currency>
+				<!--+-->
+                <code>RUB</code>
+                <name>Российский рубль</name>
+            </currency>
+			<!--+-->
+            <financeSource>Бюджет поселения Сосенское на 2014 г.</financeSource>
+            <quantityUndefined>false</quantityUndefined>
+            <customerRequirements>
+                <customerRequirement>
+                    <customer>
+						<!--+-->
+                        <regNum>01483000083</regNum>
+						<!--+-->
+                        <fullName>Администрация поселения Сосенское</fullName>
+                    </customer>
+					<!--+-->
+                    <maxPrice>3096970.79</maxPrice>
+                    <deliveryPlace>г. Москва, поселение Сосенское, поселок Газопровод, поселок Коммунарка</deliveryPlace>
+                    <deliveryTerm>с момента подписания контракта 60 календарных дней</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>154848.54</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Порядок внесения денежных средств в качестве обеспечения заявок определяется в соответствии со статьей 44 Федерального закона РФ от 05.04.2013 года № 44-ФЗ.</procedureInfo>
+                        <settlementAccount>40302810200003001579</settlementAccount>
+                        <personalAccount>05733830310</personalAccount>
+                        <bik>044583001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>309697.08</amount>
+                        <part>10.0</part>
+                        <procedureInfo>в соответствии со статьей 96 Федерального закона от 05.04.2013г. №44-ФЗ</procedureInfo>
+                        <settlementAccount>40302810200003001579</settlementAccount>
+                        <personalAccount>05733830310</personalAccount>
+                        <bik>044583001</bik>
+                    </contractGuarantee>
+                </customerRequirement>
+            </customerRequirements>
+            <purchaseObjects>
+                <purchaseObject>
+                    <OKPD>
+						<!--+-->
+                        <code>70.32.12.130</code>
+                        <name>Услуги по технической инвентаризации и технической паспортизации нежилого фонда</name>
+                    </OKPD>
+					<!--+-->
+                    <name>Паспортизация дворовых территорий</name>
+                    <OKEI>
+						<!--+-->
+                        <code>059</code>
+                        <nationalCode>ГА</nationalCode>
+                    </OKEI>
+					<!--+-->
+                    <price>3096970.79</price>
+                    <quantity>
+						<!--+-->
+                        <value>1.0</value>
+                    </quantity>
+					<!--+-->
+                    <sum>3096970.79</sum>
+                </purchaseObject>
+				<!--+-->
+                <totalSum>3096970.79</totalSum>
+            </purchaseObjects>
+            <restrictInfo>Отсутствуют</restrictInfo>
+        </lot>
+        <attachments>
+            <attachment>
+                <publishedContentId>F104AF65702700B4E043AC11072538F3</publishedContentId>
+                <fileName>Смета на 30 объектов (Коммунарка).xlsx</fileName>
+                <docDescription>Смета на 30 объектов (Коммунарка)</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=F104AF65702700B4E043AC11072538F3</url>
+            </attachment>
+            <attachment>
+                <publishedContentId>F104AF65702D00B4E043AC11072538F3</publishedContentId>
+                <fileName>стоимость работ на 1 га топография зима.xls</fileName>
+                <docDescription>стоимость работ на 1 га топография зима</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=F104AF65702D00B4E043AC11072538F3</url>
+            </attachment>
+            <attachment>
+                <publishedContentId>F104AF65702300B4E043AC11072538F3</publishedContentId>
+                <fileName>Смета на 16 объектов (Газопровод).xlsx</fileName>
+                <docDescription>Смета на 16 объектов (Газопровод)</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=F104AF65702300B4E043AC11072538F3</url>
+            </attachment>
+            <attachment>
+                <publishedContentId>F125FBEA144500E2E043AC110725B2B2</publishedContentId>
+                <fileName>АД.doc</fileName>
+                <docDescription>АД</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=F125FBEA144500E2E043AC110725B2B2</url>
+            </attachment>
+        </attachments>
+    </ns2:fcsNotificationEF>
+</ns2:export>

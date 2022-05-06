@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns2:purchaseNotice xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-3.1/purchase.xsd" xmlns:ns5="http://zakupki.gov.ru/223fz/complaint/1" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns6="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns7="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns8="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns4="http://zakupki.gov.ru/223fz/dishonestSupplier/1">
+  <header>
+    <guid>
+      <!--1. Уникальный идентификатор пакета-->af1cec80-51da-44fe-b7fe-2b03e8d7fe43</guid>
+    <createDateTime>2013-03-05T16:30:49</createDateTime>
+  </header>
+  <ns2:body>
+    <ns2:item>
+      <guid>
+        <!--2. Уникальный идентификатор закупки, он разный у разных закупок и одинаковый у разных версий одной и той же закупки-->759e7ac3-73cb-4b2d-bb11-7a6119e00a66</guid>
+      <ns2:purchaseNoticeData>
+        <ns2:guid>759e7ac3-73cb-4b2d-bb11-7a6119e00a66</ns2:guid>
+        <ns2:createDateTime>2013-03-05T16:02:06</ns2:createDateTime>
+        <ns2:registrationNumber>
+          <!--3. Официальный идентификатор закупки, использующийся для поиска закупки пользователями. По сути является аналогам поля №2 -->31300177655</ns2:registrationNumber>
+        <ns2:name>
+          <!--4. Предмет закупки. Содержит текстовую общую информацию о закупаемых товарах и услугах-->Поставка дорожных знаков для нужд ГУП РА "Кошехабльский ДРСУ"</ns2:name>
+        <ns2:customer>
+          <!--5. Список атрибутов заказчика закупки. Необходимо забирать все поля.-->
+          <mainInfo>
+            <fullName>Государственное унитарное предприятие Республики Адыгея "Кошехабльский дорожный ремонтно-строительный участок"</fullName>
+            <shortName>ГУП РА " Кошехабльский ДРСУ"</shortName>
+            <inn>0103005265</inn>
+            <kpp>010101001</kpp>
+            <ogrn>1020100510033</ogrn>
+            <legalAddress>385400, Адыгея, Дружбы Народов, дом 74</legalAddress>
+            <postalAddress>385400, Адыгея, Дружбы Народов, дом 74 </postalAddress>
+            <phone>7-87770-91106</phone>
+            <email>drsu-08@mail.ru</email>
+            <okato>79215820001</okato>
+          </mainInfo>
+        </ns2:customer>
+        <ns2:purchaseMethodCode>
+          <!--6. Идентификатор метода закупки. Позволяет определить тип закупки путем сопоставления со справочником методов закупок.-->18010</ns2:purchaseMethodCode>
+        <ns2:purchaseCodeName>
+          <!--7. Текстовое имя метода закупки. Иногда бывает кривым, вследствие чего затрудняет выборки по определенным типам закупок. Имеет смысл забирать это поле с целью точечных проверок метода в спорных ситуациях.-->Запрос цен</ns2:purchaseCodeName>
+        <ns2:placer>
+          <!--8. Список атрибутов организатора закупки. Не всегда совпадает с №5 по причине того, что одна организация может публиковать закупку за другую организацию. Необходимо забирать все поля, но не путать с заказчиком закупки.-->
+          <mainInfo>
+            <fullName>Государственное унитарное предприятие Республики Адыгея "Кошехабльский дорожный ремонтно-строительный участок"</fullName>
+            <shortName>ГУП РА " Кошехабльский ДРСУ"</shortName>
+            <inn>0103005265</inn>
+            <kpp>010101001</kpp>
+            <ogrn>1020100510033</ogrn>
+            <legalAddress>385400, Адыгея, Дружбы Народов, дом 74</legalAddress>
+            <postalAddress>385400, Адыгея, Дружбы Народов, дом 74 </postalAddress>
+            <phone>7-87770-91106</phone>
+            <email>drsu-08@mail.ru</email>
+            <okato>79215820001</okato>
+          </mainInfo>
+        </ns2:placer>
+        <!--9. Контактное лицо по закупке. Может быть как из организации заказчика, так и из организации организатора, а есть вероятность, что это будет лицо из какой-либо аффилированной третьей организации, поэтому нужно забрать не только все контактные поля, но и инфу о его организации.-->
+        <ns2:contact>
+          <firstName>Валерий </firstName>
+          <middleName>Викторович</middleName>
+          <lastName>Овчаров</lastName>
+          <phone>+7 (87770) 91106</phone>
+          <fax>+7 (87770) 91106</fax>
+          <email>drsu-08@mail.ru</email>
+          <organization>
+            <mainInfo>
+              <fullName>Государственное унитарное предприятие Республики Адыгея "Кошехабльский дорожный ремонтно-строительный участок"</fullName>
+              <shortName>ГУП РА " Кошехабльский ДРСУ"</shortName>
+              <inn>0103005265</inn>
+              <kpp>010101001</kpp>
+              <ogrn>1020100510033</ogrn>
+              <legalAddress>385400, Адыгея, Дружбы Народов, дом 74</legalAddress>
+              <postalAddress>385400, Адыгея, Дружбы Народов, дом 74 </postalAddress>
+              <phone>7-87770-91106</phone>
+              <email>drsu-08@mail.ru</email>
+              <okato>79215820001</okato>
+            </mainInfo>
+          </organization>
+        </ns2:contact>
+        <ns2:publicationDateTime>
+          <!--10. Дата публикации закупки-->2013-03-05T16:30:49</ns2:publicationDateTime>
+        <!--11. Даты начала и окончания поставки, место поставки. -->
+        <ns2:documentationDelivery>
+          <deliveryStartDateTime>2013-03-06</deliveryStartDateTime>
+          <deliveryEndDateTime>2013-03-12</deliveryEndDateTime>
+          <place>385400, Россия, Республика Адыгея, Кошехабльский район, аул Кошехабль, ул. Дружбы Народов, 74</place>
+          <procedure>Котировочная заявка подаётся в запечатанном конверте по форме и в порядке, установленным документацией о проведении запроса цен.</procedure>
+        </ns2:documentationDelivery>
+        <ns2:status>
+          <!--12. Код статуса закупки. P - published.-->P</ns2:status>
+        <ns2:version>
+          <!--13. Порядковый номер версии закупки. Очень помогает при определении необходимости перезаписывать инфо о закупке. Например, сперва может спарситься вторая версия закупки, а после нее первая. В этом случае необходимо проигнорировать более старую версию. И наоборот, если в базе лежит версия 2, а спарсилась версия 3, то необходимо осуществить перезапись.-->1</ns2:version>
+        <ns2:attachments>
+          <document>
+            <guid>d119a996-f95b-4f7f-95b0-74df6dabdfd1</guid>
+            <createDateTime>2013-03-05T16:29:08</createDateTime>
+            <fileName>Проект договора на поставку дорожных знаков.docx</fileName>
+            <description>Проект договора на поставку дорожных знаков</description>
+            <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=732754</url>
+          </document>
+          <document>
+            <guid>661032e2-7d52-461e-a893-9db1a358d412</guid>
+            <createDateTime>2013-03-05T16:28:46</createDateTime>
+            <fileName>Документация о проведении запроса цен.docx</fileName>
+            <description>Документация о проведении запроса цен</description>
+            <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=732743</url>
+          </document>
+          <document>
+            <guid>e7a919e1-5d26-461c-ade3-f8fc510c7196</guid>
+            <createDateTime>2013-03-05T16:28:30</createDateTime>
+            <fileName>Извещение о проведении запроса цен.docx</fileName>
+            <description>Извещение о проведении запроса цен</description>
+            <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=732730</url>
+          </document>
+        </ns2:attachments>
+        <ns2:modificationDate>
+          <!--14. Еще один способ определения актуальности информации по закупке. Иногда порядковый номер из пункта №13 может не измениться, однако заказчик внесет какие-то минорные изменения. В этом случае, опираясь на дату модификации, необходимо перезаписать инфо о закупке-->2013-03-05T16:30:49</ns2:modificationDate>
+        <ns2:saveUserId>
+          <!--15. Идентификатор пользователя, создавшего/изменившего закупку. Может пригодиться, берем.-->8109</ns2:saveUserId>
+        <!--16. Тег присутствует, если закупка производилась вне ЭТП. При наличии этого тега необходимо проставить у закупки атрибут "вне этп"-->
+        <ns2:nonelectronicPlaceInfo>
+          <summarizingPlace>385400, Россия, Республика Адыгея, Кошехабльский район, аул Кошехабль, ул. Дружбы Народов, 74</summarizingPlace>
+          <summarizingDateTime>2013-03-13T09:10:00</summarizingDateTime>
+        </ns2:nonelectronicPlaceInfo>
+        <ns2:examinationPlace>385400, Россия, Республика Адыгея, Кошехабльский район, аул Кошехабль, ул. Дружбы Народов, 74</ns2:examinationPlace>
+        <!--17. Дата подведения итогов по закупке-->
+        <ns2:examinationDateTime>2013-03-13T09:00:00</ns2:examinationDateTime>
+        <!--18. Дата окончания приема заявок-->
+        <ns2:submissionCloseDateTime>2013-03-12T08:00:00</ns2:submissionCloseDateTime>
+        <ns2:publicationPlannedDate>2013-03-05</ns2:publicationPlannedDate>
+        <!--в ns2:lots лежит 1 или более лотов закупки. Необходимо распарсить все лоты.-->
+        <ns2:lots>
+          <lot>
+            <guid>
+              <!--19. Идентификатор лота закупки. Сохраняется в разных версиях одной и той же закупки, уникален для каждого лота.-->5d1ccc91-1500-479f-b2f3-0248d09a8e64</guid>
+            <ordinalNumber>1</ordinalNumber>
+            <subject>
+              <!--20. Текстовое описание предмета лота. Не путать с предметом закупки. Закупка состоит и 1 и более лотов.-->Поставка дорожных знаков для нужд ГУП РА "Кошехабльский ДРСУ"  </subject>
+            <!--21. Валюта закупки. Код, цифровой код, текстовое описание.-->
+            <currency>
+              <code>RUB</code>
+              <digitalCode>810</digitalCode>
+              <name>Российский рубль</name>
+            </currency>
+            <initialSum>
+              <!--22. Начальная цена лота. Может отсутствовать в закупке.-->227674.00</initialSum>
+            <deliveryPlace>
+              <!--23. Текстовое описание адреса доставки-->385400, Россия, Республика Адыгея, Кошехабльский район, аул Кошехабль, ул. Дружбы Народов, 74</deliveryPlace>
+            <!--в lotItems лежит 1 или более позиций лота. Необходимо распарсить все позиции.-->
+            <lotItems>
+              <lotItem>
+                <guid>
+                  <!--24. Уникальный идентификатор позиции лота. Полезен для перезаписывания обновленной информации по позиции-->5d1ccc91-1500-479f-b2f3-0248d09a8e64</guid>
+                <ordinalNumber>
+                  <!--25. Порядковый номер позиции в лоте-->1</ordinalNumber>
+                <okdp>
+                  <code>
+                    <!--26. Классификатор позиции ОКДП. С 2016 года вместо него используется ОКПД2-->3599410</code>
+                  <name>
+                    <!--27. Текстовое описание пункта классификатора-->Знаки дорожные</name>
+                </okdp>
+                <okved>
+                  <code>
+                    <!--28. Классификатор позиции ОКВЕД. с 2016 года вместо него используется ОКВЕД2-->28.75.27</code>
+                  <name>
+                    <!--29. Текстовое описание пункта классификатора-->Производство прочих изделий из недрагоценных металлов, не включенных в другие группировки</name>
+                </okved>
+                <okei>
+                  <code>
+                    <!--30. Код единицы измерения позиции-->796</code>
+                  <name>
+                    <!--31. Текстовое описание единицы измерения позиции-->Штука</name>
+                </okei>
+                <qty>
+                  <!--32. Кол-во закупаемых единиц позиции-->235</qty>
+              </lotItem>
+            </lotItems>
+          </lot>
+        </ns2:lots>
+      </ns2:purchaseNoticeData>
+    </ns2:item>
+  </ns2:body>
+</ns2:purchaseNotice>

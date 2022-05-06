@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1" xmlns:ns3="http://zakupki.gov.ru/oos/printform/1">
+    <ns2:fcsProtocolEF3 schemeVersion="6.2">
+        <id>9680077</id>
+        <purchaseNumber>0173200001416000114</purchaseNumber>
+        <protocolNumber>1501489</protocolNumber>
+        <foundationProtocolNumber>1491847</foundationProtocolNumber>
+        <place>http://www1.etp-micex.ru</place>
+        <protocolDate>2016-07-07T14:28:56+03:00</protocolDate>
+        <signDate>2016-07-07T14:28:56+03:00</signDate>
+        <publishDate>2016-07-07T14:29:08.507+03:00</publishDate>
+        <commission>
+            <commissionName>Департамент города Москвы по конкурентной политике</commissionName>
+            <commissionMembers>
+                <commissionMember>
+                    <memberNumber>1</memberNumber>
+                    <lastName>Иванов</lastName>
+                    <firstName>Иван</firstName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <spelledMembersCount>один</spelledMembersCount>
+            </commissionMembers>
+            <competent>true</competent>
+        </commission>
+        <href>http://www1.etp-micex.ru/procedure/protocol/view/1501489</href>
+        <printForm>
+            <url>http://www1.etp-micex.ru/procedure/protocol/view/1501489</url>
+        </printForm>
+        <protocolPublisher>
+            <publisherOrg>
+                <regNum>01732000014</regNum>
+                <fullName>Департамент города Москвы по конкурентной политике</fullName>
+            </publisherOrg>
+            <publisherRole>RA</publisherRole>
+        </protocolPublisher>
+        <attachments>
+            <attachment>
+                <fileName>протокол итогов_1416000114.doc</fileName>
+                <fileSize>0 байт</fileSize>
+                <docDescription>протокол итогов_1416000114.doc</docDescription>
+                <url>http://www1.etp-micex.ru/procedure/download/procedure-protocol-final/623189</url>
+            </attachment>
+        </attachments>
+        <protocolLot>
+            <applications>
+                <application>
+                    <journalNumber>36</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7727759442</inn>
+                        <kpp>772701001</kpp>
+                        <organizationName>Общество с ограниченной ответственностью "Профэкспострой"</organizationName>
+                        <postAddress>Российская Федерация, Россия,117461,Москва г.,Москва,Каховка ул.,д. 30,оф. (кв.) пом.1 комн.13</postAddress>
+                    </appParticipant>
+                    <admissionResults>
+                        <admissionResult>
+                            <protocolCommissionMember>
+                                <memberNumber>1</memberNumber>
+                            </protocolCommissionMember>
+                            <admitted>true</admitted>
+                        </admissionResult>
+                    </admissionResults>
+                    <admitted>true</admitted>
+                    <appRating>1</appRating>
+                </application>
+                <application>
+                    <journalNumber>31</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7729705643</inn>
+                        <kpp>772901001</kpp>
+                        <organizationName>Общество с ограниченной ответственностью "ПРОМЫШЛЕННЫЙ УЧАСТОК"</organizationName>
+                        <postAddress>Российская Федерация, Россия,119454,Москва г.,Москва г.,Вернадского пр-кт.,д. 24,оф. (кв.) 3</postAddress>
+                    </appParticipant>
+                    <admissionResults>
+                        <admissionResult>
+                            <protocolCommissionMember>
+                                <memberNumber>1</memberNumber>
+                            </protocolCommissionMember>
+                            <admitted>true</admitted>
+                        </admissionResult>
+                    </admissionResults>
+                    <admitted>true</admitted>
+                    <appRating>2</appRating>
+                </application>
+                <application>
+                    <journalNumber>29</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7728572905</inn>
+                        <kpp>505601001</kpp>
+                        <organizationName>ООО "КиН Сервис"</organizationName>
+                        <postAddress>Российская Федерация, Россия,140091,Московская обл.,Дзержинский г.,Энергетиков ул.,д. 1</postAddress>
+                    </appParticipant>
+                    <admissionResults>
+                        <admissionResult>
+                            <protocolCommissionMember>
+                                <memberNumber>1</memberNumber>
+                            </protocolCommissionMember>
+                            <admitted>true</admitted>
+                        </admissionResult>
+                    </admissionResults>
+                    <admitted>true</admitted>
+                    <appRating>3</appRating>
+                </application>
+                <application>
+                    <journalNumber>35</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7726657286</inn>
+                        <kpp>772101001</kpp>
+                        <organizationName>ООО "Моспроектмонтаж"</organizationName>
+                        <postAddress>Российская Федерация, Россия,109428,Москва г.,Москва,Зарайская ул.,д. 21</postAddress>
+                    </appParticipant>
+                    <admissionResults>
+                        <admissionResult>
+                            <protocolCommissionMember>
+                                <memberNumber>1</memberNumber>
+                            </protocolCommissionMember>
+                            <admitted>true</admitted>
+                        </admissionResult>
+                    </admissionResults>
+                    <admitted>true</admitted>
+                    <appRating>4</appRating>
+                </application>
+            </applications>
+        </protocolLot>
+    </ns2:fcsProtocolEF3>
+</ns2:export>

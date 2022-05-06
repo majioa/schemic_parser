@@ -12,7 +12,8 @@ Then('there are no errors on parsing') do
 end
 
 Then('he can get the {string} JSON document') do |file_name|
-   expect(@tree.as_json).to include_json(JSON.parse(IO.read(File.join("features/fixtures/jsons", file_name)).strip))
+   # binding.pry
+   expect(@tree.as_json).to include_json(JSON.parse(IO.read(File.join("features/fixtures/jsons", file_name))))
 end
 
 Then('he can get the {string} YAML document') do |file_name|

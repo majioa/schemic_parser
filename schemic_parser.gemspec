@@ -29,10 +29,11 @@ Gem::Specification.new do |spec|
    spec.require_paths = ["lib"]
 
    spec.add_runtime_dependency "nokogiri", "~> 1.13", ">= 1.13.2"
-   spec.add_runtime_dependency "rdoba", "~> 0.9", ">= 0.9.3"
+   spec.add_runtime_dependency "rdoba", "~> 0.9", ">= 0.9.4"
    spec.add_development_dependency "bundler", "2.2.33"
    spec.add_development_dependency "rake", ">= 12.3.3"
    spec.add_development_dependency "pry", "~> 0.13", ">= 0.13.1"
    spec.add_development_dependency "cucumber", "~> 5.2"
+   spec.add_development_dependency "rspec-json_expectations", "~> 2.2"
    spec.add_development_dependency "shoulda-matchers-cucumber", "~> 1.0", ">= 1.0.1"
 end

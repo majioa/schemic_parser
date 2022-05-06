@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseProtocolPAEP xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-5.0 http://zakupki.gov.ru/223/integration/schema/TFF-5.0/purchase.xsd" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns10="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns11="http://zakupki.gov.ru/223fz/machineryListInfo/1" xmlns:ns12="http://zakupki.gov.ru/223fz/purchasePlanAdditionalPosition/1" xmlns:ns13="http://zakupki.gov.ru/223fz/disagreementProtocol/1" xmlns:ns14="http://zakupki.gov.ru/223fz/revenue/1" xmlns:ns15="http://zakupki.gov.ru/223fz/contract/1" xmlns:ns16="http://zakupki.gov.ru/223fz/missedNotice/1" xmlns:ns17="http://zakupki.gov.ru/223fz/decisionSuspension/1" xmlns:ns18="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns19="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/dishonestSupplier/1" xmlns:ns4="http://zakupki.gov.ru/223fz/notificationIssue/1" xmlns:ns5="http://zakupki.gov.ru/223fz/purchasePlanProjectAdditionalPosition/1" xmlns:ns6="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns7="http://zakupki.gov.ru/223fz/stopCommodity/1" xmlns:ns8="http://zakupki.gov.ru/223fz/complaint/1" xmlns:ns9="http://zakupki.gov.ru/223fz/purchasePlanProject/1">
+    <header>
+        <guid>6f9cfe0c-9a52-406b-a3c9-b8a59584c262</guid>
+        <createDateTime>2016-05-30T15:18:49</createDateTime>
+    </header>
+    <ns2:body>
+        <ns2:item>
+            <guid>116bc7f9-d0f3-4388-b9e9-5638172c81c5</guid>
+            <ns2:purchaseProtocolPAEPData>
+                <ns2:guid>116bc7f9-d0f3-4388-b9e9-5638172c81c5</ns2:guid>
+                <ns2:createDateTime>2016-05-30T15:08:49</ns2:createDateTime>
+                <ns2:urlOOS>https://zakupki.gov.ru/223/purchase/private/purchase/protocol-info/details.html?protocolInfoId=4841132</ns2:urlOOS>
+                <ns2:purchaseInfo>
+                    <purchaseNoticeNumber>31603716574</purchaseNoticeNumber>
+                    <name>Поставка нефтепродуктов </name>
+                    <purchaseMethodCode>3363</purchaseMethodCode>
+                    <purchaseCodeName>Закупка у единственного поставщика (исполнителя, подрядчика)</purchaseCodeName>
+                    <emergency>false</emergency>
+                </ns2:purchaseInfo>
+                <ns2:registrationNumber>31603716574-01</ns2:registrationNumber>
+                <ns2:placer>
+                    <mainInfo>
+                        <fullName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</fullName>
+                        <shortName>ПАО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</shortName>
+                        <iko>67720065580772001001</iko>
+                        <inn>7720065580</inn>
+                        <kpp>772001001</kpp>
+                        <ogrn>1027700067669</ogrn>
+                        <legalAddress>105118, г МОСКВА, ш ЭНТУЗИАСТОВ, дом 40</legalAddress>
+                        <postalAddress>105118,г. Москва, шоссе Энтузиастов, д 40</postalAddress>
+                        <phone>7-495-6732581</phone>
+                        <fax>7-495-7881571</fax>
+                        <email>nefteprodukt@rosneft.ru</email>
+                        <okato>45263583000</okato>
+                        <okpo>00148613</okpo>
+                    </mainInfo>
+                </ns2:placer>
+                <ns2:customer>
+                    <mainInfo>
+                        <fullName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</fullName>
+                        <shortName>ПАО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</shortName>
+                        <iko>67720065580772001001</iko>
+                        <inn>7720065580</inn>
+                        <kpp>772001001</kpp>
+                        <ogrn>1027700067669</ogrn>
+                        <legalAddress>105118, г МОСКВА, ш ЭНТУЗИАСТОВ, дом 40</legalAddress>
+                        <postalAddress>105118,г. Москва, шоссе Энтузиастов, д 40</postalAddress>
+                        <phone>7-495-6732581</phone>
+                        <fax>7-495-7881571</fax>
+                        <email>nefteprodukt@rosneft.ru</email>
+                        <okato>45263583000</okato>
+                        <okpo>00148613</okpo>
+                    </mainInfo>
+                </ns2:customer>
+                <ns2:publicationDateTime>2016-05-30T15:18:49</ns2:publicationDateTime>
+                <ns2:status>P</ns2:status>
+                <ns2:version>1</ns2:version>
+                <ns2:attachments>
+                    <totalDocumentsCount>1</totalDocumentsCount>
+                    <document>
+                        <guid>77336461-e250-4542-91ed-adcec481fa28</guid>
+                        <createDateTime>2016-05-30T15:15:39</createDateTime>
+                        <fileName>Решение 302.pdf</fileName>
+                        <description>Решение 302</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22563656</url>
+                    </document>
+                </ns2:attachments>
+                <ns2:protocolSignDate>2016-05-30</ns2:protocolSignDate>
+                <ns2:lotApplicationsList>
+                    <ns2:protocolLotApplications>
+                        <ns2:guid>cf7c9270-1d23-42c5-82a7-e6e9fdb3ccdb</ns2:guid>
+                        <ns2:ordinalNumber>1</ns2:ordinalNumber>
+                        <ns2:subject>Масло ТСЗп-8 (в бочках 200-220 л) (ТУ 38.1011280)</ns2:subject>
+                        <ns2:currency>
+                            <code>RUB</code>
+                            <digitalCode>643</digitalCode>
+                            <name>Российский рубль</name>
+                        </ns2:currency>
+                        <ns2:initialSum>18114375</ns2:initialSum>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:lastPrice>18114375</ns2:lastPrice>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>false</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Акционерное Общество «Обнинскоргсинтез»</name>
+                                <inn>4025415519</inn>
+                                <kpp>402501001</kpp>
+                                <ogrn>1074025007781</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:guid>c5be63c4-c62c-4aa3-9d9c-a7fa0337ffdf</ns2:guid>
+                        <ns2:ordinalNumber>2</ns2:ordinalNumber>
+                        <ns2:subject> Масло М-4з/14Д (в ПЭТ канистрах 5 л) (ТУ 0253-006-08151164)</ns2:subject>
+                        <ns2:currency>
+                            <code>RUB</code>
+                            <digitalCode>643</digitalCode>
+                            <name>Российский рубль</name>
+                        </ns2:currency>
+                        <ns2:initialSum>16595950</ns2:initialSum>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:lastPrice>16595950</ns2:lastPrice>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>false</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Акционерное Общество «Обнинскоргсинтез»</name>
+                                <inn>4025415519</inn>
+                                <kpp>402501001</kpp>
+                                <ogrn>1074025007781</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:guid>d749e6e7-3183-43bd-a4f3-96bcc85193a4</ns2:guid>
+                        <ns2:ordinalNumber>3</ns2:ordinalNumber>
+                        <ns2:subject> Масло М-4з/14Д (в бочках 200-220 л) (ТУ 0253-006-08151164)</ns2:subject>
+                        <ns2:currency>
+                            <code>RUB</code>
+                            <digitalCode>643</digitalCode>
+                            <name>Российский рубль</name>
+                        </ns2:currency>
+                        <ns2:initialSum>16449850</ns2:initialSum>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:lastPrice>16449850</ns2:lastPrice>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>false</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Акционерное Общество «Обнинскоргсинтез»</name>
+                                <inn>4025415519</inn>
+                                <kpp>402501001</kpp>
+                                <ogrn>1074025007781</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:guid>9807cb8a-1857-43e8-b60d-d026511b982c</ns2:guid>
+                        <ns2:ordinalNumber>4</ns2:ordinalNumber>
+                        <ns2:subject> Жидкость ОЖ-К "Лена" (в бочках 200-220 л) (ТУ 113-07-02)</ns2:subject>
+                        <ns2:currency>
+                            <code>RUB</code>
+                            <digitalCode>643</digitalCode>
+                            <name>Российский рубль</name>
+                        </ns2:currency>
+                        <ns2:initialSum>6324975</ns2:initialSum>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:lastPrice>6324975</ns2:lastPrice>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>false</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Акционерное Общество «Обнинскоргсинтез»</name>
+                                <inn>4025415519</inn>
+                                <kpp>402501001</kpp>
+                                <ogrn>1074025007781</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                </ns2:lotApplicationsList>
+            </ns2:purchaseProtocolPAEPData>
+        </ns2:item>
+    </ns2:body>
+</ns2:purchaseProtocolPAEP>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1" xmlns:ns3="http://zakupki.gov.ru/oos/printform/1">
+    <ns2:fcsNotificationZK schemeVersion="6.2">
+        <id>8836665</id>
+        <purchaseNumber>0348100070616000099</purchaseNumber>
+        <docPublishDate>2016-06-20T10:28:43.537+06:00</docPublishDate>
+        <href>http://zakupki.gov.ru/epz/order/notice/zk44/view/common-info.html?regNumber=0348100070616000099</href>
+        <printForm>
+            <url>http://zakupki.gov.ru/epz/order/notice/printForm/viewXml.html?noticeId=8836665</url>
+            <signature type="CAdES-BES">TUlJTmVBWUpLb1pJaHZjTkFRY0NvSUlOYVRDQ0RXVUNBUUV4RERBS0JnWXFoUU1DQWdrRkFEQUxCZ2txaGtpRzl3MEJCd0dnZ2dsSU1JSUpSRENDQ1BPZ0F3SUJBZ0lEQzduTk1BZ0dCaXFGQXdJQ0F6Q0NBVjB4R0RBV0Jna3Foa2lHOXcwQkNRSVRDVk5sY25abGNpQkRRVEVnTUI0R0NTcUdTSWIzRFFFSkFSWVJkV05mWm10QWNtOXphMkY2Ym1FdWNuVXhIREFhQmdOVkJBZ01FemMzSU5DekxpRFFuTkMrMFlIUXV0Q3kwTEF4R2pBWUJnZ3FoUU1EZ1FNQkFSSU1NREEzTnpFd05UWTROell3TVJnd0ZnWUZLb1VEWkFFU0RURXdORGMzT1Rjd01UazRNekF4TERBcUJnTlZCQWtNSTlHRDBMdlF1TkdHMExBZzBKalF1OUdNMExqUXZkQzYwTEFzSU5DMDBMN1F2Q0EzTVJVd0V3WURWUVFIREF6UW5OQyswWUhRdXRDeTBMQXhDekFKQmdOVkJBWVRBbEpWTVRnd05nWURWUVFLREMvUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0QzFJTkM2MExEUXQ5QzkwTERSaDlDMTBMblJnZEdDMExMUXZqRS9NRDBHQTFVRUF3dzIwS1BRcGlEUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0Q3owTDRnMExyUXNOQzMwTDNRc05HSDBMWFF1ZEdCMFlMUXN0Q3dNQjRYRFRFMU1EVXhOREE1TURJME9Wb1hEVEUyTURneE5EQTVNREkwT1Zvd2dnSTFNUm93R0FZSUtvVURBNEVEQVFFU0REQXdPVGt3TVRBd01ESTJOekVXTUJRR0JTcUZBMlFERWdzeE1UUXlOams1TlRnMk56RVlNQllHQlNxRkEyUUJFZzB4TURJNU9UQXdOVEEzTWpNd01TVXdJd1lKS29aSWh2Y05BUWtCRmhabmRYcGlZV2xyYjI1MWNrQnlZVzFpYkdWeUxuSjFNUXN3Q1FZRFZRUUdFd0pTVlRGUE1FMEdBMVVFQ0F4R09Ua2cwSmpRdmRHTDBMVWcwWUxRdGRHQTBZRFF1TkdDMEw3UmdOQzQwTGdzSU5DeTBMclF1OUdPMFlmUXNOR1BMQ0RRc3k0ZzBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RFWk1CY0dBMVVFQnd3UTBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RGUE1FMEdBMVVFQ2d4RzBKUFF2dEdBMEw3UXROR0IwTHJRdnRDMUlOR0QwTC9SZ05DdzBMTFF1OUMxMEwzUXVOQzFJTkMzMExUUmdOQ3cwTExRdnRDKzBZWFJnTkN3MEwzUXRkQzkwTGpSanpFa01DSUdBMVVFS2d3YjBKSFF2dEdBMExqUmdTRFFuOUMxMFlMUmdOQyswTExRdU5HSE1SVXdFd1lEVlFRRURBelFvOUM3MExEUXZkQyswTEl4Z1lNd2dZQUdBMVVFREF4NTBKUFF1OUN3MExMUXZkR0wwTGtnMFlIUXY5QzEwWWJRdU5DdzBMdlF1TkdCMFlJZzBMN1JndEMwMExYUXU5Q3dJTkMvMEw0ZzBMdlF0ZEM2MExEUmdOR0IwWUxRc3RDMTBMM1F2ZEMrMEx6Umd5RFF2dEN4MExYUmdkQy8wTFhSaDlDMTBMM1F1TkdPSU5DNElOQzcwTGpSaHRDMTBMM1F0ekV4TUM4R0ExVUVBd3dvMEtQUXU5Q3cwTDNRdnRDeUlOQ1IwTDdSZ05DNDBZRWcwSi9RdGRHQzBZRFF2dEN5MExqUmh6QmpNQndHQmlxRkF3SUNFekFTQmdjcWhRTUNBaVFBQmdjcWhRTUNBaDRCQTBNQUJFQjZiUnJDa3hUYmVDN2Fpb3J6UUU4OHBKTXF0NkJLbnJHT3E5blJGdXFPdElnRkVuTHEvUC9tTFpYR0xuREs5cHVYNVRnUUU1UThmZm0xeHFEVW0yZEtvNElFdkRDQ0JMZ3dEQVlEVlIwVEFRSC9CQUl3QURBZEJnTlZIU0FFRmpBVU1BZ0dCaXFGQTJSeEFUQUlCZ1lxaFFOa2NRSXdXQVlEVlIwUkJGRXdUNkFTQmdOVkJBeWdDeE1KTkRJeU1UZ3hNelE1b0JrR0NpcUZBd005bnRjMkFRZWdDeE1KT1Rrd01UQXhNREF4b0JzR0NpcUZBd005bnRjMkFRV2dEUk1MTURNME9ERXdNREEzTURhR0FUQXdOZ1lGS29VRFpHOEVMUXdySXRDYTBZRFF1TkMvMFlMUXZ0Q2YwWURRdmlCRFUxQWlJQ2pRc3RDMTBZRFJnZEM0MFk4Z015NDJLVENDQVdFR0JTcUZBMlJ3QklJQlZqQ0NBVklNUkNMUW10R0EwTGpRdjlHQzBMN1FuOUdBMEw0Z1ExTlFJaUFvMExMUXRkR0EwWUhRdU5HUElETXVOaWtnS05DNDBZSFF2OUMrMEx2UXZkQzEwTDNRdU5DMUlESXBER2dpMEovUmdOQyswTFBSZ05DdzBMelF2TkM5MEw0dDBMRFF2OUMvMExEUmdOQ3cwWUxRdmRHTDBMa2cwTHJRdnRDODBML1F1OUMxMExyUmdTQWkwSzdRdmRDNDBZSFF0ZEdBMFlJdDBKUFFudENoMEtJaUxpRFFrdEMxMFlEUmdkQzQwWThnTWk0eElneFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5TkMweU1qTTRJTkMrMFlJZ01EUXVNVEF1TWpBeE13eFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5T0MweU1UYzFJTkMrMFlJZ01qQXVNRFl1TWpBeE16QU9CZ05WSFE4QkFmOEVCQU1DQStnd1F3WURWUjBsQkR3d09nWUlLd1lCQlFVSEF3SUdEaXFGQXdNOW50YzJBUVlEQkFFQkJnNHFoUU1EUFo3WE5nRUdBd1FCQWdZT0tvVURBejJlMXpZQkJnTUVBUVF3S3dZRFZSMFFCQ1F3SW9BUE1qQXhOVEExTVRRd09EVTNOVFJhZ1E4eU1ERTJNRGd4TXpBNU1ESTBPVm93Z2dHUEJnTlZIU01FZ2dHR01JSUJnb0FVbm5FT0Q5cTBBU2hmUCtMTGoyVVZsd0pIakt1aGdnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd2dnRUJNRjRHQTFVZEh3UlhNRlV3S2FBbm9DV0dJMmgwZEhBNkx5OWpjbXd1Y205emEyRjZibUV1Y25VdlkzSnNMMlpyTURFdVkzSnNNQ2lnSnFBa2hpSm9kSFJ3T2k4dlkzSnNMbVp6Wm1zdWJHOWpZV3d2WTNKc0wyWnJNREV1WTNKc01CMEdBMVVkRGdRV0JCUmpaSzF1TzZma0lOdVZlQmp1YTJ5eUkrYk1UVEFJQmdZcWhRTUNBZ01EUVFBa3VKMDBFY2lIQVBYR0Roc2c3RlcvOUU3dmpxM2tqNnJGa20wVjUvZ2lKZkdFMHErN3A2V3dRUFZaMkUvTmJuNXR3ank3QVgrbXBvRDVsSGJZcktnR01ZSUQ5ekNDQS9NQ0FRRXdnZ0ZtTUlJQlhURVlNQllHQ1NxR1NJYjNEUUVKQWhNSlUyVnlkbVZ5SUVOQk1TQXdIZ1lKS29aSWh2Y05BUWtCRmhGMVkxOW1hMEJ5YjNOcllYcHVZUzV5ZFRFY01Cb0dBMVVFQ0F3VE56Y2cwTE11SU5DYzBMN1JnZEM2MExMUXNERWFNQmdHQ0NxRkF3T0JBd0VCRWd3d01EYzNNVEExTmpnM05qQXhHREFXQmdVcWhRTmtBUklOTVRBME56YzVOekF4T1Rnek1ERXNNQ29HQTFVRUNRd2owWVBRdTlDNDBZYlFzQ0RRbU5DNzBZelF1TkM5MExyUXNDd2cwTFRRdnRDOElEY3hGVEFUQmdOVkJBY01ETkNjMEw3UmdkQzYwTExRc0RFTE1Ba0dBMVVFQmhNQ1VsVXhPREEyQmdOVkJBb01MOUNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExVZzBMclFzTkMzMEwzUXNOR0gwTFhRdWRHQjBZTFFzdEMrTVQ4d1BRWURWUVFERERiUW85Q21JTkNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExQUXZpRFF1dEN3MExmUXZkQ3cwWWZRdGRDNTBZSFJndEN5MExBQ0F3dTV6VEFLQmdZcWhRTUNBZ2tGQUtDQ0FpZ3dHQVlKS29aSWh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1UWXdOakl3TURRek1URTJXakF2QmdrcWhraUc5dzBCQ1FReElnUWdEWWV1OEFZaHlXais3aDZ2VXBqVHBEZEhhZXBkelpBUXZYckI1cGh1ZlVVd2dnRzdCZ3NxaGtpRzl3MEJDUkFDTHpHQ0Fhb3dnZ0dtTUlJQm9qQ0NBWjR3Q0FZR0tvVURBZ0lKQkNCbzhsSUUrVW9LOGlCY2RlVEFmbTExUUlmWThjSE9SL3ZIMXArSkNDVXZFakNDQVc0d2dnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd0FnTUx1YzB3Q2dZR0tvVURBZ0lUQlFBRVFCM01pOFlQeWdvL3NtZmdISUtiZmY3bUN1RGhvbkM4L3diTTN4SW9QanlhTnlzU0VxUkhHN280SU1HbTFzVlFubCt1anRoUVVkd1NyaVU4YXBnMDBwcz0=</signature>
+        </printForm>
+        <purchaseObjectInfo>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года</purchaseObjectInfo>
+        <purchaseResponsible>
+            <responsibleOrg>
+                <regNum>03481000706</regNum>
+                <fullName>ГОРОДСКОЕ УПРАВЛЕНИЕ ЗДРАВООХРАНЕНИЯ</fullName>
+                <postAddress>Российская Федерация, 468320, Байконур г, ул. имени Космонавта Титова Г.С., д. 13</postAddress>
+                <factAddress>Российская Федерация, 468320, Байконур г, ИМ КОСМОНАВТА Г.С.ТИТОВА, ДОМ 13</factAddress>
+                <INN>9901000267</INN>
+                <KPP>990101001</KPP>
+            </responsibleOrg>
+            <responsibleRole>CU</responsibleRole>
+            <responsibleInfo>
+                <orgPostAddress>Российская Федерация, 468320, Байконур г, ул. имени Космонавта Титова Г.С., д. 13</orgPostAddress>
+                <orgFactAddress>Российская Федерация, 468320, Байконур г, ИМ КОСМОНАВТА Г.С.ТИТОВА, ДОМ 13</orgFactAddress>
+                <contactPerson>
+                    <lastName>Уланов</lastName>
+                    <firstName>Борис</firstName>
+                    <middleName>Петрович</middleName>
+                </contactPerson>
+                <contactEMail>guzbaikonur@rambler.ru</contactEMail>
+                <contactPhone>7-336-2242065</contactPhone>
+                <contactFax>7-336-2242065</contactFax>
+                <addInfo>Информация отсутствует</addInfo>
+            </responsibleInfo>
+        </purchaseResponsible>
+        <placingWay>
+            <code>ZKP44</code>
+            <name>Запрос котировок</name>
+        </placingWay>
+        <contractServiceInfo>Контрактный управляющий – главный специалист отдела по лекарственному обеспечению и лицензированию -Уланов Борис Петрович  </contractServiceInfo>
+        <procedureInfo>
+            <collecting>
+                <startDate>2016-06-21T08:30:00+06:00</startDate>
+                <place>468320, Байконур г, ИМ КОСМОНАВТА Г.С.ТИТОВА, ДОМ 13</place>
+                <order>В соответствии со статьей 77 Федерального закона от 05.04.2013года № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд» </order>
+                <endDate>2016-06-27T10:00:00+06:00</endDate>
+                <form>Форма котировочной заявки прикреплена к извещению в виде файла на странице сопроводительная информация</form>
+            </collecting>
+            <opening>
+                <date>2016-06-27T10:00:00+06:00</date>
+                <place>468320, Байконур г, ИМ КОСМОНАВТА Г.С.ТИТОВА, ДОМ 13</place>
+                <addInfo>Информация отсутствует</addInfo>
+            </opening>
+            <contracting>
+                <contractingTerm>Контракт может быть заключен не ранее чем через семь дней с даты размещения в единой информационной системе протокола рассмотрения и оценки заявок на участие в запросе котировок и не позднее чем через двадцать дней с даты подписания указанного протокола</contractingTerm>
+                <evadeConditions>Победителем запроса котировок признается участник запроса котировок, подавший заявку на участие в запросе котировок, которая соответствует всем требованиям, установленным в извещении о проведении запроса котировок, и в которой указана наиболее низкая цена товара, работы или услуги. При предложении наиболее низкой цены товара, работы или услуги несколькими участниками запроса котировок победителем запроса котировок признается участник, заявка на участие в запросе котировок которого поступила ранее других заявок на участие в запросе котировок, в которых предложена такая же цена.</evadeConditions>
+            </contracting>
+        </procedureInfo>
+        <lot>
+            <maxPrice>42880.46</maxPrice>
+            <maxPriceInfo>Начальная (максимальная) цена контракта (НМЦК) рассчитана тарифным методом в соответствии со статьей 22 федерального закона от 5 апреля 2013 года № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд» (с изменениями). (файл прикреплен к сопроводительной документации).</maxPriceInfo>
+            <currency>
+                <code>RUB</code>
+                <name>Российский рубль</name>
+            </currency>
+            <financeSource>Федеральный бюджет</financeSource>
+            <quantityUndefined>false</quantityUndefined>
+            <customerRequirements>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03481000706</regNum>
+                        <fullName>ГОРОДСКОЕ УПРАВЛЕНИЕ ЗДРАВООХРАНЕНИЯ</fullName>
+                    </customer>
+                    <maxPrice>42880.46</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <country>
+                                <countryCode>398</countryCode>
+                                <countryFullName>Республика Казахстан</countryFullName>
+                            </country>
+                            <deliveryPlace>Город Байконур (Республика Казахстан, Кзыл-Ординская область)</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>Срок исполнения контракта: год 2016 месяц Декабрь
+Срок исполнения отдельных этапов контракта: не предусмотренно
+Периодичность поставки товаров (выполнения работ, оказания услуг): Исполнитель обязан, в течение, 3-х дней с даты подписания контракта, обеспечить наличие фармацевтической организации 50% количества лекарственных препаратов по каждому наименованию.</deliveryTerm>
+                    <onesideRejection>Расторжение контракта допускается по соглашению сторон, по решению суда, в случае одностороннего отказа стороны контракта от исполнения контракта в соответствии с гражданским законодательством. Заказчик вправе принять решение об одностороннем отказе от исполнения контракта по основаниям, предусмотренным Гражданским кодексом Российской Федерации для одностороннего отказа от исполнения отдельных видов обязательств</onesideRejection>
+                    <tenderPlanInfo>
+                        <planNumber>44201603481000706001</planNumber>
+                        <positionNumber>П44201603481000706001000078</positionNumber>
+                    </tenderPlanInfo>
+                    <budgetFinancings>
+                        <budgetFinancing>
+                            <kbkCode2016>87909099900030930244</kbkCode2016>
+                            <year>2016</year>
+                            <sum>42880.46</sum>
+                        </budgetFinancing>
+                        <totalSum>42880.46</totalSum>
+                    </budgetFinancings>
+                </customerRequirement>
+            </customerRequirements>
+            <purchaseObjects>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.233</code>
+                        <name>Препараты противоэпилептические</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Тизанидин Форма вып.- Таблетки 4 мг № 30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>6.00</value>
+                    </quantity>
+                    <sum>1735.38</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.130</code>
+                        <name>Препараты, влияющие на кроветворение и кровь</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Ацетилсалициловая кислота Форма вып.- Таблетки, покрытые оболочкой 100 мг №30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <price>54.01</price>
+                    <quantity>
+                        <value>130.00</value>
+                    </quantity>
+                    <sum>7021.3</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.146</code>
+                        <name>Бета-адреноблокаторы</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Бисопролол Форма вып.- Таблетки, покрытые оболочкой 5 мг №30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>140.00</value>
+                    </quantity>
+                    <sum>17970.4</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.255</code>
+                        <name>Препараты, применяемые при кашле и простудных заболеваниях</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Ацетилцистеин Форма вып.- Табл. 100 мг №20</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>27.00</value>
+                    </quantity>
+                    <sum>7991.19</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.146</code>
+                        <name>Бета-адреноблокаторы</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Соталол Форма вып.- Таблетки 80 мг №30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>26.00</value>
+                    </quantity>
+                    <sum>3843.84</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.255</code>
+                        <name>Препараты, применяемые при кашле и простудных заболеваниях</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Амброксол  Форма вып.- Сироп   15 мг/5мл-100мл</name>
+                    <OKEI>
+                        <code>872</code>
+                        <nationalCode>ФЛАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>2.00</value>
+                    </quantity>
+                    <sum>215.6</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.113</code>
+                        <name>Препараты для лечения функциональных расстройств желудочно-кишечного тракта</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Омепразол Форма вып.- Капсулы 20 мг № 30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>50.00</value>
+                    </quantity>
+                    <sum>3444</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.221</code>
+                        <name>Препараты противовоспалительные и противоревматические</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Диклофенак Форма вып.- Таблетки  0,05 №20</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>2.00</value>
+                    </quantity>
+                    <sum>91.28</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.146</code>
+                        <name>Бета-адреноблокаторы</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Метопролол Форма вып.- Таблетки 100 мг №30</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>5.00</value>
+                    </quantity>
+                    <sum>439.25</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.10.232</code>
+                        <name>Анальгетики</name>
+                    </OKPD2>
+                    <name>Оказание услуг  по бесплатному обеспечению адренолитиками, средствами, действующими преимущественно на чувствительные нервные окончания, и противовоспалительными нестероидными препаратами, имеющих право на государственную социальную помощь в виде набора социальных услуг,   во II полугодии 2016 года  Оказание услуг по бесплатному обеспечению: МНН- Кеторолак Форма вып.- Таблетки, покрытые оболочкой 10 мг №20</name>
+                    <OKEI>
+                        <code>778</code>
+                        <nationalCode>УПАК</nationalCode>
+                    </OKEI>
+                    <quantity>
+                        <value>2.00</value>
+                    </quantity>
+                    <sum>128.22</sum>
+                </purchaseObject>
+                <totalSum>42880.46</totalSum>
+            </purchaseObjects>
+            <requirements>
+                <requirement>
+                    <code>8632410</code>
+                    <name>Единые требования к участникам (в соответствии  с пунктом 1 части 1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                    <content>Наличие у фармацевтической организации лицензии на осуществление фармацевтической деятельности (Федеральный закон от 04 мая 2011 года № 99-ФЗ «О лицензировании отдельных видов деятельности»)</content>
+                </requirement>
+                <requirement>
+                    <code>8403975</code>
+                    <name>Требование об отсутствии в предусмотренном Федеральным законом № 44-ФЗ реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе информации об учредителях, о членах коллегиального исполнительного органа, лице, исполняющем функции единоличного исполнительного органа участника закупки - юридического лица (в соответствии с частью 1.1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                    <content>К запросу котировок не допускаются участники закупки, сведения о которых содержатся в реестре недобросовестных поставщиков</content>
+                </requirement>
+            </requirements>
+            <restrictInfo>Не предусмотрены</restrictInfo>
+            <addInfo>Одновременно с подписанным контрактом победитель запроса котировок представляет выписку из единого государственного реестра юридических лиц или засвидетельствованную в нотариальном порядке копию такой выписки (для юридического лица), которые получены не ранее чем за шесть месяцев до даты размещения в единой информационной системе извещения о проведении запроса котировок, надлежащим образом заверенный перевод на русский язык документов о государственной регистрации юридического лица в соответствии с законодательством соответствующего государства (для иностранного лица) 
+      В контракте рекомендуется указывать страну происхождения поставляемого товара на основании сведений, содержащихся в заявке участника конкурса, аукциона, запроса котировок или запроса предложений, окончательном предложении, с которым заключается контракт, и данные документа, подтверждающего страну происхождения товара, при наличии такого документа
+       Условия, запреты, ограничения допуска товаров, происходящих из иностранного государства или группы иностранных государств, работ, услуг, соответственно выполняемых, оказываемых иностранными лицами в соответствии со статьей 14 Федерального закона "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд"": см. соответствующий раздел документации запроса котировок
+</addInfo>
+        </lot>
+        <attachments>
+            <attachment>
+                <publishedContentId>35379DAF247700A8E053AC110725F1B0</publishedContentId>
+                <fileName>Обоснование макс цены Адренолитики и др. ср-ва.doc</fileName>
+                <fileSize>44.5 Кб</fileSize>
+                <docDescription>Обоснование макс цены Адренолитики и др. ср-ва</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=35379DAF247700A8E053AC110725F1B0</url>
+                <cryptoSigns>
+                    <signature type="CAdES-BES">TUlJTmVBWUpLb1pJaHZjTkFRY0NvSUlOYVRDQ0RXVUNBUUV4RERBS0JnWXFoUU1DQWdrRkFEQUxCZ2txaGtpRzl3MEJCd0dnZ2dsSU1JSUpSRENDQ1BPZ0F3SUJBZ0lEQzduTk1BZ0dCaXFGQXdJQ0F6Q0NBVjB4R0RBV0Jna3Foa2lHOXcwQkNRSVRDVk5sY25abGNpQkRRVEVnTUI0R0NTcUdTSWIzRFFFSkFSWVJkV05mWm10QWNtOXphMkY2Ym1FdWNuVXhIREFhQmdOVkJBZ01FemMzSU5DekxpRFFuTkMrMFlIUXV0Q3kwTEF4R2pBWUJnZ3FoUU1EZ1FNQkFSSU1NREEzTnpFd05UWTROell3TVJnd0ZnWUZLb1VEWkFFU0RURXdORGMzT1Rjd01UazRNekF4TERBcUJnTlZCQWtNSTlHRDBMdlF1TkdHMExBZzBKalF1OUdNMExqUXZkQzYwTEFzSU5DMDBMN1F2Q0EzTVJVd0V3WURWUVFIREF6UW5OQyswWUhRdXRDeTBMQXhDekFKQmdOVkJBWVRBbEpWTVRnd05nWURWUVFLREMvUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0QzFJTkM2MExEUXQ5QzkwTERSaDlDMTBMblJnZEdDMExMUXZqRS9NRDBHQTFVRUF3dzIwS1BRcGlEUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0Q3owTDRnMExyUXNOQzMwTDNRc05HSDBMWFF1ZEdCMFlMUXN0Q3dNQjRYRFRFMU1EVXhOREE1TURJME9Wb1hEVEUyTURneE5EQTVNREkwT1Zvd2dnSTFNUm93R0FZSUtvVURBNEVEQVFFU0REQXdPVGt3TVRBd01ESTJOekVXTUJRR0JTcUZBMlFERWdzeE1UUXlOams1TlRnMk56RVlNQllHQlNxRkEyUUJFZzB4TURJNU9UQXdOVEEzTWpNd01TVXdJd1lKS29aSWh2Y05BUWtCRmhabmRYcGlZV2xyYjI1MWNrQnlZVzFpYkdWeUxuSjFNUXN3Q1FZRFZRUUdFd0pTVlRGUE1FMEdBMVVFQ0F4R09Ua2cwSmpRdmRHTDBMVWcwWUxRdGRHQTBZRFF1TkdDMEw3UmdOQzQwTGdzSU5DeTBMclF1OUdPMFlmUXNOR1BMQ0RRc3k0ZzBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RFWk1CY0dBMVVFQnd3UTBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RGUE1FMEdBMVVFQ2d4RzBKUFF2dEdBMEw3UXROR0IwTHJRdnRDMUlOR0QwTC9SZ05DdzBMTFF1OUMxMEwzUXVOQzFJTkMzMExUUmdOQ3cwTExRdnRDKzBZWFJnTkN3MEwzUXRkQzkwTGpSanpFa01DSUdBMVVFS2d3YjBKSFF2dEdBMExqUmdTRFFuOUMxMFlMUmdOQyswTExRdU5HSE1SVXdFd1lEVlFRRURBelFvOUM3MExEUXZkQyswTEl4Z1lNd2dZQUdBMVVFREF4NTBKUFF1OUN3MExMUXZkR0wwTGtnMFlIUXY5QzEwWWJRdU5DdzBMdlF1TkdCMFlJZzBMN1JndEMwMExYUXU5Q3dJTkMvMEw0ZzBMdlF0ZEM2MExEUmdOR0IwWUxRc3RDMTBMM1F2ZEMrMEx6Umd5RFF2dEN4MExYUmdkQy8wTFhSaDlDMTBMM1F1TkdPSU5DNElOQzcwTGpSaHRDMTBMM1F0ekV4TUM4R0ExVUVBd3dvMEtQUXU5Q3cwTDNRdnRDeUlOQ1IwTDdSZ05DNDBZRWcwSi9RdGRHQzBZRFF2dEN5MExqUmh6QmpNQndHQmlxRkF3SUNFekFTQmdjcWhRTUNBaVFBQmdjcWhRTUNBaDRCQTBNQUJFQjZiUnJDa3hUYmVDN2Fpb3J6UUU4OHBKTXF0NkJLbnJHT3E5blJGdXFPdElnRkVuTHEvUC9tTFpYR0xuREs5cHVYNVRnUUU1UThmZm0xeHFEVW0yZEtvNElFdkRDQ0JMZ3dEQVlEVlIwVEFRSC9CQUl3QURBZEJnTlZIU0FFRmpBVU1BZ0dCaXFGQTJSeEFUQUlCZ1lxaFFOa2NRSXdXQVlEVlIwUkJGRXdUNkFTQmdOVkJBeWdDeE1KTkRJeU1UZ3hNelE1b0JrR0NpcUZBd005bnRjMkFRZWdDeE1KT1Rrd01UQXhNREF4b0JzR0NpcUZBd005bnRjMkFRV2dEUk1MTURNME9ERXdNREEzTURhR0FUQXdOZ1lGS29VRFpHOEVMUXdySXRDYTBZRFF1TkMvMFlMUXZ0Q2YwWURRdmlCRFUxQWlJQ2pRc3RDMTBZRFJnZEM0MFk4Z015NDJLVENDQVdFR0JTcUZBMlJ3QklJQlZqQ0NBVklNUkNMUW10R0EwTGpRdjlHQzBMN1FuOUdBMEw0Z1ExTlFJaUFvMExMUXRkR0EwWUhRdU5HUElETXVOaWtnS05DNDBZSFF2OUMrMEx2UXZkQzEwTDNRdU5DMUlESXBER2dpMEovUmdOQyswTFBSZ05DdzBMelF2TkM5MEw0dDBMRFF2OUMvMExEUmdOQ3cwWUxRdmRHTDBMa2cwTHJRdnRDODBML1F1OUMxMExyUmdTQWkwSzdRdmRDNDBZSFF0ZEdBMFlJdDBKUFFudENoMEtJaUxpRFFrdEMxMFlEUmdkQzQwWThnTWk0eElneFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5TkMweU1qTTRJTkMrMFlJZ01EUXVNVEF1TWpBeE13eFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5T0MweU1UYzFJTkMrMFlJZ01qQXVNRFl1TWpBeE16QU9CZ05WSFE4QkFmOEVCQU1DQStnd1F3WURWUjBsQkR3d09nWUlLd1lCQlFVSEF3SUdEaXFGQXdNOW50YzJBUVlEQkFFQkJnNHFoUU1EUFo3WE5nRUdBd1FCQWdZT0tvVURBejJlMXpZQkJnTUVBUVF3S3dZRFZSMFFCQ1F3SW9BUE1qQXhOVEExTVRRd09EVTNOVFJhZ1E4eU1ERTJNRGd4TXpBNU1ESTBPVm93Z2dHUEJnTlZIU01FZ2dHR01JSUJnb0FVbm5FT0Q5cTBBU2hmUCtMTGoyVVZsd0pIakt1aGdnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd2dnRUJNRjRHQTFVZEh3UlhNRlV3S2FBbm9DV0dJMmgwZEhBNkx5OWpjbXd1Y205emEyRjZibUV1Y25VdlkzSnNMMlpyTURFdVkzSnNNQ2lnSnFBa2hpSm9kSFJ3T2k4dlkzSnNMbVp6Wm1zdWJHOWpZV3d2WTNKc0wyWnJNREV1WTNKc01CMEdBMVVkRGdRV0JCUmpaSzF1TzZma0lOdVZlQmp1YTJ5eUkrYk1UVEFJQmdZcWhRTUNBZ01EUVFBa3VKMDBFY2lIQVBYR0Roc2c3RlcvOUU3dmpxM2tqNnJGa20wVjUvZ2lKZkdFMHErN3A2V3dRUFZaMkUvTmJuNXR3ank3QVgrbXBvRDVsSGJZcktnR01ZSUQ5ekNDQS9NQ0FRRXdnZ0ZtTUlJQlhURVlNQllHQ1NxR1NJYjNEUUVKQWhNSlUyVnlkbVZ5SUVOQk1TQXdIZ1lKS29aSWh2Y05BUWtCRmhGMVkxOW1hMEJ5YjNOcllYcHVZUzV5ZFRFY01Cb0dBMVVFQ0F3VE56Y2cwTE11SU5DYzBMN1JnZEM2MExMUXNERWFNQmdHQ0NxRkF3T0JBd0VCRWd3d01EYzNNVEExTmpnM05qQXhHREFXQmdVcWhRTmtBUklOTVRBME56YzVOekF4T1Rnek1ERXNNQ29HQTFVRUNRd2owWVBRdTlDNDBZYlFzQ0RRbU5DNzBZelF1TkM5MExyUXNDd2cwTFRRdnRDOElEY3hGVEFUQmdOVkJBY01ETkNjMEw3UmdkQzYwTExRc0RFTE1Ba0dBMVVFQmhNQ1VsVXhPREEyQmdOVkJBb01MOUNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExVZzBMclFzTkMzMEwzUXNOR0gwTFhRdWRHQjBZTFFzdEMrTVQ4d1BRWURWUVFERERiUW85Q21JTkNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExQUXZpRFF1dEN3MExmUXZkQ3cwWWZRdGRDNTBZSFJndEN5MExBQ0F3dTV6VEFLQmdZcWhRTUNBZ2tGQUtDQ0FpZ3dHQVlKS29aSWh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1UWXdOakl3TURRek1URTJXakF2QmdrcWhraUc5dzBCQ1FReElnUWdhNEpTVWVZQmdKTFo0NUpNcGVkdFdTdFRnTFV1MXZBNW8yQmJwc2hPYkZJd2dnRzdCZ3NxaGtpRzl3MEJDUkFDTHpHQ0Fhb3dnZ0dtTUlJQm9qQ0NBWjR3Q0FZR0tvVURBZ0lKQkNCbzhsSUUrVW9LOGlCY2RlVEFmbTExUUlmWThjSE9SL3ZIMXArSkNDVXZFakNDQVc0d2dnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd0FnTUx1YzB3Q2dZR0tvVURBZ0lUQlFBRVFEdGRUOU5NQlVmZ1ZBbjA5aG1ORUYvL1JQVmQyUVkvYWsvM0ZxSTZiRUdSazBLRVM0elVrY2YxQ2JjUDJnZDNuUGdqUTczTzZQUXV2SG1Zb1VUSSttUT0=</signature>
+                </cryptoSigns>
+            </attachment>
+            <attachment>
+                <publishedContentId>350C312E8CE300C4E053AC11072516C9</publishedContentId>
+                <fileName>Фед ЗК Адренолитики и ср-ва, действ преим на чув нерв оконч,   нестер преп Форма котировочной заявки+Проект контракта.doc</fileName>
+                <fileSize>307.5 Кб</fileSize>
+                <docDescription>Фед ЗК Адренолитики и ср-ва, действ преим на чув нерв оконч,   нестер преп Форма котировочной заявки+Проект контракта</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=350C312E8CE300C4E053AC11072516C9</url>
+                <cryptoSigns>
+                    <signature type="CAdES-BES">TUlJTmVBWUpLb1pJaHZjTkFRY0NvSUlOYVRDQ0RXVUNBUUV4RERBS0JnWXFoUU1DQWdrRkFEQUxCZ2txaGtpRzl3MEJCd0dnZ2dsSU1JSUpSRENDQ1BPZ0F3SUJBZ0lEQzduTk1BZ0dCaXFGQXdJQ0F6Q0NBVjB4R0RBV0Jna3Foa2lHOXcwQkNRSVRDVk5sY25abGNpQkRRVEVnTUI0R0NTcUdTSWIzRFFFSkFSWVJkV05mWm10QWNtOXphMkY2Ym1FdWNuVXhIREFhQmdOVkJBZ01FemMzSU5DekxpRFFuTkMrMFlIUXV0Q3kwTEF4R2pBWUJnZ3FoUU1EZ1FNQkFSSU1NREEzTnpFd05UWTROell3TVJnd0ZnWUZLb1VEWkFFU0RURXdORGMzT1Rjd01UazRNekF4TERBcUJnTlZCQWtNSTlHRDBMdlF1TkdHMExBZzBKalF1OUdNMExqUXZkQzYwTEFzSU5DMDBMN1F2Q0EzTVJVd0V3WURWUVFIREF6UW5OQyswWUhRdXRDeTBMQXhDekFKQmdOVkJBWVRBbEpWTVRnd05nWURWUVFLREMvUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0QzFJTkM2MExEUXQ5QzkwTERSaDlDMTBMblJnZEdDMExMUXZqRS9NRDBHQTFVRUF3dzIwS1BRcGlEUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0Q3owTDRnMExyUXNOQzMwTDNRc05HSDBMWFF1ZEdCMFlMUXN0Q3dNQjRYRFRFMU1EVXhOREE1TURJME9Wb1hEVEUyTURneE5EQTVNREkwT1Zvd2dnSTFNUm93R0FZSUtvVURBNEVEQVFFU0REQXdPVGt3TVRBd01ESTJOekVXTUJRR0JTcUZBMlFERWdzeE1UUXlOams1TlRnMk56RVlNQllHQlNxRkEyUUJFZzB4TURJNU9UQXdOVEEzTWpNd01TVXdJd1lKS29aSWh2Y05BUWtCRmhabmRYcGlZV2xyYjI1MWNrQnlZVzFpYkdWeUxuSjFNUXN3Q1FZRFZRUUdFd0pTVlRGUE1FMEdBMVVFQ0F4R09Ua2cwSmpRdmRHTDBMVWcwWUxRdGRHQTBZRFF1TkdDMEw3UmdOQzQwTGdzSU5DeTBMclF1OUdPMFlmUXNOR1BMQ0RRc3k0ZzBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RFWk1CY0dBMVVFQnd3UTBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RGUE1FMEdBMVVFQ2d4RzBKUFF2dEdBMEw3UXROR0IwTHJRdnRDMUlOR0QwTC9SZ05DdzBMTFF1OUMxMEwzUXVOQzFJTkMzMExUUmdOQ3cwTExRdnRDKzBZWFJnTkN3MEwzUXRkQzkwTGpSanpFa01DSUdBMVVFS2d3YjBKSFF2dEdBMExqUmdTRFFuOUMxMFlMUmdOQyswTExRdU5HSE1SVXdFd1lEVlFRRURBelFvOUM3MExEUXZkQyswTEl4Z1lNd2dZQUdBMVVFREF4NTBKUFF1OUN3MExMUXZkR0wwTGtnMFlIUXY5QzEwWWJRdU5DdzBMdlF1TkdCMFlJZzBMN1JndEMwMExYUXU5Q3dJTkMvMEw0ZzBMdlF0ZEM2MExEUmdOR0IwWUxRc3RDMTBMM1F2ZEMrMEx6Umd5RFF2dEN4MExYUmdkQy8wTFhSaDlDMTBMM1F1TkdPSU5DNElOQzcwTGpSaHRDMTBMM1F0ekV4TUM4R0ExVUVBd3dvMEtQUXU5Q3cwTDNRdnRDeUlOQ1IwTDdSZ05DNDBZRWcwSi9RdGRHQzBZRFF2dEN5MExqUmh6QmpNQndHQmlxRkF3SUNFekFTQmdjcWhRTUNBaVFBQmdjcWhRTUNBaDRCQTBNQUJFQjZiUnJDa3hUYmVDN2Fpb3J6UUU4OHBKTXF0NkJLbnJHT3E5blJGdXFPdElnRkVuTHEvUC9tTFpYR0xuREs5cHVYNVRnUUU1UThmZm0xeHFEVW0yZEtvNElFdkRDQ0JMZ3dEQVlEVlIwVEFRSC9CQUl3QURBZEJnTlZIU0FFRmpBVU1BZ0dCaXFGQTJSeEFUQUlCZ1lxaFFOa2NRSXdXQVlEVlIwUkJGRXdUNkFTQmdOVkJBeWdDeE1KTkRJeU1UZ3hNelE1b0JrR0NpcUZBd005bnRjMkFRZWdDeE1KT1Rrd01UQXhNREF4b0JzR0NpcUZBd005bnRjMkFRV2dEUk1MTURNME9ERXdNREEzTURhR0FUQXdOZ1lGS29VRFpHOEVMUXdySXRDYTBZRFF1TkMvMFlMUXZ0Q2YwWURRdmlCRFUxQWlJQ2pRc3RDMTBZRFJnZEM0MFk4Z015NDJLVENDQVdFR0JTcUZBMlJ3QklJQlZqQ0NBVklNUkNMUW10R0EwTGpRdjlHQzBMN1FuOUdBMEw0Z1ExTlFJaUFvMExMUXRkR0EwWUhRdU5HUElETXVOaWtnS05DNDBZSFF2OUMrMEx2UXZkQzEwTDNRdU5DMUlESXBER2dpMEovUmdOQyswTFBSZ05DdzBMelF2TkM5MEw0dDBMRFF2OUMvMExEUmdOQ3cwWUxRdmRHTDBMa2cwTHJRdnRDODBML1F1OUMxMExyUmdTQWkwSzdRdmRDNDBZSFF0ZEdBMFlJdDBKUFFudENoMEtJaUxpRFFrdEMxMFlEUmdkQzQwWThnTWk0eElneFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5TkMweU1qTTRJTkMrMFlJZ01EUXVNVEF1TWpBeE13eFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5T0MweU1UYzFJTkMrMFlJZ01qQXVNRFl1TWpBeE16QU9CZ05WSFE4QkFmOEVCQU1DQStnd1F3WURWUjBsQkR3d09nWUlLd1lCQlFVSEF3SUdEaXFGQXdNOW50YzJBUVlEQkFFQkJnNHFoUU1EUFo3WE5nRUdBd1FCQWdZT0tvVURBejJlMXpZQkJnTUVBUVF3S3dZRFZSMFFCQ1F3SW9BUE1qQXhOVEExTVRRd09EVTNOVFJhZ1E4eU1ERTJNRGd4TXpBNU1ESTBPVm93Z2dHUEJnTlZIU01FZ2dHR01JSUJnb0FVbm5FT0Q5cTBBU2hmUCtMTGoyVVZsd0pIakt1aGdnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd2dnRUJNRjRHQTFVZEh3UlhNRlV3S2FBbm9DV0dJMmgwZEhBNkx5OWpjbXd1Y205emEyRjZibUV1Y25VdlkzSnNMMlpyTURFdVkzSnNNQ2lnSnFBa2hpSm9kSFJ3T2k4dlkzSnNMbVp6Wm1zdWJHOWpZV3d2WTNKc0wyWnJNREV1WTNKc01CMEdBMVVkRGdRV0JCUmpaSzF1TzZma0lOdVZlQmp1YTJ5eUkrYk1UVEFJQmdZcWhRTUNBZ01EUVFBa3VKMDBFY2lIQVBYR0Roc2c3RlcvOUU3dmpxM2tqNnJGa20wVjUvZ2lKZkdFMHErN3A2V3dRUFZaMkUvTmJuNXR3ank3QVgrbXBvRDVsSGJZcktnR01ZSUQ5ekNDQS9NQ0FRRXdnZ0ZtTUlJQlhURVlNQllHQ1NxR1NJYjNEUUVKQWhNSlUyVnlkbVZ5SUVOQk1TQXdIZ1lKS29aSWh2Y05BUWtCRmhGMVkxOW1hMEJ5YjNOcllYcHVZUzV5ZFRFY01Cb0dBMVVFQ0F3VE56Y2cwTE11SU5DYzBMN1JnZEM2MExMUXNERWFNQmdHQ0NxRkF3T0JBd0VCRWd3d01EYzNNVEExTmpnM05qQXhHREFXQmdVcWhRTmtBUklOTVRBME56YzVOekF4T1Rnek1ERXNNQ29HQTFVRUNRd2owWVBRdTlDNDBZYlFzQ0RRbU5DNzBZelF1TkM5MExyUXNDd2cwTFRRdnRDOElEY3hGVEFUQmdOVkJBY01ETkNjMEw3UmdkQzYwTExRc0RFTE1Ba0dBMVVFQmhNQ1VsVXhPREEyQmdOVkJBb01MOUNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExVZzBMclFzTkMzMEwzUXNOR0gwTFhRdWRHQjBZTFFzdEMrTVQ4d1BRWURWUVFERERiUW85Q21JTkNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExQUXZpRFF1dEN3MExmUXZkQ3cwWWZRdGRDNTBZSFJndEN5MExBQ0F3dTV6VEFLQmdZcWhRTUNBZ2tGQUtDQ0FpZ3dHQVlKS29aSWh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1UWXdOakl3TURRek1URTNXakF2QmdrcWhraUc5dzBCQ1FReElnUWdoTTdoNkJEbWR6RFlaK1pqTTNXNitGZ2ZBRUowajdLVjh5SEUzZ2VTcUs0d2dnRzdCZ3NxaGtpRzl3MEJDUkFDTHpHQ0Fhb3dnZ0dtTUlJQm9qQ0NBWjR3Q0FZR0tvVURBZ0lKQkNCbzhsSUUrVW9LOGlCY2RlVEFmbTExUUlmWThjSE9SL3ZIMXArSkNDVXZFakNDQVc0d2dnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd0FnTUx1YzB3Q2dZR0tvVURBZ0lUQlFBRVFNbDMvVjgyRDJUcms3RTNjSzc4eTk4aCtYcnlZTTBnbXZWQlU0YmlUZTR6V1J3dExEMENWd2ovZE5NUXdOTEw5SGpOWTdrckVNd0J0T1B6bHdKVzZZaz0=</signature>
+                </cryptoSigns>
+            </attachment>
+        </attachments>
+    </ns2:fcsNotificationZK>
+</ns2:export>

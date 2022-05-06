@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1" xmlns:ns3="http://zakupki.gov.ru/oos/printform/1">
+    <ns2:fcsProtocolEF3 schemeVersion="6.2">
+        <id>9576076</id>
+        <purchaseNumber>0148300014516000060</purchaseNumber>
+        <protocolNumber>0148300014516000060-3</protocolNumber>
+        <foundationProtocolNumber>0148300014516000060-2</foundationProtocolNumber>
+        <place>www.sberbank-ast.ru</place>
+        <protocolDate>2016-06-29T00:00:00+03:00</protocolDate>
+        <signDate>2016-06-29T00:00:00+03:00</signDate>
+        <publishDate>2016-06-29T16:29:38.980+03:00</publishDate>
+        <commission>
+            <commissionName>Тестовая комиссия для ЭП</commissionName>
+            <commissionMembers>
+                <commissionMember>
+                    <memberNumber>1</memberNumber>
+                    <lastName>Иванов</lastName>
+                    <firstName>Иван</firstName>
+                    <middleName>Иванович</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <spelledMembersCount>один</spelledMembersCount>
+            </commissionMembers>
+            <competent>true</competent>
+        </commission>
+        <href>http://www.sberbank-ast.ru/ViewDocument.aspx?id=402132551</href>
+        <printForm>
+            <url>http://www.sberbank-ast.ru/ViewDocument.aspx?id=402132551</url>
+        </printForm>
+        <protocolPublisher>
+            <publisherOrg>
+                <regNum>01483000145</regNum>
+                <fullName>Администрация поселения Московский</fullName>
+            </publisherOrg>
+            <publisherRole>CU</publisherRole>
+        </protocolPublisher>
+        <protocolLot>
+            <applications>
+                <application>
+                    <journalNumber>2</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7719781638</inn>
+                        <kpp>771901001</kpp>
+                        <organizationName>Общество с ограниченной ответственностью "ЛТСтрой"</organizationName>
+                    </appParticipant>
+                    <admitted>true</admitted>
+                    <appRating>1</appRating>
+                </application>
+                <application>
+                    <journalNumber>1</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7708133459</inn>
+                        <kpp>772801001</kpp>
+                        <organizationName>Общество с ограниченной ответственностью Инжкапстрой Сервис</organizationName>
+                    </appParticipant>
+                    <admitted>true</admitted>
+                    <appRating>2</appRating>
+                </application>
+                <application>
+                    <journalNumber>3</journalNumber>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>7728822584</inn>
+                        <kpp>772801001</kpp>
+                        <organizationName>Общество с ограниченной ответственностью "МосДорСтрой"</organizationName>
+                    </appParticipant>
+                    <admitted>true</admitted>
+                    <appRating>3</appRating>
+                </application>
+            </applications>
+        </protocolLot>
+    </ns2:fcsProtocolEF3>
+</ns2:export>

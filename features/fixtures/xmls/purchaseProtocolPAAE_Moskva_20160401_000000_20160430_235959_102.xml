@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseProtocolPAAE xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-5.0 http://zakupki.gov.ru/223/integration/schema/TFF-5.0/purchase.xsd" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns10="http://zakupki.gov.ru/223fz/complaint/1" xmlns:ns11="http://zakupki.gov.ru/223fz/notificationIssue/1" xmlns:ns12="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns13="http://zakupki.gov.ru/223fz/purchasePlanProject/1" xmlns:ns14="http://zakupki.gov.ru/223fz/contract/1" xmlns:ns15="http://zakupki.gov.ru/223fz/missedNotice/1" xmlns:ns16="http://zakupki.gov.ru/223fz/purchasePlanProjectAdditionalPosition/1" xmlns:ns17="http://zakupki.gov.ru/223fz/decisionSuspension/1" xmlns:ns18="http://zakupki.gov.ru/223fz/purchasePlanAdditionalPosition/1" xmlns:ns19="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/dishonestSupplier/1" xmlns:ns4="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns5="http://zakupki.gov.ru/223fz/stopCommodity/1" xmlns:ns6="http://zakupki.gov.ru/223fz/machineryListInfo/1" xmlns:ns7="http://zakupki.gov.ru/223fz/revenue/1" xmlns:ns8="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns9="http://zakupki.gov.ru/223fz/disagreementProtocol/1">
+    <header>
+        <guid>c864f58d-a512-4901-8f9b-f4cd1cc0c26c</guid>
+        <createDateTime>2016-04-28T22:38:28</createDateTime>
+    </header>
+    <ns2:body>
+        <ns2:item>
+            <guid>c3e7ccbb-b260-4c02-b127-66d68e83ca7f</guid>
+            <ns2:purchaseProtocolPAAEData>
+                <ns2:guid>c3e7ccbb-b260-4c02-b127-66d68e83ca7f</ns2:guid>
+                <ns2:createDateTime>2016-04-28T22:37:35</ns2:createDateTime>
+                <ns2:urlOOS>https://zakupki.gov.ru/223/purchase/private/purchase/protocol-info/details.html?protocolInfoId=4691278</ns2:urlOOS>
+                <ns2:purchaseInfo>
+                    <purchaseNoticeNumber>31603500788</purchaseNoticeNumber>
+                    <name>Открытый аукцион в электронной форме на право заключения договора на закупку оборудования для серверной</name>
+                    <purchaseMethodCode>3361</purchaseMethodCode>
+                    <purchaseCodeName>Открытый аукцион в электронной форме</purchaseCodeName>
+                    <emergency>false</emergency>
+                </ns2:purchaseInfo>
+                <ns2:registrationNumber>31603500788-02</ns2:registrationNumber>
+                <ns2:placer>
+                    <mainInfo>
+                        <fullName>Общество с ограниченной ответственностью "ПЕРВЫЙ ТЕНДЕР"</fullName>
+                        <shortName>ООО "ПЕРВЫЙ ТЕНДЕР"</shortName>
+                        <iko>57715783169771501001</iko>
+                        <inn>7715783169</inn>
+                        <kpp>771501001</kpp>
+                        <ogrn>1097746718178</ogrn>
+                        <legalAddress>127018, Москва, Складочная, дом 1, корпус СТР.18</legalAddress>
+                        <postalAddress>Москва, ул. Гостиничная, д. 7а-48</postalAddress>
+                        <phone>7-925-5052640</phone>
+                        <email>sergeevna45@yandex.ru</email>
+                        <okato>45280561000</okato>
+                        <okpo>63791184</okpo>
+                    </mainInfo>
+                </ns2:placer>
+                <ns2:customer>
+                    <mainInfo>
+                        <fullName>Государственное унитарное предприятие города Москвы "Московский городской трест геолого-геодезических и картографических работ"</fullName>
+                        <shortName>ГУП "Мосгоргеотрест"</shortName>
+                        <iko>57714084055774501001</iko>
+                        <inn>7714084055</inn>
+                        <kpp>774501001</kpp>
+                        <ogrn>1027739027414</ogrn>
+                        <legalAddress>125040, Москва, Ленинградский, дом 11</legalAddress>
+                        <postalAddress>125040, Москва, Ленинградский, дом 11</postalAddress>
+                        <phone>7-499-2570911</phone>
+                        <email>aserov@mggt.ru</email>
+                        <okato>45277556000</okato>
+                        <okpo>03997815</okpo>
+                    </mainInfo>
+                </ns2:customer>
+                <ns2:publicationDateTime>2016-04-28T22:38:28</ns2:publicationDateTime>
+                <ns2:status>P</ns2:status>
+                <ns2:version>2</ns2:version>
+                <ns2:modificationDescription>добавление информации</ns2:modificationDescription>
+                <ns2:attachments>
+                    <totalDocumentsCount>3</totalDocumentsCount>
+                    <document>
+                        <guid>4f243846-16f6-4d25-ba38-8e2ca9047271</guid>
+                        <createDateTime>2016-04-28T10:20:14</createDateTime>
+                        <fileName>Happened_31603500788.rtf</fileName>
+                        <description>Happened_31603500788.rtf</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=21880843</url>
+                    </document>
+                    <document>
+                        <guid>b1316e73-d7e1-499f-a6b7-dc71ba87a7ef</guid>
+                        <createDateTime>2016-04-28T10:20:09</createDateTime>
+                        <fileName>Happened_31603500788.rtf</fileName>
+                        <description>Happened_31603500788.rtf</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=21880844</url>
+                    </document>
+                    <document>
+                        <guid>9f594b6c-83ec-43a0-b605-c6c311b3920b</guid>
+                        <createDateTime>2016-04-28T22:37:53</createDateTime>
+                        <fileName>протокол 2   (788).doc</fileName>
+                        <description>протокол 2   (788)</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=21880845</url>
+                    </document>
+                </ns2:attachments>
+                <ns2:procedureDate>2016-04-28T10:00:00</ns2:procedureDate>
+                <ns2:protocolRZRegistrationNumber>31603500788-01</ns2:protocolRZRegistrationNumber>
+                <ns2:protocolRZVersion>1</ns2:protocolRZVersion>
+                <ns2:lotApplicationsList>
+                    <ns2:protocolLotApplications>
+                        <ns2:lot>
+                            <ns2:guid>3f1cdcc9-e3ff-4769-16f8-44cd2035dd00</ns2:guid>
+                            <ns2:ordinalNumber>1</ns2:ordinalNumber>
+                            <ns2:subject>закупка комплектующих для серверов</ns2:subject>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:initialSum>1618240.85</ns2:initialSum>
+                        </ns2:lot>
+                        <ns2:lotParameters>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                        </ns2:lotParameters>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Закрытое акционерное общество  "КЛЕВЕР КЕЙ"</name>
+                                <inn>7727826875</inn>
+                                <kpp>772701001</kpp>
+                                <ogrn>1147746123513</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>1618240.85</ns2:lastPrice>
+                            <ns2:lastButOnePrice>1618240.85</ns2:lastButOnePrice>
+                            <ns2:applicationRate>1</ns2:applicationRate>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:lot>
+                            <ns2:guid>7d84cb34-f83f-0402-d842-c1f0ca47e22e</ns2:guid>
+                            <ns2:ordinalNumber>2</ns2:ordinalNumber>
+                            <ns2:subject>закупка  серверов</ns2:subject>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:initialSum>3488665.5</ns2:initialSum>
+                        </ns2:lot>
+                        <ns2:lotParameters>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                        </ns2:lotParameters>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Участник 1</name>
+                                <inn>0000000000</inn>
+                                <kpp>000000000</kpp>
+                                <ogrn>0000000000000</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>3418892.20</ns2:lastPrice>
+                            <ns2:lastButOnePrice>3418892.20</ns2:lastButOnePrice>
+                            <ns2:applicationRate>1</ns2:applicationRate>
+                        </ns2:application>
+                        <ns2:application>
+                            <ns2:applicationNumber>2</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Участник 2</name>
+                                <inn>0000000000</inn>
+                                <kpp>000000000</kpp>
+                                <ogrn>0000000000000</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>3453778.85</ns2:lastPrice>
+                            <ns2:lastButOnePrice>3453778.85</ns2:lastButOnePrice>
+                            <ns2:applicationRate>2</ns2:applicationRate>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:lot>
+                            <ns2:guid>9156210e-c316-a364-059e-6f2c13e594bc</ns2:guid>
+                            <ns2:ordinalNumber>3</ns2:ordinalNumber>
+                            <ns2:subject>закупка дискового массива</ns2:subject>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:initialSum>4384610</ns2:initialSum>
+                        </ns2:lot>
+                        <ns2:lotParameters>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                        </ns2:lotParameters>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Участник 1</name>
+                                <inn>0000000000</inn>
+                                <kpp>000000000</kpp>
+                                <ogrn>0000000000000</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>4296917.80</ns2:lastPrice>
+                            <ns2:lastButOnePrice>4296917.80</ns2:lastButOnePrice>
+                            <ns2:applicationRate>1</ns2:applicationRate>
+                        </ns2:application>
+                        <ns2:application>
+                            <ns2:applicationNumber>2</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Участник 2</name>
+                                <inn>0000000000</inn>
+                                <kpp>000000000</kpp>
+                                <ogrn>0000000000000</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>4340763.90</ns2:lastPrice>
+                            <ns2:lastButOnePrice>4340763.90</ns2:lastButOnePrice>
+                            <ns2:applicationRate>2</ns2:applicationRate>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                    <ns2:protocolLotApplications>
+                        <ns2:lot>
+                            <ns2:guid>e7fb1184-9776-6fb0-404f-54aefbee5c3a</ns2:guid>
+                            <ns2:ordinalNumber>4</ns2:ordinalNumber>
+                            <ns2:subject>Закупка 4-х этажных коммутаторов</ns2:subject>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:initialSum>1564147.5</ns2:initialSum>
+                        </ns2:lot>
+                        <ns2:lotParameters>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                        </ns2:lotParameters>
+                        <ns2:application>
+                            <ns2:applicationNumber>1</ns2:applicationNumber>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>Общество с ограниченной ответственностью "ОФТ Компьютерс"</name>
+                                <inn>7720528044</inn>
+                                <kpp>772001001</kpp>
+                                <ogrn>1057747137480</ogrn>
+                                <type>L</type>
+                            </ns2:supplierInfo>
+                            <ns2:lastPrice>1564147.50</ns2:lastPrice>
+                            <ns2:lastButOnePrice>1564147.50</ns2:lastButOnePrice>
+                            <ns2:applicationRate>1</ns2:applicationRate>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                </ns2:lotApplicationsList>
+            </ns2:purchaseProtocolPAAEData>
+        </ns2:item>
+    </ns2:body>
+</ns2:purchaseProtocolPAAE>

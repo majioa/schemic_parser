@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseNotice xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-5.0 http://zakupki.gov.ru/223/integration/schema/TFF-5.0/purchase.xsd" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns10="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns11="http://zakupki.gov.ru/223fz/machineryListInfo/1" xmlns:ns12="http://zakupki.gov.ru/223fz/purchasePlanAdditionalPosition/1" xmlns:ns13="http://zakupki.gov.ru/223fz/disagreementProtocol/1" xmlns:ns14="http://zakupki.gov.ru/223fz/revenue/1" xmlns:ns15="http://zakupki.gov.ru/223fz/contract/1" xmlns:ns16="http://zakupki.gov.ru/223fz/missedNotice/1" xmlns:ns17="http://zakupki.gov.ru/223fz/decisionSuspension/1" xmlns:ns18="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns19="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/dishonestSupplier/1" xmlns:ns4="http://zakupki.gov.ru/223fz/notificationIssue/1" xmlns:ns5="http://zakupki.gov.ru/223fz/purchasePlanProjectAdditionalPosition/1" xmlns:ns6="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns7="http://zakupki.gov.ru/223fz/stopCommodity/1" xmlns:ns8="http://zakupki.gov.ru/223fz/complaint/1" xmlns:ns9="http://zakupki.gov.ru/223fz/purchasePlanProject/1">
+    <header>
+        <guid>6f389252-6cef-40f2-aa8a-676d03f85803</guid>
+        <createDateTime>2016-05-31T18:15:43</createDateTime>
+    </header>
+    <ns2:body>
+        <ns2:item>
+            <guid>9368ef1f-b14a-4fd8-90c6-b0e7d43ddde4</guid>
+            <ns2:purchaseNoticeData>
+                <ns2:guid>9368ef1f-b14a-4fd8-90c6-b0e7d43ddde4</ns2:guid>
+                <ns2:createDateTime>2016-05-31T18:15:02</ns2:createDateTime>
+                <ns2:urlOOS>https://zakupki.gov.ru/223/purchase/private/purchase/notice-info/details.html?noticeInfoId=4479049</ns2:urlOOS>
+                <ns2:urlVSRZ>http://utp.sberbank-ast.ru/Trade/NBT/PurchaseView/41/0/0/172920</ns2:urlVSRZ>
+				<!--+-->
+                <ns2:registrationNumber>31603725970</ns2:registrationNumber>
+				<!--+-->
+                <ns2:name>Поставка широкоформатных принтеров (плоттеров) для нужд ФНИЦ «Кристаллография и фотоника» РАН</ns2:name>
+                <ns2:customer>
+                    <mainInfo>
+					<!--+-->
+                        <fullName>Федеральное государственное бюджетное учреждение науки Институт кристаллографии им. А.В. Шубникова Российской академии наук</fullName>
+						<!--+-->
+                        <shortName>ИК РАН</shortName>
+                        <iko>87736099104773601001</iko>
+						<!--+-->
+                        <inn>7736099104</inn>
+						<!--+-->
+                        <kpp>773601001</kpp>
+						<!--+-->
+                        <ogrn>1037739548747</ogrn>
+						<!--+-->
+                        <legalAddress>119333, Москва, Ленинский, дом 59</legalAddress>
+						<!--+-->
+                        <postalAddress>119333, Москва, Ленинский, дом 59</postalAddress>
+						<!--+-->
+                        <phone>7-903-1011072</phone>
+						<!--+-->
+                        <email>rol.64@mail.ru</email>
+						<!--+-->
+                        <okato>45293558000</okato>
+                        <okpo>02698967</okpo>
+                    </mainInfo>
+                </ns2:customer>
+				<!--+-->
+                <ns2:purchaseMethodCode>5621</ns2:purchaseMethodCode>
+				<!--+-->
+                <ns2:purchaseCodeName>СБ-АСТ: Открытый аукцион в электронной форме</ns2:purchaseCodeName>
+                <ns2:placer>
+                    <mainInfo>
+                        <fullName>Закрытое акционерное общество "Сбербанк-Автоматизированная система торгов"</fullName>
+                        <shortName>ЗАО "Сбербанк-АСТ"</shortName>
+                        <iko>67707308480770701001</iko>
+                        <inn>7707308480</inn>
+                        <kpp>770701001</kpp>
+                        <ogrn>1027707000441</ogrn>
+                        <legalAddress>127055, Москва, Новослободская, дом 24, корпус СТР.2</legalAddress>
+                        <postalAddress>101000, г. Москва, Милютинский переулок, д. 10, стр. 4</postalAddress>
+                        <phone>7-495-7872997</phone>
+                        <fax>7-495-7872998</fax>
+                        <email>FSKordysh@sberbank-ast.ru</email>
+                        <okato>45286585000</okato>
+                        <okpo>58997535</okpo>
+                    </mainInfo>
+                </ns2:placer>
+                <ns2:contact>
+					<!--+-->
+                    <firstName>Гаврина Алла Петровна</firstName>
+					<!--+-->
+                    <phone>+499 (135) 14, доб.: 10</phone>
+					<!--+-->
+                    <email>torgi-vvs@yandex.ru</email>
+                    <organization>
+                        <mainInfo>
+                            <fullName>Федеральное государственное бюджетное учреждение науки Институт кристаллографии им. А.В. Шубникова Российской академии наук</fullName>
+                            <shortName>ИК РАН</shortName>
+                            <iko>87736099104773601001</iko>
+                            <inn>7736099104</inn>
+                            <kpp>773601001</kpp>
+                            <ogrn>1037739548747</ogrn>
+                            <legalAddress>119333, Москва, Ленинский, дом 59</legalAddress>
+                            <postalAddress>119333, Москва, Ленинский, дом 59</postalAddress>
+                            <phone>7-903-1011072</phone>
+                            <email>rol.64@mail.ru</email>
+                            <okato>45293558000</okato>
+                            <okpo>02698967</okpo>
+                        </mainInfo>
+                    </organization>
+                </ns2:contact>
+				<!--+-->
+                <ns2:publicationDateTime>2016-05-31T18:15:43</ns2:publicationDateTime>
+                <ns2:documentationDelivery>
+                    <deliveryStartDateTime>2016-06-01</deliveryStartDateTime>
+                    <deliveryEndDateTime>2016-06-20</deliveryEndDateTime>
+                    <place>документация об электронном аукционе доступна для ознакомления на официальном сайте по адресу в сети Интернет http://zakupki.gov.ru/223 и электронной торговой площадке по адресу в сети Интернет http://utp.sberbank-ast.ru/trade без взимания платы. Предоставление документации об электронном аукционе Заказчиком не предусмотрено.</place>
+                    <procedure>документация об электронном аукционе доступна для ознакомления на официальном сайте по адресу в сети Интернет http://zakupki.gov.ru/223 и электронной торговой площадке по адресу в сети Интернет http://utp.sberbank-ast.ru/trade без взимания платы. Предоставление документации об электронном аукционе Заказчиком не предусмотрено.</procedure>
+                </ns2:documentationDelivery>
+                <ns2:status>P</ns2:status>
+				<!--+-->
+                <ns2:version>1</ns2:version>
+                <ns2:notDishonest>true</ns2:notDishonest>
+                <ns2:attachments>
+                    <totalDocumentsCount>2</totalDocumentsCount>
+                    <document>
+                        <guid>8a1a97d3-68d5-43fa-8093-dfd3e4d014e1</guid>
+                        <createDateTime>2016-05-31T18:15:03</createDateTime>
+                        <fileName>Izv_Doc_02-16_EA-223.docx</fileName>
+                        <description>Izv_Doc_02-16_EA-223.docx</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22611128</url>
+                    </document>
+                    <document>
+                        <guid>de3e645f-9447-46c1-ad86-0f5850a07d8d</guid>
+                        <createDateTime>2016-05-31T18:15:03</createDateTime>
+                        <fileName>Приказ ФАНО о реорганиз ИК РАН.pdf</fileName>
+                        <description>Приказ ФАНО о реорганиз ИК РАН.pdf</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22611129</url>
+                    </document>
+                </ns2:attachments>
+                <ns2:modificationDate>2016-05-31T18:15:43</ns2:modificationDate>
+                <ns2:saveUserId>29401</ns2:saveUserId>
+                <ns2:deliveryPlaceIndication>DIFFERENT_PLACE</ns2:deliveryPlaceIndication>
+                <ns2:emergency>false</ns2:emergency>
+                <ns2:electronicPlaceInfo>
+					<!--+-->
+                    <name>ЗАО «Сбербанк-АСТ» (УТП)</name>
+					<!--+-->
+                    <url>http://utp.sberbank-ast.ru/Trade</url>
+					<!--+-->
+                    <electronicPlaceId>116</electronicPlaceId>
+                </ns2:electronicPlaceInfo>
+                <ns2:placingProcedure>
+                    <ns2:examinationPlace>http://utp.sberbank-ast.ru/Trade</ns2:examinationPlace>
+                    <ns2:examinationDateTime>2016-06-22T12:00:00</ns2:examinationDateTime>
+                    <ns2:summingupDateTime>2016-06-28T12:00:00</ns2:summingupDateTime>
+                </ns2:placingProcedure>
+				<!--+-->
+                <ns2:submissionCloseDateTime>2016-06-21T10:00:00</ns2:submissionCloseDateTime>
+                <ns2:publicationPlannedDate>2016-05-31</ns2:publicationPlannedDate>
+                <ns2:lots>
+                    <lot>
+						<!--+-->
+                        <guid>c8ebc590-0089-4b2c-8b3c-b14788f94210</guid>
+						<!--+-->
+                        <ordinalNumber>1</ordinalNumber>
+                        <lotEditEnabled>true</lotEditEnabled>
+                        <lotData>
+							<!--+-->
+                            <subject>Поставка широкоформатных принтеров (плоттеров)</subject>
+                            <currency>
+								<!--+-->
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </currency>
+							<!--+-->
+                            <initialSum>259909.00</initialSum>
+                            <deliveryPlace>
+                                <address>Количество поставляемого товара, объема выполняемых, оказываемых услуг: в соответствии с Техническим заданием документации об электронном аукционе. Место поставки товара, выполнения работ, оказания услуг: г. Москва, Ленинский проспект, д. 59, склад. Срок  поставки товара, выполнения работ, оказания услуг: в течение 30 (тридцати) календарных дней с момента подписания Договора. Возможна досрочная поставка. безналичный расчет, без авансирования, расчет за 100% фактически поставленный товар, после подписания Акта сдачи-приемки в течение 15-ти дней с приложением счета, счета-фактуры и товарной накладной.  Оплата по договору осуществляется только после проверки соответствия качества и характеристик (внутренняя/внешняя экспертиза) поставляемого Товара требованиям, установленным договором.</address>
+                            </deliveryPlace>
+                            <lotItems>
+                                <newCodes>true</newCodes>
+                                <lotItem>
+									<!--+-->
+                                    <guid>5cdb917e-4fa4-4166-a2f0-293d6be4970c</guid>
+									<!--+-->
+                                    <ordinalNumber>1</ordinalNumber>
+                                    <okpd2>
+										<!--+-->
+                                        <code>26.20.16.120</code>
+                                        <name>Принтеры</name>
+                                    </okpd2>
+                                    <okved2>
+										<!--+-->
+                                        <code>26.20</code>
+                                        <name>Производство компьютеров и периферийного оборудования</name>
+                                    </okved2>
+                                    <okei>
+										<!--+-->
+                                        <code>796</code>
+                                        <name>Штука</name>
+                                    </okei>
+									<!--+-->
+                                    <qty>1</qty>
+									<!--+-->
+                                    <additionalInfo>Широкоформатный фотопринтер (плоттер) HP DesignJet Z2100 44” (1118 мм) Q6677D</additionalInfo>
+                                </lotItem>
+                                <lotItem>
+									<!--+-->
+                                    <guid>f9458ba3-0e87-4c13-9e16-25fc8f4b6e09</guid>
+									<!--+-->
+                                    <ordinalNumber>2</ordinalNumber>
+                                    <okpd2>
+										<!--+-->
+                                        <code>26.20.16.120</code>
+                                        <name>Принтеры</name>
+                                    </okpd2>
+                                    <okved2>
+										<!--+-->
+                                        <code>26.20</code>
+                                        <name>Производство компьютеров и периферийного оборудования</name>
+                                    </okved2>
+                                    <okei>
+										<!--+-->
+                                        <code>796</code>
+                                        <name>Штука</name>
+                                    </okei>
+									<!--+-->
+                                    <qty>1</qty>
+									<!--+-->
+                                    <additionalInfo>Широкоформатный принтер (плоттер) HP Designjet T520 24” (610 мм) CQ890A</additionalInfo>
+                                </lotItem>
+                            </lotItems>
+                            <forSmallOrMiddle>false</forSmallOrMiddle>
+                            <excludePurchaseFromPlan>false</excludePurchaseFromPlan>
+                            <notFederalLaw223>false</notFederalLaw223>
+                            <subcontractorsRequirement>false</subcontractorsRequirement>
+                            <ignoredPurchase>false</ignoredPurchase>
+                        </lotData>
+                        <deliveryPlaceIndication>GL</deliveryPlaceIndication>
+                        <jointLotData>
+                            <jointLot>false</jointLot>
+                        </jointLotData>
+                        <lotPlanInfo>
+                            <planRegistrationNumber>2150147084</planRegistrationNumber>
+                            <planGuid>5eb808ea-3c3f-414d-8b90-b5a3e4c249d3</planGuid>
+                            <positionNumber>40</positionNumber>
+                            <lotPlanPosition>COMMODITY</lotPlanPosition>
+                            <positionGuid>84eb604e-810b-46cc-a224-67e3f25a18de</positionGuid>
+                        </lotPlanInfo>
+                        <cancelled>false</cancelled>
+                    </lot>
+                </ns2:lots>
+            </ns2:purchaseNoticeData>
+        </ns2:item>
+    </ns2:body>
+</ns2:purchaseNotice>

@@ -174,7 +174,9 @@ module Schemic::Parser::Methods
    #       paths: ["documentationDelivery", ""]
    #       dom_context: # parent * 3
    #
-   def make_selector name, options
+   def make_selector name, options_in
+      options = options_in.dup
+
       froms = [options.delete(:from) || [name].compact].flatten
 
       #ctxs = [reset_context || context].flatten.compact
@@ -183,7 +185,7 @@ module Schemic::Parser::Methods
       paths_in =
          if options[:context]
             context = [options.delete(:context)].flatten
-            context.integrate(froms).map { |from| from.join(">") }
+            context.integrate(froms).map { |from| from.reject {|x| x.blank? }.join(">") }
          else
             froms
          end.map(&:to_s)
@@ -207,15 +209,13 @@ module Schemic::Parser::Methods
             level = path.size - no_parent.size
 
             no_root = no_parent.gsub(/@/, '')
-            #root = no_root.size - path_parent.size
             level_root = no_root.size < no_parent.size && -1 || level
-            new_path = no_root.sub(/:/, '|').gsub(/\//, '>')
-#            new_path = name if new_path.blank?
-            new_path = new_path.gsub(/\./, name)
-#           binding.pry if path =~ /[@]/
+            new_path_in = no_root.sub(/:/, '|').gsub(/\//, '>')
+            new_path = new_path_in.gsub(/\./, name)
+            # binding.pry if new_path =~ /^>/
 
             # binding.pry if name =~ /number/
-            [ new_path, transform_selector_keys({ level: level_root }.merge(options)) ]
+            [new_path, transform_selector_keys({ level: level_root }.merge(options))]
          end.to_h.to_os
 
       cpaths

@@ -183,7 +183,7 @@ class Schemic::Parser
    #
    def select_value name, dom_context_in, selectors, options
       selectors.reduce([nil, nil]) do |(value, val_selector), path, selector|
-         if value && value.text.present? ||
+         if value.respond_to?(:text) && value.text.present? ||
                !selector.if.nil? && !handler_for(selector.if)[value, dom_context_in]
             next [value, val_selector]
          end
@@ -270,7 +270,7 @@ class Schemic::Parser
          if path.blank?
             xml_context
          else
-            xml_context.css(path)
+            xml_context.css(path.to_s)
          end
 
       options.single && res.first || res

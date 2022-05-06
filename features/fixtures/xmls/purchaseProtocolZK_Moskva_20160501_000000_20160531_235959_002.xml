@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseProtocolZK xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-5.0 http://zakupki.gov.ru/223/integration/schema/TFF-5.0/purchase.xsd" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns10="http://zakupki.gov.ru/223fz/complaint/1" xmlns:ns11="http://zakupki.gov.ru/223fz/decisionSuspension/1" xmlns:ns12="http://zakupki.gov.ru/223fz/purchasePlanAdditionalPosition/1" xmlns:ns13="http://zakupki.gov.ru/223fz/notificationIssue/1" xmlns:ns14="http://zakupki.gov.ru/223fz/purchasePlanProject/1" xmlns:ns15="http://zakupki.gov.ru/223fz/purchasePlanProjectAdditionalPosition/1" xmlns:ns16="http://zakupki.gov.ru/223fz/disagreementProtocol/1" xmlns:ns17="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns18="http://zakupki.gov.ru/223fz/stopCommodity/1" xmlns:ns19="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/dishonestSupplier/1" xmlns:ns4="http://zakupki.gov.ru/223fz/machineryListInfo/1" xmlns:ns5="http://zakupki.gov.ru/223fz/revenue/1" xmlns:ns6="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns7="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns8="http://zakupki.gov.ru/223fz/contract/1" xmlns:ns9="http://zakupki.gov.ru/223fz/missedNotice/1">
+    <header>
+        <guid>79def183-57de-43aa-a819-65e4da21bb0a</guid>
+        <createDateTime>2016-05-24T10:31:31</createDateTime>
+    </header>
+    <ns2:body>
+        <ns2:item>
+            <guid>2dd9c1e7-f7c3-432a-bde8-01d5cb4e0625</guid>
+            <ns2:purchaseProtocolZKData>
+                <ns2:guid>2dd9c1e7-f7c3-432a-bde8-01d5cb4e0625</ns2:guid>
+                <ns2:createDateTime>2016-05-24T09:39:04</ns2:createDateTime>
+                <ns2:urlOOS>https://zakupki.gov.ru/223/purchase/private/purchase/protocol-info/details.html?protocolInfoId=4805235</ns2:urlOOS>
+                <ns2:purchaseInfo>
+					<!--+-->
+                    <purchaseNoticeNumber>31603646024</purchaseNoticeNumber>
+                    <name>Поставка картриджей для копировальной техники
+</name>
+                    <purchaseMethodCode>3362</purchaseMethodCode>
+                    <purchaseCodeName>Запрос котировок</purchaseCodeName>
+                    <emergency>false</emergency>
+                </ns2:purchaseInfo>
+                <ns2:registrationNumber>31603646024-01</ns2:registrationNumber>
+                <ns2:placer>
+                    <mainInfo>
+                        <fullName>ФИЛИАЛ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ "ФЕДЕРАЛЬНАЯ КАДАСТРОВАЯ ПАЛАТА ФЕДЕРАЛЬНОЙ СЛУЖБЫ ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ" ПО ВЛАДИМИРСКОЙ ОБЛАСТИ</fullName>
+                        <shortName>филиал ФГБУ "ФКП Росреестра" по Владимирской области</shortName>
+                        <iko>87705401340332843001</iko>
+                        <inn>7705401340</inn>
+                        <kpp>332843001</kpp>
+                        <ogrn>1027700485757</ogrn>
+                        <legalAddress>600017, Владимирская область, г. Владимир, ул. Луначарского, д.13А</legalAddress>
+                        <postalAddress>127006, дом 15, строение 4-5</postalAddress>
+                        <phone>7-495-9827900</phone>
+                        <fax>7-499-9732469</fax>
+                        <email>fgbu@fgbu.rosreestr.ru</email>
+                        <okato>17401370000</okato>
+                        <okpo>43186110</okpo>
+                    </mainInfo>
+                </ns2:placer>
+                <ns2:customer>
+                    <mainInfo>
+                        <fullName>ФИЛИАЛ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ "ФЕДЕРАЛЬНАЯ КАДАСТРОВАЯ ПАЛАТА ФЕДЕРАЛЬНОЙ СЛУЖБЫ ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ" ПО ВЛАДИМИРСКОЙ ОБЛАСТИ</fullName>
+                        <shortName>филиал ФГБУ "ФКП Росреестра" по Владимирской области</shortName>
+                        <iko>87705401340332843001</iko>
+                        <inn>7705401340</inn>
+                        <kpp>332843001</kpp>
+                        <ogrn>1027700485757</ogrn>
+                        <legalAddress>600017, Владимирская область, г. Владимир, ул. Луначарского, д.13А</legalAddress>
+                        <postalAddress>127006, дом 15, строение 4-5</postalAddress>
+                        <phone>7-495-9827900</phone>
+                        <fax>7-499-9732469</fax>
+                        <email>fgbu@fgbu.rosreestr.ru</email>
+                        <okato>17401370000</okato>
+                        <okpo>43186110</okpo>
+                    </mainInfo>
+                </ns2:customer>
+				<!--+-->
+                <ns2:publicationDateTime>2016-05-24T10:31:31</ns2:publicationDateTime>
+                <ns2:status>P</ns2:status>
+                <ns2:version>1</ns2:version>
+                <ns2:attachments>
+                    <totalDocumentsCount>1</totalDocumentsCount>
+                    <document>
+                        <guid>5d988934-d002-4f49-b044-8240e97105ae</guid>
+                        <createDateTime>2016-05-24T10:29:24</createDateTime>
+                        <fileName>Протокол.pdf</fileName>
+                        <description>Протокол</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22413578</url>
+                    </document>
+                </ns2:attachments>
+                <ns2:procedureDate>2016-05-23T10:00:00</ns2:procedureDate>
+                <ns2:procedurePlace>Процедура рассмотрения и оценки котировочных заявок проводилась единой комиссией 23.05.2016 по адресу: г. Владимир, ул. Луначарского, д. 13а., каб.4 с 10-00 до 10-30</ns2:procedurePlace>
+                <ns2:lotApplicationsList>
+                    <ns2:protocolLotApplications>
+						<!--+-->
+                        <ns2:guid>150d3d64-ecfb-4759-9d36-f028fd4398a5</ns2:guid>
+                        <ns2:ordinalNumber>1</ns2:ordinalNumber>
+                        <ns2:subject>Закупка картриджей для оргтехники</ns2:subject>
+                        <ns2:currency>
+                            <code>RUB</code>
+                            <digitalCode>643</digitalCode>
+                            <name>Российский рубль</name>
+                        </ns2:currency>
+                        <ns2:initialSum>275000</ns2:initialSum>
+                        <ns2:contractConditions>-Порядок предоставления обеспечения исполнения договора составляет 5 % от начальной (максимальной) цены Договора;
+               -Закупка осуществляется у субъектов малого предпринимательства, социально ориентированных некоммерческих организаций; 
+            -В соответствии с Приложением № 4 к извещению запроса котировок 14/2016
+	Максимальная цена договора —  275000,00 (двести семьдесят пять тысяч  руб. 00 коп.)
+	- Цена договора включает общую стоимость товара, транспортные расходы до  места  оказания услуг, а также налоги, пошлины (в том числе таможенные), сборы и другие обязательные платежи, предусмотренные действующим законодательством Российской Федерации.
+	- Оплата производится в течение 10 (десяти) банковских дней с момента получения Заказчиком счета  и накладной, подписанного сторонами настоящего договора.
+</ns2:contractConditions>
+                        <ns2:application>
+                            <ns2:applicationNumber>( вх №05-42/4198) </ns2:applicationNumber>
+                            <ns2:applicationDate>2016-05-23T09:22:00</ns2:applicationDate>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>false</ns2:provider>
+                            <ns2:supplierInfo>
+								<!--+-->
+                                <name>ИП Девочкин Д.Е.</name>
+								<!--+-->
+                                <inn>332802469221</inn>
+								<!--+-->
+                                <kpp>332802469</kpp>
+								<!--+-->
+                                <ogrn>3143340268000</ogrn>
+								<!--+-->
+                                <type>L</type>
+								<!--+-->
+                                <address>г.Владимир, ул. Токарева, д.1г, кВ. 35</address>
+                            </ns2:supplierInfo>
+                            <ns2:price>245000</ns2:price>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:commodityAmount>ЧВ соответствии с условиями договора и документации запроса котировок</ns2:commodityAmount>
+                            <ns2:contractExecutionTerm>В течение 10 дней с даты подписания договора</ns2:contractExecutionTerm>
+                            <ns2:accepted>T</ns2:accepted>
+							<!--+-->
+                            <ns2:winnerIndication>W</ns2:winnerIndication>
+                        </ns2:application>
+                        <ns2:application>
+                            <ns2:applicationNumber>вх № 05-42/4197</ns2:applicationNumber>
+                            <ns2:applicationDate>2016-05-19T14:00:00</ns2:applicationDate>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>ООО «Расходные материалы»» ИНН 7714522397</name>
+                                <inn>7714522397</inn>
+                                <kpp>771401001</kpp>
+                                <ogrn>0000000000000</ogrn>
+                                <type>L</type>
+                                <address>г.Москва, ул.Кусковская, д.27</address>
+                            </ns2:supplierInfo>
+                            <ns2:price>256450</ns2:price>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:commodityAmount>В соответствии  с приложением № 4   документации запроса котировки</ns2:commodityAmount>
+                            <ns2:contractExecutionTerm>В течение 10 дней с даты подписания договора и условий  документации запроса котировки</ns2:contractExecutionTerm>
+                            <ns2:accepted>T</ns2:accepted>
+                            <ns2:winnerIndication>S</ns2:winnerIndication>
+                        </ns2:application>
+                        <ns2:application>
+                            <ns2:applicationNumber>вх № 05-42/4199</ns2:applicationNumber>
+                            <ns2:applicationDate>2016-05-23T12:35:00</ns2:applicationDate>
+                            <ns2:notDishonest>true</ns2:notDishonest>
+                            <ns2:provider>true</ns2:provider>
+                            <ns2:supplierInfo>
+                                <name>ООО «ВладТэк»</name>
+                                <inn>3327836230</inn>
+                                <kpp>332701001</kpp>
+                                <ogrn>1083327001383</ogrn>
+                                <type>L</type>
+                                <address>г.Владимир, 
+ул.Пушкарская, д.44
+</address>
+                            </ns2:supplierInfo>
+                            <ns2:price>272670</ns2:price>
+                            <ns2:currency>
+                                <code>RUB</code>
+                                <digitalCode>643</digitalCode>
+                                <name>Российский рубль</name>
+                            </ns2:currency>
+                            <ns2:commodityAmount>В соответствии с приложением № 4  документации запроса котировок</ns2:commodityAmount>
+                            <ns2:contractExecutionTerm>В течении 10 дней с даты подписания договора</ns2:contractExecutionTerm>
+                            <ns2:accepted>T</ns2:accepted>
+                        </ns2:application>
+                    </ns2:protocolLotApplications>
+                </ns2:lotApplicationsList>
+                <ns2:protocolSignDate>2016-05-23</ns2:protocolSignDate>
+            </ns2:purchaseProtocolZKData>
+        </ns2:item>
+    </ns2:body>
+</ns2:purchaseProtocolZK>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseNoticeEP xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-5.0 http://zakupki.gov.ru/223/integration/schema/TFF-5.0/purchase.xsd" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns10="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns11="http://zakupki.gov.ru/223fz/machineryListInfo/1" xmlns:ns12="http://zakupki.gov.ru/223fz/purchasePlanAdditionalPosition/1" xmlns:ns13="http://zakupki.gov.ru/223fz/disagreementProtocol/1" xmlns:ns14="http://zakupki.gov.ru/223fz/revenue/1" xmlns:ns15="http://zakupki.gov.ru/223fz/contract/1" xmlns:ns16="http://zakupki.gov.ru/223fz/missedNotice/1" xmlns:ns17="http://zakupki.gov.ru/223fz/decisionSuspension/1" xmlns:ns18="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns19="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/dishonestSupplier/1" xmlns:ns4="http://zakupki.gov.ru/223fz/notificationIssue/1" xmlns:ns5="http://zakupki.gov.ru/223fz/purchasePlanProjectAdditionalPosition/1" xmlns:ns6="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns7="http://zakupki.gov.ru/223fz/stopCommodity/1" xmlns:ns8="http://zakupki.gov.ru/223fz/complaint/1" xmlns:ns9="http://zakupki.gov.ru/223fz/purchasePlanProject/1">
+<header>
+<guid>714d209c-d3dd-4b31-ae98-a777af6afd39</guid>
+<createDateTime>2016-05-30T15:06:09</createDateTime>
+</header>
+<ns2:body>
+<ns2:item>
+<guid>b19a096f-97f6-477d-9373-98c9a0eb3246</guid>
+<ns2:purchaseNoticeEPData>
+<ns2:guid>b19a096f-97f6-477d-9373-98c9a0eb3246</ns2:guid>
+<ns2:createDateTime>2016-05-30T14:43:10</ns2:createDateTime>
+<ns2:urlOOS>https://zakupki.gov.ru/223/purchase/private/purchase/notice-info/details.html?noticeInfoId=4467431</ns2:urlOOS>
+<ns2:registrationNumber>31603716574</ns2:registrationNumber>
+<ns2:name>Поставка нефтепродуктов </ns2:name>
+<ns2:customer>
+<mainInfo>
+<fullName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</fullName>
+<shortName>ПАО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</shortName>
+<iko>67720065580772001001</iko>
+<inn>7720065580</inn>
+<kpp>772001001</kpp>
+<ogrn>1027700067669</ogrn>
+<legalAddress>105118, г МОСКВА, ш ЭНТУЗИАСТОВ, дом 40</legalAddress>
+<postalAddress>105118,г. Москва, шоссе Энтузиастов, д 40</postalAddress>
+<phone>7-495-6732581</phone>
+<fax>7-495-7881571</fax>
+<email>nefteprodukt@rosneft.ru</email>
+<okato>45263583000</okato>
+<okpo>00148613</okpo>
+</mainInfo>
+</ns2:customer>
+<ns2:purchaseMethodCode>3363</ns2:purchaseMethodCode>
+<ns2:purchaseCodeName>Закупка у единственного поставщика (исполнителя, подрядчика)</ns2:purchaseCodeName>
+<ns2:placer>
+<mainInfo>
+<fullName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</fullName>
+<shortName>ПАО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</shortName>
+<iko>67720065580772001001</iko>
+<inn>7720065580</inn>
+<kpp>772001001</kpp>
+<ogrn>1027700067669</ogrn>
+<legalAddress>105118, г МОСКВА, ш ЭНТУЗИАСТОВ, дом 40</legalAddress>
+<postalAddress>105118,г. Москва, шоссе Энтузиастов, д 40</postalAddress>
+<phone>7-495-6732581</phone>
+<fax>7-495-7881571</fax>
+<email>nefteprodukt@rosneft.ru</email>
+<okato>45263583000</okato>
+<okpo>00148613</okpo>
+</mainInfo>
+</ns2:placer>
+<ns2:contact>
+<firstName>Николай </firstName>
+<middleName>Владимирович</middleName>
+<lastName>Рогожин</lastName>
+<phone>+7 (495) 7969779, доб.: 1205</phone>
+<email>n_rogozhin@rosneft.ru</email>
+<organization>
+<mainInfo>
+<fullName>ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</fullName>
+<shortName>ПАО "НК "РОСНЕФТЬ"-МЗ"НЕФТЕПРОДУКТ"</shortName>
+<iko>67720065580772001001</iko>
+<inn>7720065580</inn>
+<kpp>772001001</kpp>
+<ogrn>1027700067669</ogrn>
+<legalAddress>105118, г МОСКВА, ш ЭНТУЗИАСТОВ, дом 40</legalAddress>
+<postalAddress>105118,г. Москва, шоссе Энтузиастов, д 40</postalAddress>
+<phone>7-495-6732581</phone>
+<fax>7-495-7881571</fax>
+<email>nefteprodukt@rosneft.ru</email>
+<okato>45263583000</okato>
+<okpo>00148613</okpo>
+</mainInfo>
+</organization>
+</ns2:contact>
+<ns2:publicationDateTime>2016-05-30T15:06:09</ns2:publicationDateTime>
+<ns2:documentationDelivery/>
+<ns2:status>P</ns2:status>
+<ns2:version>1</ns2:version>
+<ns2:notDishonest>true</ns2:notDishonest>
+<ns2:attachments>
+<totalDocumentsCount>3</totalDocumentsCount>
+<document>
+<guid>3d1bf446-6d7a-4ebe-b71b-24b58e957ee8</guid>
+<createDateTime>2016-05-30T15:05:21</createDateTime>
+<fileName>Спецификация ООС_1.xls</fileName>
+<description>Спецификация ООС_1</description>
+<url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22562994</url>
+</document>
+<document>
+<guid>d03c3fed-094e-448b-9916-a381d3b90a8f</guid>
+<createDateTime>2016-05-30T15:05:32</createDateTime>
+<fileName>Контракт на поставку ГСМ_2016.docx</fileName>
+<description>Контракт на поставку ГСМ_2016</description>
+<url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22563017</url>
+</document>
+<document>
+<guid>ec661744-f116-4122-a482-004ee7ca66a4</guid>
+<createDateTime>2016-05-30T15:04:37</createDateTime>
+<fileName>Документация на закупку.doc</fileName>
+<description>Документация на закупку</description>
+<url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=22562954</url>
+</document>
+</ns2:attachments>
+<ns2:modificationDate>2016-05-30T15:06:09</ns2:modificationDate>
+<ns2:saveUserId>29905</ns2:saveUserId>
+<ns2:deliveryPlaceIndication>DIFFERENT_PLACE</ns2:deliveryPlaceIndication>
+<ns2:emergency>false</ns2:emergency>
+<ns2:lots>
+<lot>
+<guid>cf7c9270-1d23-42c5-82a7-e6e9fdb3ccdb</guid>
+<ordinalNumber>1</ordinalNumber>
+<lotEditEnabled>true</lotEditEnabled>
+<lotData>
+<subject>Масло ТСЗп-8 (в бочках 200-220 л) (ТУ 38.1011280)</subject>
+<currency>
+<code>RUB</code>
+<digitalCode>643</digitalCode>
+<name>Российский рубль</name>
+</currency>
+<initialSum>18114375.00</initialSum>
+<orderPricing>с НДС</orderPricing>
+<lotItems>
+<newCodes>true</newCodes>
+<lotItem>
+<guid>9bc5f8c4-5b34-4fb0-8612-fb489302758d</guid>
+<ordinalNumber>1</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>20</qty>
+<deliveryPlace>
+<state>Сибирский федеральный округ</state>
+<region>Новосибирская обл</region>
+<regionOkato>50000000000</regionOkato>
+<address>Новосибирская область, ст. Мошково, З-Сиб. ж. д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>2832bdf8-ab1d-4a74-b842-eafa3e82e06e</guid>
+<ordinalNumber>2</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>15</qty>
+<deliveryPlace>
+<state>Приволжский федеральный округ</state>
+<region>Оренбургская обл</region>
+<regionOkato>53000000000</regionOkato>
+<address>Оренбургская область, ст.Тоцкая, Ю-Ур.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>0194293b-07d4-488a-abc2-5513ec849cb3</guid>
+<ordinalNumber>3</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Сибирский федеральный округ</state>
+<region>Забайкальский край</region>
+<regionOkato>76000000000</regionOkato>
+<address>Забайкальский край, ст.Новая, Заб.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+</lotItems>
+<forSmallOrMiddle>false</forSmallOrMiddle>
+<excludePurchaseFromPlan>false</excludePurchaseFromPlan>
+<notFederalLaw223>false</notFederalLaw223>
+<subcontractorsRequirement>false</subcontractorsRequirement>
+<ignoredPurchase>false</ignoredPurchase>
+</lotData>
+<deliveryPlaceIndication>ELP</deliveryPlaceIndication>
+<jointLotData>
+<jointLot>false</jointLot>
+</jointLotData>
+<lotPlanInfo>
+<planRegistrationNumber>2150138736</planRegistrationNumber>
+<planGuid>6da69635-4f01-43bc-8966-b617cd6c7c21</planGuid>
+<positionNumber>213</positionNumber>
+<lotPlanPosition>COMMODITY</lotPlanPosition>
+<positionGuid>853e2a73-0a06-4eba-ad35-6a39a5801a0c</positionGuid>
+</lotPlanInfo>
+<cancelled>false</cancelled>
+</lot>
+<lot>
+<guid>c5be63c4-c62c-4aa3-9d9c-a7fa0337ffdf</guid>
+<ordinalNumber>2</ordinalNumber>
+<lotEditEnabled>true</lotEditEnabled>
+<lotData>
+<subject>
+Масло М-4з/14Д (в ПЭТ канистрах 5 л) (ТУ 0253-006-08151164)</subject>
+<currency>
+<code>RUB</code>
+<digitalCode>643</digitalCode>
+<name>Российский рубль</name>
+</currency>
+<initialSum>16595950.00</initialSum>
+<orderPricing>с НДС</orderPricing>
+<lotItems>
+<newCodes>true</newCodes>
+<lotItem>
+<guid>2c5d9f62-1d37-4770-9a1c-72f80159c601</guid>
+<ordinalNumber>1</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Приволжский федеральный округ</state>
+<region>Оренбургская обл</region>
+<regionOkato>53000000000</regionOkato>
+<address>Не заполнено</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>74866e3f-c4a5-4e4f-a636-0aa38026de5b</guid>
+<ordinalNumber>2</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Сибирский федеральный округ</state>
+<region>Новосибирская обл</region>
+<regionOkato>50000000000</regionOkato>
+<address>Новосибирская область, ст.Мошково, З-Сиб.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>3df784c7-9893-4308-9798-1387d2e91695</guid>
+<ordinalNumber>3</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Сибирский федеральный округ</state>
+<region>Бурятия Респ </region>
+<regionOkato>81000000000</regionOkato>
+<address>ст.Онохой, В-Сиб.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>cac2492f-3249-45fb-906a-8778ef3b9adc</guid>
+<ordinalNumber>4</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Дальневосточный федеральный округ</state>
+<region>Хабаровский край</region>
+<regionOkato>08000000000</regionOkato>
+<address>Хабаровский край, ст.Хабаровск-2, Двост.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+</lotItems>
+<forSmallOrMiddle>false</forSmallOrMiddle>
+<excludePurchaseFromPlan>false</excludePurchaseFromPlan>
+<notFederalLaw223>false</notFederalLaw223>
+<subcontractorsRequirement>false</subcontractorsRequirement>
+<ignoredPurchase>false</ignoredPurchase>
+</lotData>
+<deliveryPlaceIndication>ELP</deliveryPlaceIndication>
+<jointLotData>
+<jointLot>false</jointLot>
+</jointLotData>
+<lotPlanInfo>
+<planRegistrationNumber>2150138736</planRegistrationNumber>
+<planGuid>6da69635-4f01-43bc-8966-b617cd6c7c21</planGuid>
+<positionNumber>211</positionNumber>
+<lotPlanPosition>COMMODITY</lotPlanPosition>
+<positionGuid>cc48ff47-b84f-4d12-8edc-d66a9c066252</positionGuid>
+</lotPlanInfo>
+<cancelled>false</cancelled>
+</lot>
+<lot>
+<guid>d749e6e7-3183-43bd-a4f3-96bcc85193a4</guid>
+<ordinalNumber>3</ordinalNumber>
+<lotEditEnabled>true</lotEditEnabled>
+<lotData>
+<subject>
+Масло М-4з/14Д (в бочках 200-220 л) (ТУ 0253-006-08151164)</subject>
+<currency>
+<code>RUB</code>
+<digitalCode>643</digitalCode>
+<name>Российский рубль</name>
+</currency>
+<initialSum>16449850.00</initialSum>
+<orderPricing>с НДС</orderPricing>
+<lotItems>
+<newCodes>true</newCodes>
+<lotItem>
+<guid>d3ba9ad8-d410-48f3-afb1-9375f41b804c</guid>
+<ordinalNumber>1</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>50</qty>
+<deliveryPlace>
+<state>Дальневосточный федеральный округ</state>
+<region>Хабаровский край</region>
+<regionOkato>08000000000</regionOkato>
+<address>Хабаровский край, ст.Хабаровск-2, Двост.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>1ff3f69d-042c-4b6c-823a-45292449edbd</guid>
+<ordinalNumber>2</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>50</qty>
+<deliveryPlace>
+<state>Сибирский федеральный округ</state>
+<region>Бурятия Респ </region>
+<regionOkato>81000000000</regionOkato>
+<address>Республика Бурятия, ст.Онохой, В-Сиб.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+</lotItems>
+<forSmallOrMiddle>false</forSmallOrMiddle>
+<excludePurchaseFromPlan>false</excludePurchaseFromPlan>
+<notFederalLaw223>false</notFederalLaw223>
+<subcontractorsRequirement>false</subcontractorsRequirement>
+<ignoredPurchase>false</ignoredPurchase>
+</lotData>
+<deliveryPlaceIndication>ELP</deliveryPlaceIndication>
+<jointLotData>
+<jointLot>false</jointLot>
+</jointLotData>
+<lotPlanInfo>
+<planRegistrationNumber>2150138736</planRegistrationNumber>
+<planGuid>6da69635-4f01-43bc-8966-b617cd6c7c21</planGuid>
+<positionNumber>212</positionNumber>
+<lotPlanPosition>COMMODITY</lotPlanPosition>
+<positionGuid>17df5c92-14c5-4142-974e-39d2b5b4108d</positionGuid>
+</lotPlanInfo>
+<cancelled>false</cancelled>
+</lot>
+<lot>
+<guid>9807cb8a-1857-43e8-b60d-d026511b982c</guid>
+<ordinalNumber>4</ordinalNumber>
+<lotEditEnabled>true</lotEditEnabled>
+<lotData>
+<subject>
+Жидкость ОЖ-К "Лена" (в бочках 200-220 л) (ТУ 113-07-02)</subject>
+<currency>
+<code>RUB</code>
+<digitalCode>643</digitalCode>
+<name>Российский рубль</name>
+</currency>
+<initialSum>6324975.00</initialSum>
+<orderPricing>с НДС</orderPricing>
+<lotItems>
+<newCodes>true</newCodes>
+<lotItem>
+<guid>1b83d4f8-8136-4f69-951c-a1c54304c9cb</guid>
+<ordinalNumber>1</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Приволжский федеральный округ</state>
+<region>Оренбургская обл</region>
+<regionOkato>53000000000</regionOkato>
+<address>Оренбургская область, ст.201 обг. п., Ю-Ур.ж.д.</address>
+</deliveryPlace>
+</lotItem>
+<lotItem>
+<guid>4bceb148-1e7e-451e-a42a-f718585db13c</guid>
+<ordinalNumber>2</ordinalNumber>
+<okpd2>
+<code>19.20</code>
+<name>Нефтепродукты</name>
+</okpd2>
+<okved2>
+<code>19.20</code>
+<name>Производство нефтепродуктов</name>
+</okved2>
+<okei>
+<code>168</code>
+<name>Тонна; Метрическая тонна (1000 кг)</name>
+</okei>
+<qty>25</qty>
+<deliveryPlace>
+<state>Уральский федеральный округ</state>
+<region>Свердловская обл</region>
+<regionOkato>65000000000</regionOkato>
+<address>Свердловская область, ст.Кольцово, Сверд. Ж.д.</address>
+</deliveryPlace>
+</lotItem>
+</lotItems>
+<forSmallOrMiddle>false</forSmallOrMiddle>
+<excludePurchaseFromPlan>false</excludePurchaseFromPlan>
+<notFederalLaw223>false</notFederalLaw223>
+<subcontractorsRequirement>false</subcontractorsRequirement>
+<ignoredPurchase>false</ignoredPurchase>
+</lotData>
+<deliveryPlaceIndication>ELP</deliveryPlaceIndication>
+<jointLotData>
+<jointLot>false</jointLot>
+</jointLotData>
+<lotPlanInfo>
+<planRegistrationNumber>2150138736</planRegistrationNumber>
+<planGuid>6da69635-4f01-43bc-8966-b617cd6c7c21</planGuid>
+<positionNumber>214</positionNumber>
+<lotPlanPosition>COMMODITY</lotPlanPosition>
+<positionGuid>1116380e-5d2d-4d8d-a1dc-ebad4579e6fd</positionGuid>
+</lotPlanInfo>
+<cancelled>false</cancelled>
+</lot>
+</ns2:lots>
+</ns2:purchaseNoticeEPData>
+</ns2:item>
+</ns2:body>
+</ns2:purchaseNoticeEP>

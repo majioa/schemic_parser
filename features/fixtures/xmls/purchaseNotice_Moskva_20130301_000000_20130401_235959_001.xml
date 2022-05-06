@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:purchaseNotice xsi:schemaLocation="http://zakupki.gov.ru/223/integration/schema/TFF-3.1/purchase.xsd" xmlns:ns5="http://zakupki.gov.ru/223fz/complaint/1" xmlns="http://zakupki.gov.ru/223fz/types/1" xmlns:ns6="http://zakupki.gov.ru/223fz/orderClauseList/1" xmlns:ns7="http://zakupki.gov.ru/223fz/purchasePlan/1" xmlns:ns8="http://zakupki.gov.ru/223fz/webRequest/1" xmlns:ns2="http://zakupki.gov.ru/223fz/purchase/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://zakupki.gov.ru/223fz/reference/1" xmlns:ns4="http://zakupki.gov.ru/223fz/dishonestSupplier/1">
+    <header>
+        <guid>8873276b-7db6-4ddd-941e-2b993c6ed3b1</guid>
+        <createDateTime>2013-03-13T13:23:22</createDateTime>
+    </header>
+    <ns2:body>
+        <ns2:item>
+            <guid>00c2ccf1-2d43-148a-37dc-ed0525586490</guid>
+            <ns2:purchaseNoticeData>
+                <ns2:guid>00c2ccf1-2d43-148a-37dc-ed0525586490</ns2:guid>
+                <ns2:createDateTime>2012-12-19T15:51:55</ns2:createDateTime>
+				<!--+-->
+                <ns2:registrationNumber>31200059171</ns2:registrationNumber>
+				<!--+-->
+                <ns2:name>открытый запрос предложений в электронной форме на право заключения договора на выполнение работ «Замена деталей трубопроводов на котлоагрегате ст. № 14 энергоблока ст. №7 Верхнетагильской ГРЭС (1024531)»</ns2:name>
+                <ns2:customer>
+                    <mainInfo>
+					<!--+-->
+                        <fullName>Открытое акционерное общество "ИНТЕР РАО - Электрогенерация"</fullName>
+						<!--+-->
+                        <shortName>ОАО "ИНТЕР РАО - Электрогенерация"</shortName>
+						<!--+-->
+                        <inn>7704784450</inn>
+						<!--+-->
+                        <kpp>770401001</kpp>
+						<!--+-->
+                        <ogrn>1117746460358</ogrn>
+						<!--+-->
+                        <legalAddress>119435, Москва, Пироговская Б., дом 27, корпус стр.1</legalAddress>
+						<!--+-->
+                        <postalAddress>119435 г. Москва ул. Большая Пироговская д. 27 стр. 1</postalAddress>
+						<!--+-->
+                        <phone>7-495-6647680-3665</phone>
+						<!--+-->
+                        <email>kaptur_sp@interrao.ru</email>
+						<!--+-->
+                        <okato>45286590000</okato>
+                    </mainInfo>
+                </ns2:customer>
+				<!--+-->
+                <ns2:purchaseMethodCode>6125</ns2:purchaseMethodCode>
+				<!--+-->
+                <ns2:purchaseCodeName>Открытый запрос предложений в электронной форме</ns2:purchaseCodeName>
+                <ns2:placer>
+                    <mainInfo>
+                        <fullName>Открытое акционерное общество "ИНТЕР РАО - Электрогенерация"</fullName>
+                        <shortName>ОАО "ИНТЕР РАО - Электрогенерация"</shortName>
+                        <inn>7704784450</inn>
+                        <kpp>770401001</kpp>
+                        <ogrn>1117746460358</ogrn>
+                        <legalAddress>119435, Москва, Пироговская Б., дом 27, корпус стр.1</legalAddress>
+                        <postalAddress>119435 г. Москва ул. Большая Пироговская д. 27 стр. 1</postalAddress>
+                        <phone>7-495-6647680-3665</phone>
+                        <email>kaptur_sp@interrao.ru</email>
+                        <okato>45286590000</okato>
+                    </mainInfo>
+                </ns2:placer>
+                <ns2:contact>
+					<!--+-->
+                    <lastName>Пояркова</lastName>
+					<!--+-->
+                    <phone>+7-(34357)-22114</phone>
+					<!--+-->
+                    <email>osk17@vtgres.ru</email>
+                    <organization>
+                        <mainInfo>
+                            <fullName>Открытое акционерное общество "ИНТЕР РАО - Электрогенерация"</fullName>
+                            <shortName>ОАО "ИНТЕР РАО - Электрогенерация"</shortName>
+                            <inn>7704784450</inn>
+                            <kpp>770401001</kpp>
+                            <ogrn>1117746460358</ogrn>
+                            <legalAddress>119435, Москва, Пироговская Б., дом 27, корпус стр.1</legalAddress>
+                            <postalAddress>119435 г. Москва ул. Большая Пироговская д. 27 стр. 1</postalAddress>
+                            <phone>7-495-6647680-3665</phone>
+                            <email>kaptur_sp@interrao.ru</email>
+                            <okato>45286590000</okato>
+                        </mainInfo>
+                    </organization>
+                </ns2:contact>
+				<!--+-->
+                <ns2:publicationDateTime>2013-03-13T13:23:22</ns2:publicationDateTime>
+                <ns2:documentationDelivery>
+                    <deliveryStartDateTime>2012-12-05</deliveryStartDateTime>
+                    <deliveryEndDateTime>2012-12-25</deliveryEndDateTime>
+                    <place>https://com.roseltorg.ru/</place>
+                    <procedure>посредством размещения для скачивания и ознакомления</procedure>
+                </ns2:documentationDelivery>
+                <ns2:status>P</ns2:status>
+				<!--+-->
+                <ns2:version>2</ns2:version>
+                <ns2:modificationDescription>Изложено в прилагаемой документации</ns2:modificationDescription>
+                <ns2:attachments>
+                    <document>
+                        <createDateTime>2012-12-06T16:17:37</createDateTime>
+                        <fileName>документация.zip</fileName>
+                        <description>документация</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=298739</url>
+                    </document>
+                    <document>
+                        <createDateTime>2012-12-19T15:51:32</createDateTime>
+                        <fileName>Уведомление__о_продлении[1].doc</fileName>
+                        <description>уведомление о продлении</description>
+                        <url>http://zakupki.gov.ru/223/purchase/public/download/download.html?id=298740</url>
+                    </document>
+                </ns2:attachments>
+                <ns2:modificationDate>2013-03-13T13:23:22</ns2:modificationDate>
+                <ns2:saveUserId>21261</ns2:saveUserId>
+                <ns2:electronicPlaceInfo>
+					<!--+-->
+                    <name>ОАО "ЕЭТП"</name>
+					<!--+-->
+                    <url>https://com.roseltorg.ru/</url>
+					<!--+-->
+                    <electronicPlaceId>113</electronicPlaceId>
+                    <ns2:purchaseDateTime>2013-01-17T21:59:00</ns2:purchaseDateTime>
+                </ns2:electronicPlaceInfo>
+                <ns2:examinationPlace>624162, Свердловская область, г. Верхний Тагил, сектор Промышленный проезд 4, Промплощадка</ns2:examinationPlace>
+                <ns2:examinationDateTime>2012-12-28T10:00:00</ns2:examinationDateTime>
+				<!--+-->
+                <ns2:submissionCloseDateTime>2012-12-25T12:00:00</ns2:submissionCloseDateTime>
+                <ns2:publicationPlannedDate>2012-12-05</ns2:publicationPlannedDate>
+                <ns2:lots>
+                    <lot>
+						<!--+-->
+                        <guid>23654570-2c37-5a12-b845-60e81404ad99</guid>
+						<!--+-->
+                        <ordinalNumber>1</ordinalNumber>
+						<!--+-->
+                        <subject>Замена деталей трубопроводов на котлоагрегате ст. № 14 энергоблока ст. №7 Верхнетагильской ГРЭС (1024531)</subject>
+                        <currency>
+							<!--+-->
+                            <code>RUB</code>
+                            <digitalCode>810</digitalCode>
+                            <name>Российский рубль</name>
+                        </currency>
+						<!--+-->
+                        <initialSum>1993000.00</initialSum>
+                        <deliveryPlace>в соответствии с разделом II «Техническая часть» Закупочной документации</deliveryPlace>
+                        <lotItems>
+                            <lotItem>
+								<!--+-->
+                                <guid>23654570-2c37-5a12-b845-60e81404ad99</guid>
+								<!--+-->
+                                <ordinalNumber>1</ordinalNumber>
+                                <okdp>
+									<!--+-->
+                                    <code>9432000</code>
+                                    <name>Услуги по ремонту машин и оборудования, не включенные в другие группировки, предоставляемые за вознаграждение или на договорной основе</name>
+                                </okdp>
+                                <okved>
+									<!--+-->
+                                    <code>40.10.41</code>
+                                    <name>Деятельность по обеспечению работоспособности тепловых электростанций</name>
+                                </okved>
+								<!--+-->
+                                <additionalInfo>«Замена деталей трубопроводов на котлоагрегате ст. № 14 энергоблока ст. №7 Верхнетагильской ГРЭС (1024531)»</additionalInfo>
+                            </lotItem>
+                        </lotItems>
+                    </lot>
+                </ns2:lots>
+            </ns2:purchaseNoticeData>
+        </ns2:item>
+    </ns2:body>
+</ns2:purchaseNotice>

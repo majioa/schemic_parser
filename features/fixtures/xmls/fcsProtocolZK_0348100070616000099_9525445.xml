@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1" xmlns:ns3="http://zakupki.gov.ru/oos/printform/1">
+    <ns2:fcsProtocolZK schemeVersion="6.2">
+        <id>9525445</id>
+        <purchaseNumber>0348100070616000099</purchaseNumber>
+        <protocolNumber>П1</protocolNumber>
+        <place>468320, Казахстан, Байконур г, ул. имени Космонавта Титова Г.С., д. 13</place>
+        <protocolDate>2016-06-27T10:00:00+06:00</protocolDate>
+        <signDate>2016-06-27T00:00:00+06:00</signDate>
+        <publishDate>2016-06-27T17:01:33.896+06:00</publishDate>
+        <commission>
+            <commissionName>Единая комиссия</commissionName>
+            <commissionMembers>
+                <commissionMember>
+                    <memberNumber>1</memberNumber>
+                    <lastName>Уланов</lastName>
+                    <firstName>Борис</firstName>
+                    <middleName>Петрович</middleName>
+                    <role>
+                        <id>198</id>
+                        <name>Зам. председателя комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>2</memberNumber>
+                    <lastName>Вильверт</lastName>
+                    <firstName>Ирина</firstName>
+                    <middleName>Владимировна</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>3</memberNumber>
+                    <lastName>Жусупова</lastName>
+                    <firstName>Гульхан</firstName>
+                    <middleName>Нурхановна</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>4</memberNumber>
+                    <lastName>Ларина</lastName>
+                    <firstName>Светлана</firstName>
+                    <middleName>Николаевна</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>5</memberNumber>
+                    <lastName>Макуева</lastName>
+                    <firstName>Эльвира</firstName>
+                    <middleName>Памировна</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>6</memberNumber>
+                    <lastName>Цымбрыла </lastName>
+                    <firstName>Елена</firstName>
+                    <middleName>Александровна</middleName>
+                    <role>
+                        <id>28</id>
+                        <name>Член комиссии</name>
+                        <rightVote>true</rightVote>
+                    </role>
+                </commissionMember>
+                <commissionMember>
+                    <memberNumber>7</memberNumber>
+                    <lastName>Мандрыкина</lastName>
+                    <firstName>Светлана</firstName>
+                    <middleName>Витальевна</middleName>
+                    <role>
+                        <id>6324830</id>
+                        <name>Секретарь комиссии (без права голоса)</name>
+                        <rightVote>false</rightVote>
+                    </role>
+                </commissionMember>
+                <spelledMembersNoVoteCount>один</spelledMembersNoVoteCount>
+                <spelledMembersCount>семь</spelledMembersCount>
+            </commissionMembers>
+            <competent>true</competent>
+            <addInfo>Сапун Н.Н. отсутствует по уважительной причине.</addInfo>
+        </commission>
+        <href>http://zakupki.gov.ru/epz/order/notice/zk44/view/documents.html?regNumber=0348100070616000099</href>
+        <printForm>
+            <url>http://zakupki.gov.ru/epz/order/notice/printForm/viewXml.html?structuredProtocolID=9525445</url>
+            <signature type="CAdES-BES">TUlJTmVBWUpLb1pJaHZjTkFRY0NvSUlOYVRDQ0RXVUNBUUV4RERBS0JnWXFoUU1DQWdrRkFEQUxCZ2txaGtpRzl3MEJCd0dnZ2dsSU1JSUpSRENDQ1BPZ0F3SUJBZ0lEQzduTk1BZ0dCaXFGQXdJQ0F6Q0NBVjB4R0RBV0Jna3Foa2lHOXcwQkNRSVRDVk5sY25abGNpQkRRVEVnTUI0R0NTcUdTSWIzRFFFSkFSWVJkV05mWm10QWNtOXphMkY2Ym1FdWNuVXhIREFhQmdOVkJBZ01FemMzSU5DekxpRFFuTkMrMFlIUXV0Q3kwTEF4R2pBWUJnZ3FoUU1EZ1FNQkFSSU1NREEzTnpFd05UWTROell3TVJnd0ZnWUZLb1VEWkFFU0RURXdORGMzT1Rjd01UazRNekF4TERBcUJnTlZCQWtNSTlHRDBMdlF1TkdHMExBZzBKalF1OUdNMExqUXZkQzYwTEFzSU5DMDBMN1F2Q0EzTVJVd0V3WURWUVFIREF6UW5OQyswWUhRdXRDeTBMQXhDekFKQmdOVkJBWVRBbEpWTVRnd05nWURWUVFLREMvUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0QzFJTkM2MExEUXQ5QzkwTERSaDlDMTBMblJnZEdDMExMUXZqRS9NRDBHQTFVRUF3dzIwS1BRcGlEUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0Q3owTDRnMExyUXNOQzMwTDNRc05HSDBMWFF1ZEdCMFlMUXN0Q3dNQjRYRFRFMU1EVXhOREE1TURJME9Wb1hEVEUyTURneE5EQTVNREkwT1Zvd2dnSTFNUm93R0FZSUtvVURBNEVEQVFFU0REQXdPVGt3TVRBd01ESTJOekVXTUJRR0JTcUZBMlFERWdzeE1UUXlOams1TlRnMk56RVlNQllHQlNxRkEyUUJFZzB4TURJNU9UQXdOVEEzTWpNd01TVXdJd1lKS29aSWh2Y05BUWtCRmhabmRYcGlZV2xyYjI1MWNrQnlZVzFpYkdWeUxuSjFNUXN3Q1FZRFZRUUdFd0pTVlRGUE1FMEdBMVVFQ0F4R09Ua2cwSmpRdmRHTDBMVWcwWUxRdGRHQTBZRFF1TkdDMEw3UmdOQzQwTGdzSU5DeTBMclF1OUdPMFlmUXNOR1BMQ0RRc3k0ZzBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RFWk1CY0dBMVVFQnd3UTBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RGUE1FMEdBMVVFQ2d4RzBKUFF2dEdBMEw3UXROR0IwTHJRdnRDMUlOR0QwTC9SZ05DdzBMTFF1OUMxMEwzUXVOQzFJTkMzMExUUmdOQ3cwTExRdnRDKzBZWFJnTkN3MEwzUXRkQzkwTGpSanpFa01DSUdBMVVFS2d3YjBKSFF2dEdBMExqUmdTRFFuOUMxMFlMUmdOQyswTExRdU5HSE1SVXdFd1lEVlFRRURBelFvOUM3MExEUXZkQyswTEl4Z1lNd2dZQUdBMVVFREF4NTBKUFF1OUN3MExMUXZkR0wwTGtnMFlIUXY5QzEwWWJRdU5DdzBMdlF1TkdCMFlJZzBMN1JndEMwMExYUXU5Q3dJTkMvMEw0ZzBMdlF0ZEM2MExEUmdOR0IwWUxRc3RDMTBMM1F2ZEMrMEx6Umd5RFF2dEN4MExYUmdkQy8wTFhSaDlDMTBMM1F1TkdPSU5DNElOQzcwTGpSaHRDMTBMM1F0ekV4TUM4R0ExVUVBd3dvMEtQUXU5Q3cwTDNRdnRDeUlOQ1IwTDdSZ05DNDBZRWcwSi9RdGRHQzBZRFF2dEN5MExqUmh6QmpNQndHQmlxRkF3SUNFekFTQmdjcWhRTUNBaVFBQmdjcWhRTUNBaDRCQTBNQUJFQjZiUnJDa3hUYmVDN2Fpb3J6UUU4OHBKTXF0NkJLbnJHT3E5blJGdXFPdElnRkVuTHEvUC9tTFpYR0xuREs5cHVYNVRnUUU1UThmZm0xeHFEVW0yZEtvNElFdkRDQ0JMZ3dEQVlEVlIwVEFRSC9CQUl3QURBZEJnTlZIU0FFRmpBVU1BZ0dCaXFGQTJSeEFUQUlCZ1lxaFFOa2NRSXdXQVlEVlIwUkJGRXdUNkFTQmdOVkJBeWdDeE1KTkRJeU1UZ3hNelE1b0JrR0NpcUZBd005bnRjMkFRZWdDeE1KT1Rrd01UQXhNREF4b0JzR0NpcUZBd005bnRjMkFRV2dEUk1MTURNME9ERXdNREEzTURhR0FUQXdOZ1lGS29VRFpHOEVMUXdySXRDYTBZRFF1TkMvMFlMUXZ0Q2YwWURRdmlCRFUxQWlJQ2pRc3RDMTBZRFJnZEM0MFk4Z015NDJLVENDQVdFR0JTcUZBMlJ3QklJQlZqQ0NBVklNUkNMUW10R0EwTGpRdjlHQzBMN1FuOUdBMEw0Z1ExTlFJaUFvMExMUXRkR0EwWUhRdU5HUElETXVOaWtnS05DNDBZSFF2OUMrMEx2UXZkQzEwTDNRdU5DMUlESXBER2dpMEovUmdOQyswTFBSZ05DdzBMelF2TkM5MEw0dDBMRFF2OUMvMExEUmdOQ3cwWUxRdmRHTDBMa2cwTHJRdnRDODBML1F1OUMxMExyUmdTQWkwSzdRdmRDNDBZSFF0ZEdBMFlJdDBKUFFudENoMEtJaUxpRFFrdEMxMFlEUmdkQzQwWThnTWk0eElneFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5TkMweU1qTTRJTkMrMFlJZ01EUXVNVEF1TWpBeE13eFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5T0MweU1UYzFJTkMrMFlJZ01qQXVNRFl1TWpBeE16QU9CZ05WSFE4QkFmOEVCQU1DQStnd1F3WURWUjBsQkR3d09nWUlLd1lCQlFVSEF3SUdEaXFGQXdNOW50YzJBUVlEQkFFQkJnNHFoUU1EUFo3WE5nRUdBd1FCQWdZT0tvVURBejJlMXpZQkJnTUVBUVF3S3dZRFZSMFFCQ1F3SW9BUE1qQXhOVEExTVRRd09EVTNOVFJhZ1E4eU1ERTJNRGd4TXpBNU1ESTBPVm93Z2dHUEJnTlZIU01FZ2dHR01JSUJnb0FVbm5FT0Q5cTBBU2hmUCtMTGoyVVZsd0pIakt1aGdnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd2dnRUJNRjRHQTFVZEh3UlhNRlV3S2FBbm9DV0dJMmgwZEhBNkx5OWpjbXd1Y205emEyRjZibUV1Y25VdlkzSnNMMlpyTURFdVkzSnNNQ2lnSnFBa2hpSm9kSFJ3T2k4dlkzSnNMbVp6Wm1zdWJHOWpZV3d2WTNKc0wyWnJNREV1WTNKc01CMEdBMVVkRGdRV0JCUmpaSzF1TzZma0lOdVZlQmp1YTJ5eUkrYk1UVEFJQmdZcWhRTUNBZ01EUVFBa3VKMDBFY2lIQVBYR0Roc2c3RlcvOUU3dmpxM2tqNnJGa20wVjUvZ2lKZkdFMHErN3A2V3dRUFZaMkUvTmJuNXR3ank3QVgrbXBvRDVsSGJZcktnR01ZSUQ5ekNDQS9NQ0FRRXdnZ0ZtTUlJQlhURVlNQllHQ1NxR1NJYjNEUUVKQWhNSlUyVnlkbVZ5SUVOQk1TQXdIZ1lKS29aSWh2Y05BUWtCRmhGMVkxOW1hMEJ5YjNOcllYcHVZUzV5ZFRFY01Cb0dBMVVFQ0F3VE56Y2cwTE11SU5DYzBMN1JnZEM2MExMUXNERWFNQmdHQ0NxRkF3T0JBd0VCRWd3d01EYzNNVEExTmpnM05qQXhHREFXQmdVcWhRTmtBUklOTVRBME56YzVOekF4T1Rnek1ERXNNQ29HQTFVRUNRd2owWVBRdTlDNDBZYlFzQ0RRbU5DNzBZelF1TkM5MExyUXNDd2cwTFRRdnRDOElEY3hGVEFUQmdOVkJBY01ETkNjMEw3UmdkQzYwTExRc0RFTE1Ba0dBMVVFQmhNQ1VsVXhPREEyQmdOVkJBb01MOUNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExVZzBMclFzTkMzMEwzUXNOR0gwTFhRdWRHQjBZTFFzdEMrTVQ4d1BRWURWUVFERERiUW85Q21JTkNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExQUXZpRFF1dEN3MExmUXZkQ3cwWWZRdGRDNTBZSFJndEN5MExBQ0F3dTV6VEFLQmdZcWhRTUNBZ2tGQUtDQ0FpZ3dHQVlKS29aSWh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1UWXdOakkzTVRFd05ERTFXakF2QmdrcWhraUc5dzBCQ1FReElnUWdqTW93VGRuM3dVamJTTi9Hci9tbm1WVU5pTDRpUUFLcTdJb2R1ZktmdU1Jd2dnRzdCZ3NxaGtpRzl3MEJDUkFDTHpHQ0Fhb3dnZ0dtTUlJQm9qQ0NBWjR3Q0FZR0tvVURBZ0lKQkNCbzhsSUUrVW9LOGlCY2RlVEFmbTExUUlmWThjSE9SL3ZIMXArSkNDVXZFakNDQVc0d2dnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd0FnTUx1YzB3Q2dZR0tvVURBZ0lUQlFBRVFJR3VBNnI5T1h5SC9UZVpVT1ZIUW9VM01QUWVQLzVmYkZFS0ZKV0VRaHZMYjVBd0hId3JRVGJQYVhtdkFrMjRDWjZnYm5SMC8zMDRXemQ2MjZxaCs1ND0=</signature>
+        </printForm>
+        <protocolPublisher>
+            <publisherOrg>
+                <regNum>03481000706</regNum>
+                <fullName>ГОРОДСКОЕ УПРАВЛЕНИЕ ЗДРАВООХРАНЕНИЯ</fullName>
+            </publisherOrg>
+            <publisherRole>CU</publisherRole>
+        </protocolPublisher>
+        <attachments>
+            <attachment>
+                <publishedContentId>363F8CD955600042E053AC1107254AAE</publishedContentId>
+                <fileName>Протокол рассмотрения оценки заявок №0348100070616000099.pdf</fileName>
+                <fileSize>177.2 Кб</fileSize>
+                <docDescription>Протокол рассмотрения оценки заявок №0348100070616000099</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=363F8CD955600042E053AC1107254AAE</url>
+                <cryptoSigns>
+                    <signature type="CAdES-BES">TUlJTmVBWUpLb1pJaHZjTkFRY0NvSUlOYVRDQ0RXVUNBUUV4RERBS0JnWXFoUU1DQWdrRkFEQUxCZ2txaGtpRzl3MEJCd0dnZ2dsSU1JSUpSRENDQ1BPZ0F3SUJBZ0lEQzduTk1BZ0dCaXFGQXdJQ0F6Q0NBVjB4R0RBV0Jna3Foa2lHOXcwQkNRSVRDVk5sY25abGNpQkRRVEVnTUI0R0NTcUdTSWIzRFFFSkFSWVJkV05mWm10QWNtOXphMkY2Ym1FdWNuVXhIREFhQmdOVkJBZ01FemMzSU5DekxpRFFuTkMrMFlIUXV0Q3kwTEF4R2pBWUJnZ3FoUU1EZ1FNQkFSSU1NREEzTnpFd05UWTROell3TVJnd0ZnWUZLb1VEWkFFU0RURXdORGMzT1Rjd01UazRNekF4TERBcUJnTlZCQWtNSTlHRDBMdlF1TkdHMExBZzBKalF1OUdNMExqUXZkQzYwTEFzSU5DMDBMN1F2Q0EzTVJVd0V3WURWUVFIREF6UW5OQyswWUhRdXRDeTBMQXhDekFKQmdOVkJBWVRBbEpWTVRnd05nWURWUVFLREMvUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0QzFJTkM2MExEUXQ5QzkwTERSaDlDMTBMblJnZEdDMExMUXZqRS9NRDBHQTFVRUF3dzIwS1BRcGlEUXBOQzEwTFRRdGRHQTBMRFF1OUdNMEwzUXZ0Q3owTDRnMExyUXNOQzMwTDNRc05HSDBMWFF1ZEdCMFlMUXN0Q3dNQjRYRFRFMU1EVXhOREE1TURJME9Wb1hEVEUyTURneE5EQTVNREkwT1Zvd2dnSTFNUm93R0FZSUtvVURBNEVEQVFFU0REQXdPVGt3TVRBd01ESTJOekVXTUJRR0JTcUZBMlFERWdzeE1UUXlOams1TlRnMk56RVlNQllHQlNxRkEyUUJFZzB4TURJNU9UQXdOVEEzTWpNd01TVXdJd1lKS29aSWh2Y05BUWtCRmhabmRYcGlZV2xyYjI1MWNrQnlZVzFpYkdWeUxuSjFNUXN3Q1FZRFZRUUdFd0pTVlRGUE1FMEdBMVVFQ0F4R09Ua2cwSmpRdmRHTDBMVWcwWUxRdGRHQTBZRFF1TkdDMEw3UmdOQzQwTGdzSU5DeTBMclF1OUdPMFlmUXNOR1BMQ0RRc3k0ZzBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RFWk1CY0dBMVVFQnd3UTBKSFFzTkM1MExyUXZ0QzkwWVBSZ0RGUE1FMEdBMVVFQ2d4RzBKUFF2dEdBMEw3UXROR0IwTHJRdnRDMUlOR0QwTC9SZ05DdzBMTFF1OUMxMEwzUXVOQzFJTkMzMExUUmdOQ3cwTExRdnRDKzBZWFJnTkN3MEwzUXRkQzkwTGpSanpFa01DSUdBMVVFS2d3YjBKSFF2dEdBMExqUmdTRFFuOUMxMFlMUmdOQyswTExRdU5HSE1SVXdFd1lEVlFRRURBelFvOUM3MExEUXZkQyswTEl4Z1lNd2dZQUdBMVVFREF4NTBKUFF1OUN3MExMUXZkR0wwTGtnMFlIUXY5QzEwWWJRdU5DdzBMdlF1TkdCMFlJZzBMN1JndEMwMExYUXU5Q3dJTkMvMEw0ZzBMdlF0ZEM2MExEUmdOR0IwWUxRc3RDMTBMM1F2ZEMrMEx6Umd5RFF2dEN4MExYUmdkQy8wTFhSaDlDMTBMM1F1TkdPSU5DNElOQzcwTGpSaHRDMTBMM1F0ekV4TUM4R0ExVUVBd3dvMEtQUXU5Q3cwTDNRdnRDeUlOQ1IwTDdSZ05DNDBZRWcwSi9RdGRHQzBZRFF2dEN5MExqUmh6QmpNQndHQmlxRkF3SUNFekFTQmdjcWhRTUNBaVFBQmdjcWhRTUNBaDRCQTBNQUJFQjZiUnJDa3hUYmVDN2Fpb3J6UUU4OHBKTXF0NkJLbnJHT3E5blJGdXFPdElnRkVuTHEvUC9tTFpYR0xuREs5cHVYNVRnUUU1UThmZm0xeHFEVW0yZEtvNElFdkRDQ0JMZ3dEQVlEVlIwVEFRSC9CQUl3QURBZEJnTlZIU0FFRmpBVU1BZ0dCaXFGQTJSeEFUQUlCZ1lxaFFOa2NRSXdXQVlEVlIwUkJGRXdUNkFTQmdOVkJBeWdDeE1KTkRJeU1UZ3hNelE1b0JrR0NpcUZBd005bnRjMkFRZWdDeE1KT1Rrd01UQXhNREF4b0JzR0NpcUZBd005bnRjMkFRV2dEUk1MTURNME9ERXdNREEzTURhR0FUQXdOZ1lGS29VRFpHOEVMUXdySXRDYTBZRFF1TkMvMFlMUXZ0Q2YwWURRdmlCRFUxQWlJQ2pRc3RDMTBZRFJnZEM0MFk4Z015NDJLVENDQVdFR0JTcUZBMlJ3QklJQlZqQ0NBVklNUkNMUW10R0EwTGpRdjlHQzBMN1FuOUdBMEw0Z1ExTlFJaUFvMExMUXRkR0EwWUhRdU5HUElETXVOaWtnS05DNDBZSFF2OUMrMEx2UXZkQzEwTDNRdU5DMUlESXBER2dpMEovUmdOQyswTFBSZ05DdzBMelF2TkM5MEw0dDBMRFF2OUMvMExEUmdOQ3cwWUxRdmRHTDBMa2cwTHJRdnRDODBML1F1OUMxMExyUmdTQWkwSzdRdmRDNDBZSFF0ZEdBMFlJdDBKUFFudENoMEtJaUxpRFFrdEMxMFlEUmdkQzQwWThnTWk0eElneFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5TkMweU1qTTRJTkMrMFlJZ01EUXVNVEF1TWpBeE13eFAwS0hRdGRHQTBZTFF1TkdFMExqUXV0Q3cwWUlnMFlIUXZ0QyswWUxRc3RDMTBZTFJnZEdDMExMUXVOR1BJT0tFbGlEUW9kQ2tMekV5T0MweU1UYzFJTkMrMFlJZ01qQXVNRFl1TWpBeE16QU9CZ05WSFE4QkFmOEVCQU1DQStnd1F3WURWUjBsQkR3d09nWUlLd1lCQlFVSEF3SUdEaXFGQXdNOW50YzJBUVlEQkFFQkJnNHFoUU1EUFo3WE5nRUdBd1FCQWdZT0tvVURBejJlMXpZQkJnTUVBUVF3S3dZRFZSMFFCQ1F3SW9BUE1qQXhOVEExTVRRd09EVTNOVFJhZ1E4eU1ERTJNRGd4TXpBNU1ESTBPVm93Z2dHUEJnTlZIU01FZ2dHR01JSUJnb0FVbm5FT0Q5cTBBU2hmUCtMTGoyVVZsd0pIakt1aGdnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd2dnRUJNRjRHQTFVZEh3UlhNRlV3S2FBbm9DV0dJMmgwZEhBNkx5OWpjbXd1Y205emEyRjZibUV1Y25VdlkzSnNMMlpyTURFdVkzSnNNQ2lnSnFBa2hpSm9kSFJ3T2k4dlkzSnNMbVp6Wm1zdWJHOWpZV3d2WTNKc0wyWnJNREV1WTNKc01CMEdBMVVkRGdRV0JCUmpaSzF1TzZma0lOdVZlQmp1YTJ5eUkrYk1UVEFJQmdZcWhRTUNBZ01EUVFBa3VKMDBFY2lIQVBYR0Roc2c3RlcvOUU3dmpxM2tqNnJGa20wVjUvZ2lKZkdFMHErN3A2V3dRUFZaMkUvTmJuNXR3ank3QVgrbXBvRDVsSGJZcktnR01ZSUQ5ekNDQS9NQ0FRRXdnZ0ZtTUlJQlhURVlNQllHQ1NxR1NJYjNEUUVKQWhNSlUyVnlkbVZ5SUVOQk1TQXdIZ1lKS29aSWh2Y05BUWtCRmhGMVkxOW1hMEJ5YjNOcllYcHVZUzV5ZFRFY01Cb0dBMVVFQ0F3VE56Y2cwTE11SU5DYzBMN1JnZEM2MExMUXNERWFNQmdHQ0NxRkF3T0JBd0VCRWd3d01EYzNNVEExTmpnM05qQXhHREFXQmdVcWhRTmtBUklOTVRBME56YzVOekF4T1Rnek1ERXNNQ29HQTFVRUNRd2owWVBRdTlDNDBZYlFzQ0RRbU5DNzBZelF1TkM5MExyUXNDd2cwTFRRdnRDOElEY3hGVEFUQmdOVkJBY01ETkNjMEw3UmdkQzYwTExRc0RFTE1Ba0dBMVVFQmhNQ1VsVXhPREEyQmdOVkJBb01MOUNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExVZzBMclFzTkMzMEwzUXNOR0gwTFhRdWRHQjBZTFFzdEMrTVQ4d1BRWURWUVFERERiUW85Q21JTkNrMExYUXROQzEwWURRc05DNzBZelF2ZEMrMExQUXZpRFF1dEN3MExmUXZkQ3cwWWZRdGRDNTBZSFJndEN5MExBQ0F3dTV6VEFLQmdZcWhRTUNBZ2tGQUtDQ0FpZ3dHQVlKS29aSWh2Y05BUWtETVFzR0NTcUdTSWIzRFFFSEFUQWNCZ2txaGtpRzl3MEJDUVV4RHhjTk1UWXdOakkzTVRFd05ERTFXakF2QmdrcWhraUc5dzBCQ1FReElnUWd3OHJxQXQ2KzhmVjVMTXI5VmtNNDg0dFJtZVBXeGlLUjJLaU9PbjBDa1Zjd2dnRzdCZ3NxaGtpRzl3MEJDUkFDTHpHQ0Fhb3dnZ0dtTUlJQm9qQ0NBWjR3Q0FZR0tvVURBZ0lKQkNCbzhsSUUrVW9LOGlCY2RlVEFmbTExUUlmWThjSE9SL3ZIMXArSkNDVXZFakNDQVc0d2dnRmxwSUlCWVRDQ0FWMHhHREFXQmdrcWhraUc5dzBCQ1FJVENWTmxjblpsY2lCRFFURWdNQjRHQ1NxR1NJYjNEUUVKQVJZUmRXTmZabXRBY205emEyRjZibUV1Y25VeEhEQWFCZ05WQkFnTUV6YzNJTkN6TGlEUW5OQyswWUhRdXRDeTBMQXhHakFZQmdncWhRTURnUU1CQVJJTU1EQTNOekV3TlRZNE56WXdNUmd3RmdZRktvVURaQUVTRFRFd05EYzNPVGN3TVRrNE16QXhMREFxQmdOVkJBa01JOUdEMEx2UXVOR0cwTEFnMEpqUXU5R00wTGpRdmRDNjBMQXNJTkMwMEw3UXZDQTNNUlV3RXdZRFZRUUhEQXpRbk5DKzBZSFF1dEN5MExBeEN6QUpCZ05WQkFZVEFsSlZNVGd3TmdZRFZRUUtEQy9RcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDMUlOQzYwTERRdDlDOTBMRFJoOUMxMExuUmdkR0MwTExRdmpFL01EMEdBMVVFQXd3MjBLUFFwaURRcE5DMTBMVFF0ZEdBMExEUXU5R00wTDNRdnRDejBMNGcwTHJRc05DMzBMM1FzTkdIMExYUXVkR0IwWUxRc3RDd0FnTUx1YzB3Q2dZR0tvVURBZ0lUQlFBRVFBOUdmYmhpTHh2cXl3Tm9pUjFRcHhCd3FoVDBlQ1BUbXowbGVQelJQSUVxWGJHWThxUEtGR3R2OUk5OCtsWmxzTUp3RzZIajBVYjhmYm91emxWR2Nrdz0=</signature>
+                </cryptoSigns>
+            </attachment>
+        </attachments>
+        <protocolLot>
+            <lotNumber>1</lotNumber>
+            <execution>
+                <openingDate>2016-06-27T10:00:00+06:00</openingDate>
+                <scoringDate>2016-06-27T00:00:00+06:00</scoringDate>
+            </execution>
+            <applications>
+                <application>
+                    <journalNumber>2</journalNumber>
+                    <appDate>2016-06-27T09:26:00+06:00</appDate>
+                    <appParticipant>
+                        <participantType>P</participantType>
+                        <inn>990103030619</inn>
+                        <postAddress>468320, г. Байконур, 7 мкр., дом 11, квартира 86</postAddress>
+                        <contactInfo>
+                            <lastName>Баймуратова</lastName>
+                            <firstName>Гульбану</firstName>
+                            <middleName>Нурхановна</middleName>
+                        </contactInfo>
+                    </appParticipant>
+                    <price>23991</price>
+                    <spelledPrice>двадцать три тысячи девятьсот девяносто один рубль ноль копеек</spelledPrice>
+                    <admittedInfo>
+                        <resultType>WIN_OFFER</resultType>
+                    </admittedInfo>
+                    <correspondencies>
+                        <correspondence>
+                            <compatible>true</compatible>
+                            <requirement>
+                                <code>8632410</code>
+                                <name>Единые требования к участникам (в соответствии  с пунктом 1 части 1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                                <content>Наличие у фармацевтической организации лицензии на осуществление фармацевтической деятельности (Федеральный закон от 04 мая 2011 года № 99-ФЗ «О лицензировании отдельных видов деятельности»)</content>
+                            </requirement>
+                        </correspondence>
+                        <correspondence>
+                            <compatible>true</compatible>
+                            <requirement>
+                                <code>8403975</code>
+                                <name>Требование об отсутствии в предусмотренном Федеральным законом № 44-ФЗ реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе информации об учредителях, о членах коллегиального исполнительного органа, лице, исполняющем функции единоличного исполнительного органа участника закупки - юридического лица (в соответствии с частью 1.1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                                <content>К запросу котировок не допускаются участники закупки, сведения о которых содержатся в реестре недобросовестных поставщиков</content>
+                            </requirement>
+                        </correspondence>
+                    </correspondencies>
+                </application>
+                <application>
+                    <journalNumber>1</journalNumber>
+                    <appDate>2016-06-27T09:25:00+06:00</appDate>
+                    <appParticipant>
+                        <participantType>U</participantType>
+                        <inn>9901001091</inn>
+                        <kpp>990101001</kpp>
+                        <legalForm>
+                            <code>65242</code>
+                            <singularName>Государственное унитарное предприятие субъектов Российской Федерации</singularName>
+                        </legalForm>
+                        <organizationName>Государственное унитарное предприятие «Фармация»</organizationName>
+                        <postAddress>468320, Российская Федерация, Иные территории, включая г. Байконур, Байконур, Королева пр-кт, 8а</postAddress>
+                    </appParticipant>
+                    <price>28472</price>
+                    <spelledPrice>двадцать восемь тысяч четыреста семьдесят два рубля ноль копеек</spelledPrice>
+                    <admittedInfo>
+                        <resultType>SECOND_OFFER</resultType>
+                    </admittedInfo>
+                    <correspondencies>
+                        <correspondence>
+                            <compatible>true</compatible>
+                            <requirement>
+                                <code>8632410</code>
+                                <name>Единые требования к участникам (в соответствии  с пунктом 1 части 1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                                <content>Наличие у фармацевтической организации лицензии на осуществление фармацевтической деятельности (Федеральный закон от 04 мая 2011 года № 99-ФЗ «О лицензировании отдельных видов деятельности»)</content>
+                            </requirement>
+                        </correspondence>
+                        <correspondence>
+                            <compatible>true</compatible>
+                            <requirement>
+                                <code>8403975</code>
+                                <name>Требование об отсутствии в предусмотренном Федеральным законом № 44-ФЗ реестре недобросовестных поставщиков (подрядчиков, исполнителей) информации об участнике закупки, в том числе информации об учредителях, о членах коллегиального исполнительного органа, лице, исполняющем функции единоличного исполнительного органа участника закупки - юридического лица (в соответствии с частью 1.1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                                <content>К запросу котировок не допускаются участники закупки, сведения о которых содержатся в реестре недобросовестных поставщиков</content>
+                            </requirement>
+                        </correspondence>
+                    </correspondencies>
+                </application>
+            </applications>
+        </protocolLot>
+    </ns2:fcsProtocolZK>
+</ns2:export>
